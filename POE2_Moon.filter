@@ -16,6 +16,18 @@ Show #金幣
     MinimapIcon 2 Yellow Circle
     DisableDropSoundIfAlertSound
 
+Show #任務道具
+    Class "Quest Item"
+    SetTextColor 74 230 58
+    SetBackgroundColor 0 0 0
+    SetBorderColor 74 230 58
+    SetFontSize 42
+    CustomAlertSoundOptional "bubu\bubu-任務道具(粵語).mp3" 300
+    CustomAlertSoundOptional "Lelouch\Lelouch-魯路修_所有條件都成立了.mp3" 300
+    MinimapIcon 1 Green UpsideDownHouse
+    PlayEffect Green
+    DisableDropSoundIfAlertSound
+
 Show #印鈔 - 終局 - 速刷 - 蛻變石碎片
     Class "Stackable Currency"
     BaseType "Transmutation Shard"
@@ -68,14 +80,21 @@ Show #護甲片
     Class "Stackable Currency"
     BaseType "Armourer's Scrap"
     SetBorderColor 210 0 0
-    SetFontSize 35
+    SetFontSize 39
     DisableDropSoundIfAlertSound
 
 Show #磨刀石
     Class "Stackable Currency"
     BaseType "Blacksmith's Whetstone"
     SetBorderColor 210 0 0
-    SetFontSize 35
+    SetFontSize 39
+    DisableDropSoundIfAlertSound
+
+Show #奧術蝕刻師
+    Class "Arcanist's Etcher"
+    BaseType "Blacksmith's Whetstone"
+    SetBorderColor 210 0 0
+    SetFontSize 39
     DisableDropSoundIfAlertSound
 
 Show #寶石匠的稜鏡
@@ -90,6 +109,50 @@ Show #寶石匠的稜鏡
     CustomAlertSoundOptional "Diablo2\28.mp3" 200
     CustomAlertSoundOptional "Lelouch\Lelouch-魯路修_富有被射中的覺悟才有資格開槍2.mp3" 300
     MinimapIcon 1 Green Diamond
+    PlayEffect Green Temp
+    DisableDropSoundIfAlertSound 
+
+Show #工匠石
+    Class "Stackable Currency"
+    BaseType "Lesser Jeweller's Orb"
+    SetTextColor 252 239 175
+    SetBackgroundColor 68 51 42
+    SetFontSize 41
+    PlayAlertSoundPositional 8 300
+    CustomAlertSoundOptional "bubu\bubu-水啦.mp3" 300
+    CustomAlertSoundOptional "Diablo2\27.mp3" 300
+    CustomAlertSoundOptional "Lelouch\Lelouch-魯路修_富有被射中的覺悟才有資格開槍2.mp3" 300
+    MinimapIcon 2 Green Diamond
+    PlayEffect Green Temp
+    DisableDropSoundIfAlertSound 
+
+Show #高階工匠石
+    Class "Stackable Currency"
+    BaseType "Greater Jeweller's Orb"
+    SetTextColor 252 239 175
+    SetBackgroundColor 68 51 42
+    SetBorderColor 252 239 175
+    SetFontSize 43
+    PlayAlertSoundPositional 8 300
+    CustomAlertSoundOptional "bubu\bubu-要發財了.mp3" 300
+    CustomAlertSoundOptional "Diablo2\26.mp3" 300
+    CustomAlertSoundOptional "Lelouch\Lelouch-魯路修_富有被射中的覺悟才有資格開槍2.mp3" 300
+    MinimapIcon 1 Green Diamond
+    PlayEffect Green Temp
+    DisableDropSoundIfAlertSound 
+
+Show #完美工匠石
+    Class "Stackable Currency"
+    BaseType "Perfect Jeweller's Orb"
+    SetTextColor 252 239 175
+    SetBackgroundColor 68 51 42
+    SetBorderColor 210 0 0
+    SetFontSize 45
+    PlayAlertSoundPositional 8 300
+    CustomAlertSoundOptional "bubu\bubu-要發財了.mp3" 300
+    CustomAlertSoundOptional "Diablo2\26.mp3" 300
+    CustomAlertSoundOptional "Lelouch\Lelouch-魯路修_富有被射中的覺悟才有資格開槍2.mp3" 300
+    MinimapIcon 0 Green Diamond
     PlayEffect Green Temp
     DisableDropSoundIfAlertSound 
 
@@ -236,6 +299,35 @@ Show #神聖石
     CustomAlertSoundOptional "Lelouch\Lelouch-夏陸陸.mp3" 300
     MinimapIcon 0 Orange Moon
     PlayEffect Orange
+    DisableDropSoundIfAlertSound
+
+Show #最後通牒雕刻
+    Class "Misc Map Items"
+    BaseType "Inscribed Ultimatum"
+    SetTextColor 210 0 0
+    SetBackgroundColor 0 0 0 255
+    SetBorderColor 255 40 0 220
+    SetFontSize 45
+    PlayAlertSoundPositional 2 300
+    CustomAlertSoundOptional "bubu\bubu-特殊地圖.mp3" 300    
+    CustomAlertSoundOptional "Diablo2\42.mp3" 300
+    CustomAlertSoundOptional "Lelouch\Lelouch-魯路修_死吧4.mp3" 300
+    MinimapIcon 0 Red Triangle
+    PlayEffect Red
+    DisableDropSoundIfAlertSound            
+
+Show #巨靈之幣
+    Class "Djinn Barya"
+    SetTextColor 191 162 0 200
+    SetBackgroundColor 50 40 0
+    SetBorderColor 191 162 0 200
+    SetFontSize 45
+    PlayAlertSoundPositional 2 300
+    CustomAlertSoundOptional "bubu\bubu-特殊地圖.mp3" 300    
+    CustomAlertSoundOptional "Diablo2\42.mp3" 300
+    CustomAlertSoundOptional "Lelouch\Lelouch-魯路修_死吧4.mp3" 300
+    MinimapIcon 0 Yellow Triangle
+    PlayEffect Yellow
     DisableDropSoundIfAlertSound
 
 Show #精煉
@@ -403,16 +495,4 @@ Show #翠綠碧雲
     SetBackgroundColor 10 50 10   
     SetBorderColor 71 161 103
     SetFontSize 35
-    DisableDropSoundIfAlertSound
-
-Show #任務道具
-    Class "Quest Item"
-    SetTextColor 74 230 58
-    SetBackgroundColor 0 0 0
-    SetBorderColor 74 230 58
-    SetFontSize 42
-    CustomAlertSoundOptional "bubu\bubu-任務道具(粵語).mp3" 300
-    CustomAlertSoundOptional "Lelouch\Lelouch-魯路修_所有條件都成立了.mp3" 300
-    MinimapIcon 1 Green UpsideDownHouse
-    PlayEffect Green
     DisableDropSoundIfAlertSound
