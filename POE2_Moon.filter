@@ -302,7 +302,6 @@ Show #神聖石
     DisableDropSoundIfAlertSound
 
 Show #最後通牒雕刻
-    Class "Misc Map Items"
     BaseType "Inscribed Ultimatum"
     SetTextColor 210 0 0
     SetBackgroundColor 0 0 0 255
@@ -317,7 +316,6 @@ Show #最後通牒雕刻
     DisableDropSoundIfAlertSound            
 
 Show #巨靈之幣
-    Class "Misc Map Items"
     BaseType "Djinn Barya"
     SetTextColor 191 162 0 200
     SetBackgroundColor 50 40 0
@@ -329,6 +327,20 @@ Show #巨靈之幣
     CustomAlertSoundOptional "Lelouch\Lelouch-魯路修_死吧4.mp3" 300
     MinimapIcon 0 Yellow Triangle
     PlayEffect Yellow
+    DisableDropSoundIfAlertSound
+
+Show #先行者碑牌
+    Class "Tablet"
+    BaseType "Precursor Tablet"
+    SetTextColor 246 173 255
+    SetBorderColor 30 144 255
+    SetFontSize 42
+    PlayAlertSoundPositional 6 300
+    CustomAlertSoundOptional "bubu\bubu-六分儀.mp3" 300
+    CustomAlertSoundOptional "Diablo2\27.mp3" 300
+    CustomAlertSoundOptional "Lelouch\Lelouch-朱雀_yes your majesty.mp3" 200
+    MinimapIcon 0 Purple Hexagon
+    PlayEffect Purple
     DisableDropSoundIfAlertSound
 
 Show #精煉
