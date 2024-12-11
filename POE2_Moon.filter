@@ -5,8 +5,8 @@
     SetFontSize 40
     DisableDropSoundIfAlertSound
 
-Show #金幣
-    Class "Gold"
+Show #黃金
+    Class "Stackable Currency"
     BaseType "Gold"
     SetTextColor 246 220 130
     SetBackgroundColor 0 0 0 240
@@ -91,8 +91,8 @@ Show #磨刀石
     DisableDropSoundIfAlertSound
 
 Show #奧術蝕刻師
-    Class "Arcanist's Etcher"
-    BaseType "Blacksmith's Whetstone"
+    Class "Stackable Currency"
+    BaseType "Arcanist's Etcher"
     SetBorderColor 210 0 0
     SetFontSize 39
     DisableDropSoundIfAlertSound
@@ -302,7 +302,6 @@ Show #神聖石
     DisableDropSoundIfAlertSound
 
 Show #最後通牒雕刻
-    Class "Misc Map Items"
     BaseType "Inscribed Ultimatum"
     SetTextColor 210 0 0
     SetBackgroundColor 0 0 0 255
@@ -317,7 +316,7 @@ Show #最後通牒雕刻
     DisableDropSoundIfAlertSound            
 
 Show #巨靈之幣
-    Class "Djinn Barya"
+    BaseType "Djinn Barya"
     SetTextColor 191 162 0 200
     SetBackgroundColor 50 40 0
     SetBorderColor 191 162 0 200
@@ -328,6 +327,20 @@ Show #巨靈之幣
     CustomAlertSoundOptional "Lelouch\Lelouch-魯路修_死吧4.mp3" 300
     MinimapIcon 0 Yellow Triangle
     PlayEffect Yellow
+    DisableDropSoundIfAlertSound
+
+Show #先行者碑牌
+    Class "Tablet"
+    BaseType "Precursor Tablet"
+    SetTextColor 246 173 255
+    SetBorderColor 30 144 255
+    SetFontSize 42
+    PlayAlertSoundPositional 6 300
+    CustomAlertSoundOptional "bubu\bubu-六分儀.mp3" 300
+    CustomAlertSoundOptional "Diablo2\27.mp3" 300
+    CustomAlertSoundOptional "Lelouch\Lelouch-朱雀_yes your majesty.mp3" 200
+    MinimapIcon 0 Purple Hexagon
+    PlayEffect Purple
     DisableDropSoundIfAlertSound
 
 Show #精煉
@@ -371,7 +384,7 @@ Show #催化劑
 
 Show #白換界石
     Rarity <= Rare
-    MapTier <= 5
+    WaystoneTier <= 5
     Class "Waystones"
     SetTextColor 200 200 200
     SetBorderColor 74 0 160 200
@@ -386,8 +399,8 @@ Show #白換界石
 
 Show #黃換界石
     Rarity <= Rare
-    MapTier >= 6
-    MapTier <= 10
+    WaystoneTier >= 6
+    WaystoneTier <= 10
     Class "Waystones"
     SetTextColor 222 183 83
     SetBorderColor 74 0 160 200
@@ -402,8 +415,8 @@ Show #黃換界石
 
 Show #紅換界石
     Rarity <= Rare
-    MapTier >= 11
-    MapTier <= 15
+    WaystoneTier >= 11
+    WaystoneTier <= 15
     Class "Waystones"
     SetTextColor 255 47 71
     SetBorderColor 74 0 160 200
@@ -418,7 +431,7 @@ Show #紅換界石
 
 Show #T16換界石
     Rarity <= Rare
-    MapTier = 16
+    WaystoneTier = 16
     Class "Waystones"
     SetTextColor 210 0 0
     SetBackgroundColor 45 8 92 255
@@ -433,26 +446,26 @@ Show #T16換界石
     DisableDropSoundIfAlertSound
 
 Show #技能寶石
-    BaseType "Uncut Skill Gem"
+    BaseType "Skill Gem"
     SetTextColor 27 162 155
-    SetBackgroundColor 0 0 0 85
+    SetBackgroundColor 0 0 0
     SetBorderColor 27 162 155
     SetFontSize 40
     DisableDropSoundIfAlertSound
 
 Show #輔助寶石
-    BaseType "Uncut Support Gem"
+    BaseType "Support Gem"
     SetTextColor 27 162 155
-    SetBackgroundColor 0 0 0 85
-    SetBorderColor 27 162 155
+    SetBackgroundColor 0 0 0
+    SetBorderColor 237 78 15
     SetFontSize 40
     DisableDropSoundIfAlertSound
 
 Show #精魂寶石
-    BaseType "Uncut Buff Skill Gem"
+    BaseType "Spirit Gem"
     SetTextColor 27 162 155
-    SetBackgroundColor 0 0 0 85
-    SetBorderColor 27 162 155
+    SetBackgroundColor 0 0 0
+    SetBorderColor 166 142 98
     SetFontSize 40
     DisableDropSoundIfAlertSound
 
