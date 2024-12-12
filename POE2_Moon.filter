@@ -415,6 +415,21 @@
         PlayEffect Cyan
         DisableDropSoundIfAlertSound
 
+    Show #探險日誌
+        Class "Expedition Logbook"
+        BaseType "Expedition Logbook"
+        SetTextColor 255 200 0
+        SetBackgroundColor 66 148 202
+        SetBorderColor 0 0 0 255
+        SetFontSize 42
+        PlayAlertSoundPositional 2 300
+        CustomAlertSoundOptional "bubu\bubu-探險日誌.mp3" 300
+        CustomAlertSoundOptional "Diablo2\51.mp3" 300
+        CustomAlertSoundOptional "Lelouch\Lelouch-魯路修_死吧4.mp3" 300
+        MinimapIcon 0 Cyan Cross
+        PlayEffect Cyan
+        DisableDropSoundIfAlertSound
+
     Show #符文(冰川符文、暴風符文、心靈符文、肉體符文、啟發符文、重生符文、遠見符文、鍛鐵符文、岩石符文、沙漠符文)
         BaseType "Glacial Rune" "Storm Rune" "Mind Rune" "Body Rune" "Inspiration Rune" "Rebirth Rune" "Vision Rune" "Iron Rune" "Stone Rune" "Desert Rune"
         SetTextColor 0 73 165 200
@@ -556,36 +571,6 @@
         PlayEffect Orange
         DisableDropSoundIfAlertSound
 
-    Show #高階金裝(飾品)
-        Rarity = Rare
-        Class "Rings" "Amulets" "Belts"
-        SetTextColor 237 201 128
-        SetBorderColor 255 255 0
-        SetFontSize 42
-        DisableDropSoundIfAlertSound
-
-    Show #高階金裝 雜響權杖|專家薩滿披肩|金羽腰帶|精良腰帶|金光戒指|紅玉戒指|藍玉戒指|黃玉戒指|紫晶戒指|三相戒指|潛能之戒|帝金護身符|日耀項鍊|進階橡木巨槌
-        Rarity = Rare
-        BaseType "Rattling Sceptre" "Expert Shaman Mantle" "Golden Obi" "Fine Belt" "Gold Ring" "Ruby Ring" "Sapphire Ring" "Topaz Ring" "Amethyst Ring" "Prismatic Ring" "Unset Ring" "Gold Amulet" "Solar Amulet" "Advanced Oak Greathammer"
-        SetTextColor 237 201 128
-        SetBorderColor 255 255 0
-        SetFontSize 42
-        DisableDropSoundIfAlertSound
-
-    Show #召喚基底 雜響權杖|專家薩滿披肩|金羽腰帶|精良腰帶|金光戒指|紅玉戒指|藍玉戒指|黃玉戒指|紫晶戒指|三相戒指|潛能之戒|帝金護身符|日耀項鍊|
-        Rarity < Rare
-        Corrupted False
-        BaseType "Rattling Sceptre" "Expert Shaman Mantle" "Golden Obi" "Fine Belt" "Gold Ring" "Ruby Ring" "Sapphire Ring" "Topaz Ring" "Amethyst Ring" "Prismatic Ring" "Unset Ring" "Gold Amulet" "Solar Amulet"
-        SetBorderColor 84 211 143
-        DisableDropSoundIfAlertSound
-
-    Show #近戰基底 進階橡木巨槌
-        Rarity < Rare
-        Corrupted False
-        BaseType "Advanced Oak Greathammer"
-        SetBorderColor 222 147 72
-        DisableDropSoundIfAlertSound
-
     Show #鑽石
         Class "Jewel"
         BaseType "Diamond"
@@ -620,6 +605,36 @@
         SetBackgroundColor 10 50 10   
         SetBorderColor 71 161 103
         SetFontSize 42
+        DisableDropSoundIfAlertSound
+
+    Show #高階金裝(飾品)
+        Rarity = Rare
+        Class "Rings" "Amulets" "Belts"
+        SetTextColor 237 201 128
+        SetBorderColor 255 255 0
+        SetFontSize 42
+        DisableDropSoundIfAlertSound
+
+    Show #高階金裝 雜響權杖|專家薩滿披肩|金羽腰帶|精良腰帶|金光戒指|紅玉戒指|藍玉戒指|黃玉戒指|紫晶戒指|三相戒指|潛能之戒|帝金護身符|日耀項鍊|進階橡木巨槌
+        Rarity = Rare
+        BaseType "Rattling Sceptre" "Expert Shaman Mantle" "Golden Obi" "Fine Belt" "Gold Ring" "Ruby Ring" "Sapphire Ring" "Topaz Ring" "Amethyst Ring" "Prismatic Ring" "Unset Ring" "Gold Amulet" "Solar Amulet" "Advanced Oak Greathammer"
+        SetTextColor 237 201 128
+        SetBorderColor 255 255 0
+        SetFontSize 42
+        DisableDropSoundIfAlertSound
+
+    Show #召喚基底 雜響權杖|專家薩滿披肩|金羽腰帶|精良腰帶|金光戒指|紅玉戒指|藍玉戒指|黃玉戒指|紫晶戒指|三相戒指|潛能之戒|帝金護身符|日耀項鍊|
+        Rarity < Rare
+        Corrupted False
+        BaseType "Rattling Sceptre" "Expert Shaman Mantle" "Golden Obi" "Fine Belt" "Gold Ring" "Ruby Ring" "Sapphire Ring" "Topaz Ring" "Amethyst Ring" "Prismatic Ring" "Unset Ring" "Gold Amulet" "Solar Amulet"
+        SetBorderColor 84 211 143
+        DisableDropSoundIfAlertSound
+
+    Show #近戰基底 進階橡木巨槌
+        Rarity < Rare
+        Corrupted False
+        BaseType "Advanced Oak Greathammer"
+        SetBorderColor 222 147 72
         DisableDropSoundIfAlertSound
 
     #end
