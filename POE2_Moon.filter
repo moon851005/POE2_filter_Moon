@@ -202,9 +202,9 @@
         PlayEffect Green Temp
         DisableDropSoundIfAlertSound
 
-    Show #工匠石
+    Show #工匠石(裝備插槽)
         Class "Stackable Currency"
-        BaseType "Jeweller's Orb"
+        BaseType "Artificer's Orb"
         SetTextColor 255 255 255
         SetBorderColor 255 192 203
         SetFontSize 39
@@ -392,12 +392,12 @@
         SetTextColor 255 200 0
         SetBackgroundColor 45 55 87
         SetBorderColor 135 155 210
-        SetFontSize 42
+        SetFontSize 45
         PlayAlertSoundPositional 9 300
         CustomAlertSoundOptional "bubu\bubu-探險文物.mp3" 300
         CustomAlertSoundOptional "Diablo2\24.mp3" 300
         CustomAlertSoundOptional "Lelouch\Lelouch-傑瑞米亞_發現.mp3" 300
-        MinimapIcon 1 Cyan Circle
+        MinimapIcon 0 Cyan Circle
         PlayEffect Cyan
         DisableDropSoundIfAlertSound
 
@@ -472,6 +472,14 @@
         PlayEffect Purple Temp
         DisableDropSoundIfAlertSound
 
+    Show #裂痕戒指
+        BaseType "Breach Ring"
+        SetTextColor 128 0 128
+        SetBackgroundColor 255 218 136 202
+        SetBorderColor 128 0 128
+        SetFontSize 35
+        DisableDropSoundIfAlertSound
+        
     Show #最後通牒雕刻
         BaseType "Inscribed Ultimatum"
         SetTextColor 210 0 0
@@ -539,7 +547,7 @@
         SetTextColor 227 92 9 220
         SetBackgroundColor 0 0 0
         SetBorderColor 180 81 0
-        SetFontSize 41
+        SetFontSize 42
         PlayAlertSoundPositional 1 200
         CustomAlertSoundOptional "bubu\bubu-傳說裝備.mp3" 100
         CustomAlertSoundOptional "Diablo2\33.mp3" 200
@@ -553,7 +561,29 @@
         Class "Rings" "Amulets" "Belts"
         SetTextColor 237 201 128
         SetBorderColor 255 255 0
-        SetFontSize 35
+        SetFontSize 42
+        DisableDropSoundIfAlertSound
+
+    Show #高階金裝 雜響權杖|專家薩滿披肩|金羽腰帶|精良腰帶|金光戒指|紅玉戒指|藍玉戒指|黃玉戒指|紫晶戒指|三相戒指|潛能之戒|帝金護身符|日耀項鍊|進階橡木巨槌
+        Rarity = Rare
+        BaseType "Rattling Sceptre" "Expert Shaman Mantle" "Golden Obi" "Fine Belt" "Gold Ring" "Ruby Ring" "Sapphire Ring" "Topaz Ring" "Amethyst Ring" "Prismatic Ring" "Unset Ring" "Gold Amulet" "Solar Amulet" "Advanced Oak Greathammer"
+        SetTextColor 237 201 128
+        SetBorderColor 255 255 0
+        SetFontSize 42
+        DisableDropSoundIfAlertSound
+
+    Show #召喚基底 雜響權杖|專家薩滿披肩|金羽腰帶|精良腰帶|金光戒指|紅玉戒指|藍玉戒指|黃玉戒指|紫晶戒指|三相戒指|潛能之戒|帝金護身符|日耀項鍊|
+        Rarity < Rare
+        Corrupted False
+        BaseType "Rattling Sceptre" "Expert Shaman Mantle" "Golden Obi" "Fine Belt" "Gold Ring" "Ruby Ring" "Sapphire Ring" "Topaz Ring" "Amethyst Ring" "Prismatic Ring" "Unset Ring" "Gold Amulet" "Solar Amulet"
+        SetBorderColor 84 211 143
+        DisableDropSoundIfAlertSound
+
+    Show #近戰基底 進階橡木巨槌
+        Rarity < Rare
+        Corrupted False
+        BaseType "Advanced Oak Greathammer"
+        SetBorderColor 222 147 72
         DisableDropSoundIfAlertSound
 
     Show #鑽石
@@ -562,7 +592,7 @@
         SetTextColor 209 232 255
         SetBackgroundColor 10 10 50
         SetBorderColor 245 245 245
-        SetFontSize 39
+        SetFontSize 42
         DisableDropSoundIfAlertSound
 
     Show #藍玉
@@ -571,7 +601,7 @@
         SetTextColor 70 200 200
         SetBackgroundColor 10 10 50
         SetBorderColor 70 200 200
-        SetFontSize 39
+        SetFontSize 42
         DisableDropSoundIfAlertSound
 
     Show #紅玉
@@ -580,7 +610,7 @@
         SetTextColor 200 35 35 
         SetBackgroundColor 50 10 10        
         SetBorderColor 200 35 35
-        SetFontSize 39
+        SetFontSize 42
         DisableDropSoundIfAlertSound
 
     Show #翠綠碧雲
@@ -589,7 +619,7 @@
         SetTextColor 71 161 103
         SetBackgroundColor 10 50 10   
         SetBorderColor 71 161 103
-        SetFontSize 39
+        SetFontSize 42
         DisableDropSoundIfAlertSound
 
     #end
@@ -675,6 +705,7 @@
     #end
 #L1 6 藥劑
     Show #顯示終極魔力藥劑
+        BaseType "Ultimate Mana Flask"
         Class "Mana Flask"
         SetTextColor 30 144 255
         SetBackgroundColor 0 0 0
@@ -686,6 +717,7 @@
         DisableDropSoundIfAlertSound
 
     Show #顯示終極生命藥劑
+        BaseType "Ultimate Life Flask"
         Class "Life Flask"
         SetTextColor 150 0 0
         SetBackgroundColor 0 0 0
