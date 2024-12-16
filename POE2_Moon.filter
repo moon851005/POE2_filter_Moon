@@ -107,7 +107,7 @@
         BaseType "Armourer's Scrap"
         SetBackgroundColor 45 0 0
         SetBorderColor 150 0 0
-        SetFontSize 39
+        SetFontSize 42
         MinimapIcon 2 Grey Circle
         DisableDropSoundIfAlertSound
 
@@ -116,7 +116,7 @@
         BaseType "Blacksmith's Whetstone"
         SetBackgroundColor 45 0 0
         SetBorderColor 150 0 0
-        SetFontSize 39
+        SetFontSize 42
         MinimapIcon 2 Grey Circle
         DisableDropSoundIfAlertSound
 
@@ -125,7 +125,7 @@
         BaseType "Arcanist's Etcher"
         SetBackgroundColor 45 0 0
         SetBorderColor 150 0 0
-        SetFontSize 39
+        SetFontSize 42
         MinimapIcon 2 Grey Circle
         DisableDropSoundIfAlertSound
 
@@ -492,7 +492,7 @@
         SetTextColor 128 0 128
         SetBackgroundColor 255 218 136 202
         SetBorderColor 128 0 128
-        SetFontSize 35
+        SetFontSize 42
         DisableDropSoundIfAlertSound
         
     Show #最後通牒雕刻
@@ -615,26 +615,203 @@
         SetFontSize 42
         DisableDropSoundIfAlertSound
 
-    Show #高階金裝 雜響權杖|專家薩滿披肩|金羽腰帶|精良腰帶|金光戒指|紅玉戒指|藍玉戒指|黃玉戒指|紫晶戒指|三相戒指|潛能之戒|帝金護身符|日耀項鍊|進階橡木巨槌
+    Show #品質權杖
+        Rarity <= Rare
+        Quality > 0
+        SetFontSize 45
+        Class "Sceptre"
+        SetBorderColor 220 220 220
+        MinimapIcon 0 White UpsideDownHouse
+        DisableDropSoundIfAlertSound
+
+    Show #高階金裝 
         Rarity = Rare
-        BaseType "Rattling Sceptre" "Expert Shaman Mantle" "Golden Obi" "Fine Belt" "Gold Ring" "Ruby Ring" "Sapphire Ring" "Topaz Ring" "Amethyst Ring" "Prismatic Ring" "Unset Ring" "Gold Amulet" "Solar Amulet" "Advanced Oak Greathammer"
+        BaseType "Attuned Wand" "Siphoning Wand" "Galvanic Wand" "Rattling Sceptre" "Omen Sceptre" "Expert Construct Hammer" "Expert Warpick" "Expert Smithing Hammer" "Expert Crumbling Maul" "Expert Cultist Greathammer" "Expert Oak Greathammer" "Advanced Oak Greathammer" "Expert Dualstring Bow" "Expert Bombard Crossbow" "Expert Dyad Crossbow" "Primed Quiver" "Expert Plumed Focus" "Expert Feathered Tiara" "Expert Hexer's Robe" "Expert Feathered Sandals" "Advanced Intricate Gloves" "Expert Omen Crest Shield" "Expert Stone Tower Shield" "Expert Elite Greathelm" "Expert Iron Cuirass" "Expert Stone Greaves" "Advanced Moulded Mitts" "Expert Hunter Hood" "Expert Studded Vest" "Expert Lizardscale Boots" "Advanced Spined Bracers" "Expert Wayfarer Jacket" "Expert Shaman Mantle" "Expert Sacrificial Mantle" "Expert Rogue Armour" "Expert Cloaked Mail" "Expert Steel Plate" "Expert Altar Robe" "Expert Keth Raiment"
         SetTextColor 237 201 128
         SetBorderColor 255 255 0
         SetFontSize 42
         DisableDropSoundIfAlertSound
 
-    Show #召喚基底 雜響權杖|專家薩滿披肩|金羽腰帶|精良腰帶|金光戒指|紅玉戒指|藍玉戒指|黃玉戒指|紫晶戒指|三相戒指|潛能之戒|帝金護身符|日耀項鍊|
+    Show#項鍊基底 蒼藍項鍊|帝金護身符|日耀項鍊|赤紅項鍊|琥珀護身符|翠玉護身符|海玉護身符|海玉護身符|海玉護身符|恆星項鍊
+        BaseType "Azure Amulet" "Gold Amulet" "Solar Amulet" "Crimson Amulet" "Amber Amulet" "Jade Amulet" "Lapis Amulet" "Lunar Amulet" "Bloodstone Amulet" "Stellar Amulet"
+        SetBorderColor 222 72 212
         Rarity < Rare
-        Corrupted False
-        BaseType "Rattling Sceptre" "Expert Shaman Mantle" "Golden Obi" "Fine Belt" "Gold Ring" "Ruby Ring" "Sapphire Ring" "Topaz Ring" "Amethyst Ring" "Prismatic Ring" "Unset Ring" "Gold Amulet" "Solar Amulet"
-        SetBorderColor 84 211 143
+        SetFontSize 40
         DisableDropSoundIfAlertSound
 
-    Show #近戰基底 進階橡木巨槌
+    Show#戒指基底 鍛鐵戒指|青金石戒指|紅玉戒指|藍玉戒指|黃玉戒指|紫晶戒指|綠寶石戒指|珍珠戒指|三相戒指|金光戒指|潛能之戒
+        BaseType "Iron Ring" "Lazuli Ring" "Ruby Ring" "Sapphire Ring" "Topaz Ring" "Amethyst Ring" "Emerald Ring" "Pearl Ring" "Prismatic Ring" "Gold Ring" "Unset Ring"
+        SetBorderColor 222 72 212
         Rarity < Rare
-        Corrupted False
-        BaseType "Advanced Oak Greathammer"
-        SetBorderColor 222 147 72
+        SetFontSize 40
+        DisableDropSoundIfAlertSound
+        
+    Show#腰帶 金羽腰帶|板甲腰帶|精良腰帶|實用腰帶|重革腰帶
+        BaseType "Golden Obi" "Plate Belt" "Fine Belt" "Utility Belt" "Heavy Belt"
+        SetBorderColor 222 72 212
+        Rarity < Rare
+        SetFontSize 40
+        DisableDropSoundIfAlertSound
+
+    Show#法術基底 調和法杖|虹吸法杖|電能法杖
+        BaseType "Attuned Wand" "Siphoning Wand" "Galvanic Wand"
+        SetBorderColor 27 103 255
+        Rarity < Rare
+        SetFontSize 40
+        DisableDropSoundIfAlertSound
+
+    Show#召喚基底 調和法杖|虹吸法杖|電能法杖|雜響權杖|徵兆權杖
+        BaseType  "Rattling Sceptre" "Omen Sceptre"
+        SetBorderColor 84 211 143
+        Rarity < Rare
+        SetFontSize 40
+        DisableDropSoundIfAlertSound
+
+    Show#物理單手錘基底 專家建造錘|專家戰鎬|專家鍛造錘
+        BaseType "Expert Construct Hammer" "Expert Warpick" "Expert Smithing Hammer"
+        SetBorderColor 243 91 50
+        Rarity < Rare
+        SetFontSize 40
+        DisableDropSoundIfAlertSound
+
+    Show#物理雙手錘基底 專家崩毀重錘|專家教徒巨錘|專家橡木巨錘|進階橡木巨錘
+        BaseType "Expert Crumbling Maul" "Expert Cultist Greathammer" "Expert Oak Greathammer" "Advanced Oak Greathammer"
+        SetBorderColor 243 91 50
+        Rarity < Rare
+        SetFontSize 40
+        DisableDropSoundIfAlertSound
+
+    Show#物理弓基底 專家雙弦弓
+        BaseType "Expert Dualstring Bow"
+        SetBorderColor 55 143 8
+        Rarity < Rare
+        SetFontSize 40
+        DisableDropSoundIfAlertSound
+
+    Show#物理十字弓基底 專家轟炸十字弓|專家成對十字弓
+        BaseType "Expert Bombard Crossbow" "Expert Dyad Crossbow"
+        SetBorderColor 55 143 8
+        Rarity < Rare
+        SetFontSize 40
+        DisableDropSoundIfAlertSound
+
+    Show#物理箭袋基底 灌注箭袋
+        BaseType "Primed Quiver"
+        SetBorderColor 55 143 8
+        Rarity < Rare
+        SetFontSize 40
+        DisableDropSoundIfAlertSound
+
+    Show#盾牌智力基底 專家羽毛法器
+        BaseType "Expert Plumed Focus"
+        SetBorderColor 27 103 255
+        Rarity < Rare
+        SetFontSize 40
+        DisableDropSoundIfAlertSound
+
+    Show#頭盔智力基底 專家羽毛頭冠
+        BaseType "Expert Feathered Tiara"
+        SetBorderColor 27 103 255
+        Rarity < Rare
+        SetFontSize 40
+        DisableDropSoundIfAlertSound
+
+    Show#盔甲智力基底 專家咒術師長袍
+        BaseType "Expert Hexer's Robe"
+        SetBorderColor 27 103 255
+        Rarity < Rare
+        SetFontSize 40
+        DisableDropSoundIfAlertSound
+
+    Show#鞋子智力基底 專家羽毛便鞋
+        BaseType "Expert Feathered Sandals"
+        SetBorderColor 27 103 255
+        Rarity < Rare
+        SetFontSize 40
+        DisableDropSoundIfAlertSound
+        
+    Show#手套智力基底 專家精妙手套
+        BaseType "Advanced Intricate Gloves"
+        SetBorderColor 27 103 255
+        Rarity < Rare
+        SetFontSize 40
+        DisableDropSoundIfAlertSound
+
+    Show#盾牌力智基底 專家預兆紋章盾
+        BaseType "Expert Omen Crest Shield"
+        SetBorderColor 243 91 50
+        Rarity < Rare
+        SetFontSize 40
+        DisableDropSoundIfAlertSound
+
+    Show#盾牌力量基底 專家岩石塔盾
+        BaseType "Expert Stone Tower Shield"
+        SetBorderColor 243 91 50
+        Rarity < Rare
+        SetFontSize 40
+        DisableDropSoundIfAlertSound
+
+    Show#頭盔力量基底 專家菁英巨盔
+        BaseType "Expert Elite Greathelm"
+        SetBorderColor 243 91 50
+        Rarity < Rare
+        SetFontSize 40
+        DisableDropSoundIfAlertSound
+
+    Show#盔甲力量基底 專家鍛鐵胸甲
+        BaseType "Expert Iron Cuirass"
+        SetBorderColor 243 91 50
+        Rarity < Rare
+        SetFontSize 40
+        DisableDropSoundIfAlertSound
+
+    Show#鞋子力量基底 專家岩石脛甲
+        BaseType "Expert Stone Greaves"
+        SetBorderColor 243 91 50
+        Rarity < Rare
+        SetFontSize 40
+        DisableDropSoundIfAlertSound
+
+    Show#手套力量基底 專家鑄模長手套
+        BaseType "Advanced Moulded Mitts"
+        SetBorderColor 243 91 50
+        Rarity < Rare
+        SetFontSize 40
+        DisableDropSoundIfAlertSound
+
+    Show#頭盔敏捷基底 專家獵者之兜
+        BaseType "Expert Hunter Hood"
+        SetBorderColor 55 143 8
+        Rarity < Rare
+        SetFontSize 40
+        DisableDropSoundIfAlertSound
+
+    Show#盔甲敏捷基底 專家鑲釘背心
+        BaseType "Expert Studded Vest"
+        SetBorderColor 55 143 8
+        Rarity < Rare
+        SetFontSize 40
+        DisableDropSoundIfAlertSound
+
+    Show#鞋子敏捷基底 專家蜥蜴鱗長靴
+        BaseType "Expert Lizardscale Boots"
+        SetBorderColor 55 143 8
+        Rarity < Rare
+        SetFontSize 40
+        DisableDropSoundIfAlertSound
+
+    Show#手套敏捷基底 專家棘刺護腕
+        BaseType "Advanced Spined Bracers"
+        SetBorderColor 55 143 8
+        Rarity < Rare
+        SetFontSize 40
+        DisableDropSoundIfAlertSound
+
+    Show#盔甲特殊基底 專家旅人外衣|專家薩滿披肩|專家獻祭披肩|專家盜賊護甲|專家斗篷鎖甲|專家堅鋼鎧甲|專家祭壇長袍|專家凱斯之衣
+        BaseType "Expert Wayfarer Jacket" "Expert Shaman Mantle" "Expert Sacrificial Mantle" "Expert Rogue Armour" "Expert Cloaked Mail" "Expert Steel Plate" "Expert Altar Robe" "Expert Keth Raiment"
+        SetBorderColor 84 211 143
+        Rarity < Rare
+        SetFontSize 40
         DisableDropSoundIfAlertSound
 
     #end
@@ -719,8 +896,9 @@
 
     #end
 #L1 6 藥劑
-    Show #顯示終極魔力藥劑
+    Show #顯示高品質終極魔力藥劑
         BaseType "Ultimate Mana Flask"
+        Quality >= 15
         Class "Mana Flask"
         SetTextColor 30 144 255
         SetBackgroundColor 0 0 0
@@ -731,8 +909,9 @@
         MinimapIcon 2 Blue Raindrop
         DisableDropSoundIfAlertSound
 
-    Show #顯示終極生命藥劑
+    Show #顯示高品質終極生命藥劑
         BaseType "Ultimate Life Flask"
+        Quality >= 15
         Class "Life Flask"
         SetTextColor 150 0 0
         SetBackgroundColor 0 0 0
@@ -744,7 +923,7 @@
         DisableDropSoundIfAlertSound
 
     Hide #隱藏高物等低階魔力藥劑
-        ItemLevel >= 60
+        ItemLevel >= 70
         Class "Mana Flask"
         SetTextColor 30 144 255
         SetBackgroundColor 0 0 0
@@ -753,7 +932,7 @@
         DisableDropSoundIfAlertSound
 
     Hide #隱藏高物等低階生命藥劑
-        ItemLevel >= 60
+        ItemLevel >= 70
         Class "Life Flask"
         SetTextColor 150 0 0
         SetBackgroundColor 0 0 0
@@ -762,7 +941,7 @@
         DisableDropSoundIfAlertSound
 
     Show #顯示低等魔力藥劑
-        ItemLevel < 60
+        ItemLevel < 70
         Class "Mana Flask"
         SetTextColor 30 144 255
         SetBackgroundColor 0 0 0
@@ -774,7 +953,7 @@
         DisableDropSoundIfAlertSound
 
     Show #顯示低等生命藥劑
-        ItemLevel < 60
+        ItemLevel < 70
         Class "Life Flask"
         SetTextColor 150 0 0
         SetBackgroundColor 0 0 0
@@ -815,7 +994,16 @@
     #end
 
 #L1 8 其他
-
+    Hide #隱藏高等白藍裝
+        AreaLevel >= 75
+        Rarity < Rare
+        SetFontSize 35
+        DisableDropSoundIfAlertSound
+    Show #縮小白藍裝
+        AreaLevel >= 65
+        Rarity < Rare
+        SetFontSize 35
+        DisableDropSoundIfAlertSound
     #end
 
 
