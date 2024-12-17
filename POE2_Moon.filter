@@ -826,6 +826,19 @@
     #end
 
 #L1 5 輿圖
+    Show #巔峰鑰匙
+        Class "Pinnacle Keys"
+        SetTextColor 246 173 255
+        SetBackgroundColor 5 8 123 255
+        SetBorderColor 4 141 177
+        SetFontSize 45
+        PlayAlertSoundPositional 2 300
+        CustomAlertSoundOptional "bubu\bubu-釋界之邀.mp3" 300
+        CustomAlertSoundOptional "Diablo2\50.mp3" 300
+        CustomAlertSoundOptional "Lelouch\Lelouch-魯路修_敬告全世界.mp3" 300
+        MinimapIcon 0 Purple Triangle
+        PlayEffect Purple
+        DisableDropSoundIfAlertSound
     Show #白換界石
         Rarity <= Rare
         WaystoneTier <= 5
