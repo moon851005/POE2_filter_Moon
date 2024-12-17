@@ -219,16 +219,16 @@
     Show #機會石
         Class "Stackable Currency"
         BaseType "Orb of Chance"
-        SetTextColor 124 255 196 202
-        SetBackgroundColor 45 0 0
-        SetBorderColor 150 0 0
-        SetFontSize 43
-        PlayAlertSoundPositional 4 300
+        SetTextColor 81 106 243 249
+        SetBackgroundColor 0 0 60
+        SetBorderColor 255 200 0
+        SetFontSize 45
+        PlayAlertSoundPositional ShDivine 300
         CustomAlertSoundOptional "bubu\bubu-要發財了.mp3" 300
-        CustomAlertSoundOptional "Diablo2\27.mp3" 300
-        CustomAlertSoundOptional "Lelouch\Lelouch-魯路修_富有被射中的覺悟才有資格開槍3.mp3" 300
-        MinimapIcon 0 Grey Moon
-        PlayEffect Grey 
+        CustomAlertSoundOptional "Diablo2\26.mp3" 300
+        CustomAlertSoundOptional "Lelouch\Lelouch-夏陸陸.mp3" 300
+        MinimapIcon 0 Blue Moon
+        PlayEffect Blue
         DisableDropSoundIfAlertSound
 
     Show #點金石
@@ -359,7 +359,7 @@
         SetTextColor 24 208 255
         SetBackgroundColor 0 46 77
         SetBorderColor 255 255 0
-        SetFontSize 39
+        SetFontSize 45
         DisableDropSoundIfAlertSound
 
     Show #精髓
@@ -368,7 +368,7 @@
         SetTextColor 24 208 255
         SetBackgroundColor 0 46 77
         SetBorderColor 24 208 255
-        SetFontSize 39
+        SetFontSize 42
         DisableDropSoundIfAlertSound
 
     Show #催化劑
@@ -377,7 +377,7 @@
         SetTextColor 184 218 242
         SetBackgroundColor 63 0 169 192
         SetBorderColor 210 0 0
-        SetFontSize 39
+        SetFontSize 42
         PlayAlertSoundPositional 4 100
         CustomAlertSoundOptional "bubu\bubu-催化劑.mp3" 300
         CustomAlertSoundOptional "Diablo2\2.mp3" 100
@@ -430,6 +430,15 @@
         PlayEffect Cyan
         DisableDropSoundIfAlertSound
 
+    Hide #符文(冰川符文、暴風符文、心靈符文、肉體符文、啟發符文、重生符文、遠見符文、鍛鐵符文、岩石符文、沙漠符文)
+        AreaLevel >= 75
+        BaseType "Glacial Rune" "Storm Rune" "Mind Rune" "Body Rune" "Inspiration Rune" "Rebirth Rune" "Vision Rune" "Iron Rune" "Stone Rune" "Desert Rune"
+        SetTextColor 0 73 165 200
+        SetBackgroundColor 152 184 191
+        SetBorderColor 153 213 243
+        SetFontSize 40
+        DisableDropSoundIfAlertSound
+
     Show #符文(冰川符文、暴風符文、心靈符文、肉體符文、啟發符文、重生符文、遠見符文、鍛鐵符文、岩石符文、沙漠符文)
         BaseType "Glacial Rune" "Storm Rune" "Mind Rune" "Body Rune" "Inspiration Rune" "Rebirth Rune" "Vision Rune" "Iron Rune" "Stone Rune" "Desert Rune"
         SetTextColor 0 73 165 200
@@ -440,7 +449,7 @@
         CustomAlertSoundOptional "bubu\bubu-探險文物.mp3" 200
         CustomAlertSoundOptional "Diablo2\24.mp3" 200
         CustomAlertSoundOptional "Lelouch\Lelouch-傑瑞米亞_發現.mp3" 200
-        MinimapIcon 1 Cyan Circle
+        MinimapIcon 2 Cyan Circle
         PlayEffect Cyan
         DisableDropSoundIfAlertSound
 
