@@ -626,7 +626,7 @@
 
     Show #高階金裝 
         Rarity = Rare
-        BaseType "Attuned Wand" "Siphoning Wand" "Galvanic Wand" "Rattling Sceptre" "Omen Sceptre" "Expert Construct Hammer" "Expert Warpick" "Expert Smithing Hammer" "Expert Crumbling Maul" "Expert Cultist Greathammer" "Expert Oak Greathammer" "Advanced Oak Greathammer" "Expert Dualstring Bow" "Expert Bombard Crossbow" "Expert Dyad Crossbow" "Primed Quiver" "Expert Plumed Focus" "Expert Feathered Tiara" "Expert Hexer's Robe" "Expert Feathered Sandals" "Advanced Intricate Gloves" "Expert Omen Crest Shield" "Expert Stone Tower Shield" "Expert Elite Greathelm" "Expert Iron Cuirass" "Expert Stone Greaves" "Advanced Moulded Mitts" "Expert Hunter Hood" "Expert Studded Vest" "Expert Lizardscale Boots" "Advanced Spined Bracers" "Expert Wayfarer Jacket" "Expert Shaman Mantle" "Expert Sacrificial Mantle" "Expert Rogue Armour" "Expert Cloaked Mail" "Expert Steel Plate" "Expert Altar Robe" "Expert Keth Raiment"
+        BaseType "Attuned Wand" "Siphoning Wand" "Galvanic Wand" "Rattling Sceptre" "Omen Sceptre" "Expert Construct Hammer" "Expert Warpick" "Expert Smithing Hammer" "Expert Crumbling Maul" "Expert Cultist Greathammer" "Expert Oak Greathammer" "Advanced Oak Greathammer" "Expert Dualstring Bow" "Expert Bombard Crossbow" "Expert Dyad Crossbow" "Primed Quiver" "Expert Plumed Focus" "Expert Feathered Tiara" "Expert Hexer's Robe" "Expert Feathered Sandals" "Expert Intricate Gloves" "Expert Omen Crest Shield" "Expert Stone Tower Shield" "Expert Elite Greathelm" "Expert Iron Cuirass" "Expert Stone Greaves" "Expert Moulded Mitts" "Expert Hunter Hood" "Expert Studded Vest" "Expert Lizardscale Boots" "Expert Spined Bracers" "Expert Wayfarer Jacket" "Expert Shaman Mantle" "Expert Sacrificial Mantle" "Expert Rogue Armour" "Expert Cloaked Mail" "Expert Steel Plate" "Expert Altar Robe" "Expert Keth Raiment"
         SetTextColor 237 201 128
         SetBorderColor 255 255 0
         SetFontSize 42
@@ -731,7 +731,7 @@
         DisableDropSoundIfAlertSound
         
     Show#手套智力基底 專家精妙手套
-        BaseType "Advanced Intricate Gloves"
+        BaseType "Expert Intricate Gloves"
         SetBorderColor 27 103 255
         Rarity < Rare
         SetFontSize 40
@@ -773,7 +773,7 @@
         DisableDropSoundIfAlertSound
 
     Show#手套力量基底 專家鑄模長手套
-        BaseType "Advanced Moulded Mitts"
+        BaseType "Expert Moulded Mitts"
         SetBorderColor 243 91 50
         Rarity < Rare
         SetFontSize 40
@@ -801,7 +801,7 @@
         DisableDropSoundIfAlertSound
 
     Show#手套敏捷基底 專家棘刺護腕
-        BaseType "Advanced Spined Bracers"
+        BaseType "Expert Spined Bracers"
         SetBorderColor 55 143 8
         Rarity < Rare
         SetFontSize 40
