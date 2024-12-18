@@ -826,6 +826,16 @@
     #end
 
 #L1 5 輿圖
+    Show #輿圖斷片
+        Class "Map Fragments"
+        SetTextColor 208 32 144
+        SetBorderColor 210 0 220
+        SetFontSize 40
+        PlayAlertSoundPositional 2 200
+        CustomAlertSoundOptional "bubu\bubu-輿圖斷片.mp3" 300    
+        CustomAlertSoundOptional "Diablo2\3.mp3" 300
+        CustomAlertSoundOptional "Lelouch\Lelouch-星刻_原來是這麼回事.mp3" 200
+        DisableDropSoundIfAlertSound
     Show #巔峰鑰匙
         Class "Pinnacle Keys"
         SetTextColor 246 173 255
