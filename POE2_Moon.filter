@@ -995,7 +995,32 @@
         CustomAlertSoundOptional "Lelouch\Lelouch-水滴.mp3" 300
         MinimapIcon 2 Red Raindrop
         DisableDropSoundIfAlertSound
-        
+
+    Show #顯示黃金護符、紫晶護符
+        BaseType "Golden Charm" "Amethyst Charm"
+        Class "Charms"
+        SetTextColor 50 100 200
+        SetBackgroundColor 172 233 76
+        SetBorderColor 184 218 242
+        SetFontSize 40
+        CustomAlertSoundOptional "bubu\bubu-功能藥劑.mp3" 300
+        CustomAlertSoundOptional "Diablo2\7.mp3" 300
+        CustomAlertSoundOptional "Lelouch\Lelouch-水滴.mp3" 300
+        MinimapIcon 1 Green Raindrop
+        DisableDropSoundIfAlertSound
+
+    Show #顯示護符
+        Class "Charms"
+        SetTextColor 172 233 76
+        SetBackgroundColor 0 0 0
+        SetBorderColor 184 218 242
+        SetFontSize 39
+        CustomAlertSoundOptional "bubu\bubu-功能藥劑.mp3" 300
+        CustomAlertSoundOptional "Diablo2\7.mp3" 300
+        CustomAlertSoundOptional "Lelouch\Lelouch-水滴.mp3" 300
+        MinimapIcon 2 Green Raindrop
+        DisableDropSoundIfAlertSound
+
     #end
 
 #L1 7 技能
