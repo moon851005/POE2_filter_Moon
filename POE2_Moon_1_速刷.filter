@@ -443,9 +443,9 @@
         PlayEffect Cyan
         DisableDropSoundIfAlertSound
 
-    Hide #符文(冰川符文、暴風符文、心靈符文、肉體符文、啟發符文、重生符文、遠見符文、鍛鐵符文、岩石符文、沙漠符文)
+    Hide #符文(冰川符文、暴風符文、心靈符文、肉體符文、啟發符文、重生符文、遠見符文、岩石符文、沙漠符文)
         AreaLevel >= 75
-        BaseType "Glacial Rune" "Storm Rune" "Mind Rune" "Body Rune" "Inspiration Rune" "Rebirth Rune" "Vision Rune" "Iron Rune" "Stone Rune" "Desert Rune"
+        BaseType "Glacial Rune" "Storm Rune" "Mind Rune" "Body Rune" "Inspiration Rune" "Rebirth Rune" "Vision Rune" "Stone Rune" "Desert Rune"
         SetTextColor 0 73 165 200
         SetBackgroundColor 152 184 191
         SetBorderColor 153 213 243
@@ -967,9 +967,9 @@
         PlayEffect Red
         DisableDropSoundIfAlertSound
 
-    Show #T16換界石
+    Show #高階紅換界石
         Rarity <= Rare
-        WaystoneTier = 15
+        WaystoneTier >= 15
         Class "Waystones"
         SetTextColor 210 0 0
         SetBackgroundColor 45 8 92 255
