@@ -1,4 +1,4 @@
-﻿#L1 1 任務
+#L1 1 任務
     Show #任務道具
         Class "Quest Item"
         SetTextColor 74 230 58
@@ -45,7 +45,7 @@
         MinimapIcon 2 Yellow Circle
         DisableDropSoundIfAlertSound
 
-    Show #印鈔 - 終局 - 速刷 蛻變石碎片
+    Hide #印鈔 - 終局 - 速刷 蛻變石碎片
         Class "Stackable Currency"
         BaseType "Transmutation Shard"
         SetTextColor 255 94 97
@@ -887,7 +887,7 @@
         PlayEffect Purple
         DisableDropSoundIfAlertSound
 
-    Show #印鈔 - 終局 - 速刷 高等區域白換界石
+    Hide #印鈔 - 終局 - 速刷 高等區域白換界石
         AreaLevel >= 78
         Rarity <= Rare
         WaystoneTier <= 5
@@ -918,7 +918,7 @@
         PlayEffect White Temp
         DisableDropSoundIfAlertSound
 
-    Show #印鈔 - 終局 - 速刷 黃換界石
+    Hide #印鈔 - 終局 - 速刷 黃換界石
         AreaLevel >= 78
         Rarity <= Rare
         WaystoneTier >= 6
@@ -967,9 +967,9 @@
         PlayEffect Red
         DisableDropSoundIfAlertSound
 
-    Show #高階紅換界石
+    Show #T16換界石
         Rarity <= Rare
-        WaystoneTier >= 15
+        WaystoneTier = 15
         Class "Waystones"
         SetTextColor 210 0 0
         SetBackgroundColor 45 8 92 255
