@@ -189,14 +189,14 @@
     Show #完美工匠石
         Class "Stackable Currency"
         BaseType "Perfect Jeweller's Orb"
-        SetTextColor 252 239 175
-        SetBackgroundColor 68 51 42
+        SetTextColor 68 51 42
+        SetBackgroundColor 252 239 175
         SetBorderColor 210 0 0
         SetFontSize 45
         PlayAlertSoundPositional 8 300
         CustomAlertSoundOptional "bubu\bubu-要發財了.mp3" 300
         CustomAlertSoundOptional "Diablo2\26.mp3" 300
-        CustomAlertSoundOptional "Lelouch\Lelouch-魯路修_富有被射中的覺悟才有資格開槍2.mp3" 300
+        CustomAlertSoundOptional "Lelouch\Lelouch-夏陸陸_All Hail Britannia3.mp3" 300
         MinimapIcon 0 Green Diamond
         PlayEffect Green Temp
         DisableDropSoundIfAlertSound 
@@ -239,7 +239,7 @@
         PlayAlertSoundPositional ShDivine 300
         CustomAlertSoundOptional "bubu\bubu-要發財了.mp3" 300
         CustomAlertSoundOptional "Diablo2\26.mp3" 300
-        CustomAlertSoundOptional "Lelouch\Lelouch-夏陸陸.mp3" 300
+        CustomAlertSoundOptional "Lelouch\Lelouch-夏陸陸_All Hail Britannia2.mp3" 300
         MinimapIcon 0 Blue Moon
         PlayEffect Blue
         DisableDropSoundIfAlertSound
@@ -918,7 +918,7 @@
         PlayEffect White Temp
         DisableDropSoundIfAlertSound
 
-    Show #印鈔 - 終局 - 速刷 黃換界石
+    Show #印鈔 - 終局 - 速刷 高等地區黃換界石
         AreaLevel >= 78
         Rarity <= Rare
         WaystoneTier >= 6
@@ -949,6 +949,23 @@
         CustomAlertSoundOptional "Lelouch\Lelouch-魯路修_仲裁.mp3" 100
         MinimapIcon 1 Yellow Cross
         PlayEffect Yellow Temp
+        DisableDropSoundIfAlertSound
+
+    Show #印鈔 - 終局 - 速刷 高等地區低等紅換界石
+        AreaLevel >= 78
+        Rarity <= Rare
+        WaystoneTier >= 11
+        WaystoneTier <= 13
+        Class "Waystones"
+        SetTextColor 255 47 71
+        SetBorderColor 74 0 160 200
+        SetFontSize 43
+        PlayAlertSoundPositional 2 300
+        CustomAlertSoundOptional "bubu\bubu-地圖.mp3" 300
+        CustomAlertSoundOptional "Diablo2\34.mp3" 300
+        CustomAlertSoundOptional "Lelouch\Lelouch-魯路修_仲裁.mp3" 100
+        MinimapIcon 1 Red Cross
+        PlayEffect Red
         DisableDropSoundIfAlertSound
 
     Show #低等紅換界石
