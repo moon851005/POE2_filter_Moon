@@ -660,7 +660,7 @@
         MinimapIcon 0 White UpsideDownHouse
         DisableDropSoundIfAlertSound
 
-    Hide #夢語之痕|賭神芬多|獵首|均衡之符|
+    Show #夢語之痕|賭神芬多|獵首|均衡之符|
         Rarity = Normal
         BaseType "Sapphire Ring" "Gold Ring" "Heavy Belt" "Stellar Amulet"
         SetTextColor 255 255 255 220
