@@ -163,10 +163,6 @@
         SetTextColor 252 239 175
         SetBackgroundColor 68 51 42
         SetFontSize 41
-        PlayAlertSoundPositional 8 300
-        CustomAlertSoundOptional "bubu\bubu-水啦.mp3" 300
-        CustomAlertSoundOptional "Diablo2\27.mp3" 300
-        CustomAlertSoundOptional "Lelouch\Lelouch-魯路修_富有被射中的覺悟才有資格開槍2.mp3" 300
         MinimapIcon 2 Green Diamond
         PlayEffect Green Temp
         DisableDropSoundIfAlertSound 
@@ -179,8 +175,8 @@
         SetBorderColor 252 239 175
         SetFontSize 43
         PlayAlertSoundPositional 8 300
-        CustomAlertSoundOptional "bubu\bubu-要發財了.mp3" 300
-        CustomAlertSoundOptional "Diablo2\26.mp3" 300
+        CustomAlertSoundOptional "bubu\bubu-水啦.mp3" 300
+        CustomAlertSoundOptional "Diablo2\27.mp3" 300
         CustomAlertSoundOptional "Lelouch\Lelouch-魯路修_富有被射中的覺悟才有資格開槍2.mp3" 300
         MinimapIcon 1 Green Diamond
         PlayEffect Green Temp
