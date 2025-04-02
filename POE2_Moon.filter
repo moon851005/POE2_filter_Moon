@@ -935,28 +935,35 @@
         DisableDropSoundIfAlertSound
 
     Show #印鈔 - 終局 物理單手錘基底 專家建造錘|專家戰鎬|專家鍛造錘
-        BaseType "Expert Construct Hammer" "Expert Warpick" "Expert Smithing Hammer"
+        BaseType "Fortified Hammer" "Strife Pick" "Molten Hammer"
         SetBorderColor 243 91 50
         Rarity < Rare
         SetFontSize 35
         DisableDropSoundIfAlertSound
 
     Show #印鈔 - 終局 物理雙手錘基底 專家崩毀重錘|專家教徒巨錘|專家橡木巨錘|進階橡木巨錘
-        BaseType "Expert Crumbling Maul" "Expert Cultist Greathammer" "Expert Oak Greathammer" "Advanced Oak Greathammer"
+        BaseType "Ruination Maul" "Fanatic Greathammer" "Ironwood Greathammer" "Snakewood Greathammer"
         SetBorderColor 243 91 50
         Rarity < Rare
         SetFontSize 35
         DisableDropSoundIfAlertSound
 
     Show #印鈔 - 終局 物理弓基底 專家雙弦弓
-        BaseType "Expert Dualstring Bow"
+        BaseType "Gemini Bow"
         SetBorderColor 55 143 8
         Rarity < Rare
         SetFontSize 35
         DisableDropSoundIfAlertSound
 
     Show #印鈔 - 終局 物理十字弓基底 專家轟炸十字弓|專家成對十字弓
-        BaseType "Expert Bombard Crossbow" "Expert Dyad Crossbow"
+        BaseType "Siege Crossbow" "Gemini Crossbow"
+        SetBorderColor 55 143 8
+        Rarity < Rare
+        SetFontSize 35
+        DisableDropSoundIfAlertSound
+
+    Show #印鈔 - 終局 長鋒基底
+        Class "Spears"
         SetBorderColor 55 143 8
         Rarity < Rare
         SetFontSize 35
@@ -970,112 +977,112 @@
         DisableDropSoundIfAlertSound
 
     Show #印鈔 - 終局 盾牌智力基底 專家羽毛法器
-        BaseType "Expert Plumed Focus"
+        BaseType "Sacred Focus"
         SetBorderColor 27 103 255
         Rarity < Rare
         SetFontSize 35
         DisableDropSoundIfAlertSound
 
     Show #印鈔 - 終局 頭盔智力基底 專家羽毛頭冠
-        BaseType "Expert Feathered Tiara"
+        BaseType "Kamasan Tiara"
         SetBorderColor 27 103 255
         Rarity < Rare
         SetFontSize 35
         DisableDropSoundIfAlertSound
 
     Show #印鈔 - 終局 盔甲智力基底 專家咒術師長袍
-        BaseType "Expert Hexer's Robe"
+        BaseType "Vile Robe"
         SetBorderColor 27 103 255
         Rarity < Rare
         SetFontSize 35
         DisableDropSoundIfAlertSound
 
     Show #印鈔 - 終局 鞋子智力基底 專家羽毛便鞋
-        BaseType "Expert Feathered Sandals"
+        BaseType "Sandsworn Sandals"
         SetBorderColor 27 103 255
         Rarity < Rare
         SetFontSize 35
         DisableDropSoundIfAlertSound
         
     Show #印鈔 - 終局 手套智力基底 專家精妙手套
-        BaseType "Expert Intricate Gloves"
+        BaseType "Vaal Gloves"
         SetBorderColor 27 103 255
         Rarity < Rare
         SetFontSize 35
         DisableDropSoundIfAlertSound
 
     Show #印鈔 - 終局 盾牌力智基底 專家預兆紋章盾
-        BaseType "Expert Omen Crest Shield"
+        BaseType "Vaal Crest Shield"
         SetBorderColor 243 91 50
         Rarity < Rare
         SetFontSize 35
         DisableDropSoundIfAlertSound
 
     Show #印鈔 - 終局 盾牌力量基底 專家岩石塔盾
-        BaseType "Expert Stone Tower Shield"
+        BaseType "Vaal Tower Shield"
         SetBorderColor 243 91 50
         Rarity < Rare
         SetFontSize 35
         DisableDropSoundIfAlertSound
 
     Show #印鈔 - 終局 頭盔力量基底 專家菁英巨盔
-        BaseType "Expert Elite Greathelm"
+        BaseType "Paragon Greathelm"
         SetBorderColor 243 91 50
         Rarity < Rare
         SetFontSize 35
         DisableDropSoundIfAlertSound
 
     Show #印鈔 - 終局 盔甲力量基底 專家鍛鐵胸甲
-        BaseType "Expert Iron Cuirass"
+        BaseType "Soldier Cuirass"
         SetBorderColor 243 91 50
         Rarity < Rare
         SetFontSize 35
         DisableDropSoundIfAlertSound
 
     Show #印鈔 - 終局 鞋子力量基底 專家岩石脛甲
-        BaseType "Expert Stone Greaves"
+        BaseType "Vaal Greaves"
         SetBorderColor 243 91 50
         Rarity < Rare
         SetFontSize 35
         DisableDropSoundIfAlertSound
 
     Show #印鈔 - 終局 手套力量基底 專家鑄模長手套
-        BaseType "Expert Moulded Mitts"
+        BaseType "Vaal Mitts"
         SetBorderColor 243 91 50
         Rarity < Rare
         SetFontSize 35
         DisableDropSoundIfAlertSound
 
     Show #印鈔 - 終局 頭盔敏捷基底 專家獵者之兜
-        BaseType "Expert Hunter Hood"
+        BaseType "Trapper Hood"
         SetBorderColor 55 143 8
         Rarity < Rare
         SetFontSize 35
         DisableDropSoundIfAlertSound
 
     Show #印鈔 - 終局 盔甲敏捷基底 專家鑲釘背心
-        BaseType "Expert Studded Vest"
+        BaseType "Slipstrike Vest"
         SetBorderColor 55 143 8
         Rarity < Rare
         SetFontSize 35
         DisableDropSoundIfAlertSound
 
     Show #印鈔 - 終局 鞋子敏捷基底 專家蜥蜴鱗長靴
-        BaseType "Expert Lizardscale Boots"
+        BaseType "Dragonscale Boots"
         SetBorderColor 55 143 8
         Rarity < Rare
         SetFontSize 35
         DisableDropSoundIfAlertSound
 
     Show #印鈔 - 終局 手套敏捷基底 專家棘刺護腕
-        BaseType "Expert Spined Bracers"
+        BaseType "Barbed Bracers"
         SetBorderColor 55 143 8
         Rarity < Rare
         SetFontSize 35
         DisableDropSoundIfAlertSound
 
     Show #印鈔 - 終局 盔甲特殊基底 專家旅人外衣|專家薩滿披肩|專家獻祭披肩|專家盜賊護甲|專家斗篷鎖甲|專家堅鋼鎧甲|專家祭壇長袍|專家凱斯之衣
-        BaseType "Expert Wayfarer Jacket" "Expert Shaman Mantle" "Expert Sacrificial Mantle" "Expert Rogue Armour" "Expert Cloaked Mail" "Expert Steel Plate" "Expert Altar Robe" "Expert Keth Raiment"
+        BaseType "Rambler Jacket" "Conjurer Mantle" "Death Mantle" "Dastard Armour" "Shrouded Mail" "Ornate Plate" "Sacramental Robe" "Flowing Raiment"
         SetBorderColor 84 211 143
         Rarity < Rare
         SetFontSize 35
