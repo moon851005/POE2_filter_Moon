@@ -252,16 +252,16 @@
     Show #機會石
         Class "Stackable Currency"
         BaseType "Orb of Chance"
-        SetTextColor 81 106 243 249
-        SetBackgroundColor 0 0 60
-        SetBorderColor 255 200 0
+        SetTextColor 124 255 196 202
+        SetBackgroundColor 45 0 0
+        SetBorderColor 150 0 0
         SetFontSize 45
-        PlayAlertSoundPositional ShDivine 300
+        PlayAlertSoundPositional 4 300
         CustomAlertSoundOptional "bubu\bubu-要發財了.mp3" 300
-        CustomAlertSoundOptional "Diablo2\26.mp3" 300
-        CustomAlertSoundOptional "Lelouch\Lelouch-夏陸陸_All Hail Britannia2.mp3" 300
-        MinimapIcon 0 Blue Moon
-        PlayEffect Blue
+        CustomAlertSoundOptional "Diablo2\27.mp3" 300
+        CustomAlertSoundOptional "Lelouch\Lelouch-魯路修_富有被射中的覺悟才有資格開槍3.mp3" 300
+        MinimapIcon 0 Grey Moon
+        PlayEffect Grey
         DisableDropSoundIfAlertSound
 
     Show #點金石
@@ -368,6 +368,21 @@
         PlayEffect Orange
         DisableDropSoundIfAlertSound
 
+    Show #破裂石
+        Class "Stackable Currency"
+        BaseType "Fracturing Orb"
+        SetTextColor 81 106 243 249
+        SetBackgroundColor 0 0 60
+        SetBorderColor 255 200 0
+        SetFontSize 45
+        PlayAlertSoundPositional ShDivine 300
+        CustomAlertSoundOptional "bubu\bubu-神聖石.mp3" 300
+        CustomAlertSoundOptional "Diablo2\26.mp3" 300
+        CustomAlertSoundOptional "Lelouch\Lelouch-夏陸陸.mp3" 300
+        MinimapIcon 0 Blue Moon
+        PlayEffect Blue
+        DisableDropSoundIfAlertSound
+
     Show #卡蘭德的魔鏡
         Class "Stackable Currency"
         BaseType "Mirror of Kalandra"
@@ -386,6 +401,16 @@
     #end
 
 #L1 3 機制
+    Show #汙染精髓
+        Class "Stackable Currency"
+        BaseType "Essence of Hysteriaf" "Essence of Horror" "Essence of Insanity" "Essence of Delirium"
+        SetTextColor 255 255 0
+        SetBackgroundColor 51 0 18
+        SetBorderColor 244 162 155
+        SetFontSize 45
+        CustomAlertSoundOptional "bubu\bubu-精髓.mp3" 300
+        DisableDropSoundIfAlertSound
+
     Show #高階精髓
         Class "Stackable Currency"
         BaseType "Greater Essence of"
@@ -463,17 +488,24 @@
         PlayEffect Cyan
         DisableDropSoundIfAlertSound
 
-    Hide #符文(冰川符文、暴風符文、心靈符文、肉體符文、啟發符文、重生符文、遠見符文、岩石符文、沙漠符文)
-        AreaLevel >= 75
-        BaseType "Glacial Rune" "Storm Rune" "Mind Rune" "Body Rune" "Inspiration Rune" "Rebirth Rune" "Vision Rune" "Stone Rune" "Desert Rune"
+    Hide #印鈔 - 終局 - 速刷 低階符文(冰川符文、暴風符文、心靈符文、肉體符文、啟發符文、重生符文、遠見符文、鍛鐵符文、岩石符文、沙漠符文)
+        Class "Socketable"
+        BaseType == "Lesser Glacial Rune" "Lesser Storm Rune" "Lesser Mind Rune" "Lesser Body Rune" "Lesser Inspiration Rune" "Lesser Rebirth Rune" "Lesser Vision Rune" "Lesser Iron Rune" "Lesser Stone Rune" "Lesser Desert Rune"
         SetTextColor 0 73 165 200
         SetBackgroundColor 152 184 191
         SetBorderColor 153 213 243
-        SetFontSize 40
+        SetFontSize 38
+        PlayAlertSoundPositional 9 200
+        CustomAlertSoundOptional "bubu\bubu-探險文物.mp3" 200
+        CustomAlertSoundOptional "Diablo2\24.mp3" 200
+        CustomAlertSoundOptional "Lelouch\Lelouch-傑瑞米亞_發現.mp3" 200
+        MinimapIcon 2 Cyan Circle
+        PlayEffect Cyan
         DisableDropSoundIfAlertSound
 
     Show #印鈔 - 終局 符文(冰川符文、暴風符文、心靈符文、肉體符文、啟發符文、重生符文、遠見符文、鍛鐵符文、岩石符文、沙漠符文)
-        BaseType "Glacial Rune" "Storm Rune" "Mind Rune" "Body Rune" "Inspiration Rune" "Rebirth Rune" "Vision Rune" "Iron Rune" "Stone Rune" "Desert Rune"
+        Class "Socketable"
+        BaseType == "Glacial Rune" "Storm Rune" "Mind Rune" "Body Rune" "Inspiration Rune" "Rebirth Rune" "Vision Rune" "Iron Rune" "Stone Rune" "Desert Rune"
         SetTextColor 0 73 165 200
         SetBackgroundColor 152 184 191
         SetBorderColor 153 213 243
@@ -483,6 +515,21 @@
         CustomAlertSoundOptional "Diablo2\24.mp3" 200
         CustomAlertSoundOptional "Lelouch\Lelouch-傑瑞米亞_發現.mp3" 200
         MinimapIcon 2 Cyan Circle
+        PlayEffect Cyan
+        DisableDropSoundIfAlertSound
+
+    Show #印鈔 - 終局 高階符文(冰川符文、暴風符文、心靈符文、肉體符文、啟發符文、重生符文、遠見符文、鍛鐵符文、岩石符文、沙漠符文)
+        Class "Socketable"
+        BaseType == "Greater Glacial Rune" "Greater Storm Rune" "Greater Mind Rune" "Greater Body Rune" "Greater Inspiration Rune" "Greater Rebirth Rune" "Greater Vision Rune" "Greater Iron Rune" "Greater Stone Rune" "Greater Desert Rune"
+        SetTextColor 0 73 165 200
+        SetBackgroundColor 152 184 191
+        SetBorderColor 153 213 243
+        SetFontSize 42
+        PlayAlertSoundPositional 9 200
+        CustomAlertSoundOptional "bubu\bubu-探險文物.mp3" 200
+        CustomAlertSoundOptional "Diablo2\24.mp3" 200
+        CustomAlertSoundOptional "Lelouch\Lelouch-傑瑞米亞_發現.mp3" 200
+        MinimapIcon 1 Cyan Circle
         PlayEffect Cyan
         DisableDropSoundIfAlertSound
 
@@ -683,6 +730,16 @@
         CustomAlertSoundOptional "Lelouch\Lelouch-魯路修_把達摩克利斯的按鈕交給我.mp3" 300
         DisableDropSoundIfAlertSound
 
+    Show # 魔符
+        Rarity < Unique
+        Class "Socketable"
+        BaseType "Talisman"
+        SetTextColor 138 255 103
+        SetBackgroundColor 0 128 0
+        SetBorderColor 70 166 70
+        SetFontSize 40
+        DisableDropSoundIfAlertSound
+    
     #end
 
 #L1 4 裝備
@@ -807,9 +864,36 @@
         SetFontSize 40
         DisableDropSoundIfAlertSound    
 
+    Show #卡蘭德迷湖限定戒指
+        Rarity <= Rare
+        BaseType "Dusk Ring" "Gloam Ring" "Penumbra Ring" "Tenebrous Ring" "Dusk Amulet" "Gloam Amulet" "Penumbra Amulet" "Tenebrous Amulet"
+        SetTextColor 255 255 255 255
+        SetBackgroundColor 0 74 192 120
+        SetBorderColor 255 200 0
+        SetFontSize 41
+        MinimapIcon 1 Purple UpsideDownHouse
+        PlayEffect Purple Temp
+        DisableDropSoundIfAlertSound
+    
     Show #高階金裝 
         Rarity = Rare
-        BaseType "Attuned Wand" "Siphoning Wand" "Galvanic Wand" "Rattling Sceptre" "Omen Sceptre" "Expert Construct Hammer" "Expert Warpick" "Expert Smithing Hammer" "Expert Crumbling Maul" "Expert Cultist Greathammer" "Expert Oak Greathammer" "Advanced Oak Greathammer" "Expert Dualstring Bow" "Expert Bombard Crossbow" "Expert Dyad Crossbow" "Primed Quiver" "Expert Plumed Focus" "Expert Feathered Tiara" "Expert Hexer's Robe" "Expert Feathered Sandals" "Expert Intricate Gloves" "Expert Omen Crest Shield" "Expert Stone Tower Shield" "Expert Elite Greathelm" "Expert Iron Cuirass" "Expert Stone Greaves" "Expert Moulded Mitts" "Expert Hunter Hood" "Expert Studded Vest" "Expert Lizardscale Boots" "Expert Spined Bracers" "Expert Wayfarer Jacket" "Expert Shaman Mantle" "Expert Sacrificial Mantle" "Expert Rogue Armour" "Expert Cloaked Mail" "Expert Steel Plate" "Expert Altar Robe" "Expert Keth Raiment"
+        BaseType "Attuned Wand" "Siphoning Wand" "Galvanic Wand" "Rattling Sceptre" "Omen Sceptre" "Fortified Hammer" "Strife Pick" "Molten Hammer" "Ruination Maul" "Fanatic Greathammer" "Ironwood Greathammer" "Snakewood Greathammer" "Gemini Bow" "Siege Crossbow" "Gemini Crossbow" "Primed Quiver" "Sacred Focus" "Kamasan Tiara" "Vile Robe" "Sandsworn Sandals" "Vaal Gloves" "Vaal Crest Shield" "Vaal Tower Shield" "Paragon Greathelm" "Soldier Cuirass" "Vaal Greaves" "Vaal Mitts" "Trapper Hood" "Slipstrike Vest" "Dragonscale Boots" "Barbed Bracers" "Rambler Jacket" "Conjurer Mantle" "Death Mantle" "Dastard Armour" "Shrouded Mail" "Ornate Plate" "Sacramental Robe" "Flowing Raiment"
+        SetTextColor 237 201 128
+        SetBorderColor 255 255 0
+        SetFontSize 42
+        DisableDropSoundIfAlertSound
+
+    Show #高階金裝(長鋒)
+        Rarity = Rare
+        Class "Spears"
+        SetTextColor 237 201 128
+        SetBorderColor 255 255 0
+        SetFontSize 42
+        DisableDropSoundIfAlertSound
+
+    Show #高階金裝(輕盾)
+        Rarity = Rare
+        BaseType "Buckler"
         SetTextColor 237 201 128
         SetBorderColor 255 255 0
         SetFontSize 42
@@ -851,28 +935,35 @@
         DisableDropSoundIfAlertSound
 
     Show #印鈔 - 終局 物理單手錘基底 專家建造錘|專家戰鎬|專家鍛造錘
-        BaseType "Expert Construct Hammer" "Expert Warpick" "Expert Smithing Hammer"
+        BaseType "Fortified Hammer" "Strife Pick" "Molten Hammer"
         SetBorderColor 243 91 50
         Rarity < Rare
         SetFontSize 35
         DisableDropSoundIfAlertSound
 
     Show #印鈔 - 終局 物理雙手錘基底 專家崩毀重錘|專家教徒巨錘|專家橡木巨錘|進階橡木巨錘
-        BaseType "Expert Crumbling Maul" "Expert Cultist Greathammer" "Expert Oak Greathammer" "Advanced Oak Greathammer"
+        BaseType "Ruination Maul" "Fanatic Greathammer" "Ironwood Greathammer" "Snakewood Greathammer"
         SetBorderColor 243 91 50
         Rarity < Rare
         SetFontSize 35
         DisableDropSoundIfAlertSound
 
     Show #印鈔 - 終局 物理弓基底 專家雙弦弓
-        BaseType "Expert Dualstring Bow"
+        BaseType "Gemini Bow"
         SetBorderColor 55 143 8
         Rarity < Rare
         SetFontSize 35
         DisableDropSoundIfAlertSound
 
     Show #印鈔 - 終局 物理十字弓基底 專家轟炸十字弓|專家成對十字弓
-        BaseType "Expert Bombard Crossbow" "Expert Dyad Crossbow"
+        BaseType "Siege Crossbow" "Gemini Crossbow"
+        SetBorderColor 55 143 8
+        Rarity < Rare
+        SetFontSize 35
+        DisableDropSoundIfAlertSound
+
+    Show #印鈔 - 終局 長鋒基底
+        Class "Spears"
         SetBorderColor 55 143 8
         Rarity < Rare
         SetFontSize 35
@@ -886,112 +977,112 @@
         DisableDropSoundIfAlertSound
 
     Show #印鈔 - 終局 盾牌智力基底 專家羽毛法器
-        BaseType "Expert Plumed Focus"
+        BaseType "Sacred Focus"
         SetBorderColor 27 103 255
         Rarity < Rare
         SetFontSize 35
         DisableDropSoundIfAlertSound
 
     Show #印鈔 - 終局 頭盔智力基底 專家羽毛頭冠
-        BaseType "Expert Feathered Tiara"
+        BaseType "Kamasan Tiara"
         SetBorderColor 27 103 255
         Rarity < Rare
         SetFontSize 35
         DisableDropSoundIfAlertSound
 
     Show #印鈔 - 終局 盔甲智力基底 專家咒術師長袍
-        BaseType "Expert Hexer's Robe"
+        BaseType "Vile Robe"
         SetBorderColor 27 103 255
         Rarity < Rare
         SetFontSize 35
         DisableDropSoundIfAlertSound
 
     Show #印鈔 - 終局 鞋子智力基底 專家羽毛便鞋
-        BaseType "Expert Feathered Sandals"
+        BaseType "Sandsworn Sandals"
         SetBorderColor 27 103 255
         Rarity < Rare
         SetFontSize 35
         DisableDropSoundIfAlertSound
         
     Show #印鈔 - 終局 手套智力基底 專家精妙手套
-        BaseType "Expert Intricate Gloves"
+        BaseType "Vaal Gloves"
         SetBorderColor 27 103 255
         Rarity < Rare
         SetFontSize 35
         DisableDropSoundIfAlertSound
 
     Show #印鈔 - 終局 盾牌力智基底 專家預兆紋章盾
-        BaseType "Expert Omen Crest Shield"
+        BaseType "Vaal Crest Shield"
         SetBorderColor 243 91 50
         Rarity < Rare
         SetFontSize 35
         DisableDropSoundIfAlertSound
 
     Show #印鈔 - 終局 盾牌力量基底 專家岩石塔盾
-        BaseType "Expert Stone Tower Shield"
+        BaseType "Vaal Tower Shield"
         SetBorderColor 243 91 50
         Rarity < Rare
         SetFontSize 35
         DisableDropSoundIfAlertSound
 
     Show #印鈔 - 終局 頭盔力量基底 專家菁英巨盔
-        BaseType "Expert Elite Greathelm"
+        BaseType "Paragon Greathelm"
         SetBorderColor 243 91 50
         Rarity < Rare
         SetFontSize 35
         DisableDropSoundIfAlertSound
 
     Show #印鈔 - 終局 盔甲力量基底 專家鍛鐵胸甲
-        BaseType "Expert Iron Cuirass"
+        BaseType "Soldier Cuirass"
         SetBorderColor 243 91 50
         Rarity < Rare
         SetFontSize 35
         DisableDropSoundIfAlertSound
 
     Show #印鈔 - 終局 鞋子力量基底 專家岩石脛甲
-        BaseType "Expert Stone Greaves"
+        BaseType "Vaal Greaves"
         SetBorderColor 243 91 50
         Rarity < Rare
         SetFontSize 35
         DisableDropSoundIfAlertSound
 
     Show #印鈔 - 終局 手套力量基底 專家鑄模長手套
-        BaseType "Expert Moulded Mitts"
+        BaseType "Vaal Mitts"
         SetBorderColor 243 91 50
         Rarity < Rare
         SetFontSize 35
         DisableDropSoundIfAlertSound
 
     Show #印鈔 - 終局 頭盔敏捷基底 專家獵者之兜
-        BaseType "Expert Hunter Hood"
+        BaseType "Trapper Hood"
         SetBorderColor 55 143 8
         Rarity < Rare
         SetFontSize 35
         DisableDropSoundIfAlertSound
 
     Show #印鈔 - 終局 盔甲敏捷基底 專家鑲釘背心
-        BaseType "Expert Studded Vest"
+        BaseType "Slipstrike Vest"
         SetBorderColor 55 143 8
         Rarity < Rare
         SetFontSize 35
         DisableDropSoundIfAlertSound
 
     Show #印鈔 - 終局 鞋子敏捷基底 專家蜥蜴鱗長靴
-        BaseType "Expert Lizardscale Boots"
+        BaseType "Dragonscale Boots"
         SetBorderColor 55 143 8
         Rarity < Rare
         SetFontSize 35
         DisableDropSoundIfAlertSound
 
     Show #印鈔 - 終局 手套敏捷基底 專家棘刺護腕
-        BaseType "Expert Spined Bracers"
+        BaseType "Barbed Bracers"
         SetBorderColor 55 143 8
         Rarity < Rare
         SetFontSize 35
         DisableDropSoundIfAlertSound
 
     Show #印鈔 - 終局 盔甲特殊基底 專家旅人外衣|專家薩滿披肩|專家獻祭披肩|專家盜賊護甲|專家斗篷鎖甲|專家堅鋼鎧甲|專家祭壇長袍|專家凱斯之衣
-        BaseType "Expert Wayfarer Jacket" "Expert Shaman Mantle" "Expert Sacrificial Mantle" "Expert Rogue Armour" "Expert Cloaked Mail" "Expert Steel Plate" "Expert Altar Robe" "Expert Keth Raiment"
+        BaseType "Rambler Jacket" "Conjurer Mantle" "Death Mantle" "Dastard Armour" "Shrouded Mail" "Ornate Plate" "Sacramental Robe" "Flowing Raiment"
         SetBorderColor 84 211 143
         Rarity < Rare
         SetFontSize 35
@@ -1330,6 +1421,20 @@
     #end
 
 #L1 8 其他
+    Show #遺鑰
+        Class "Vault Keys"
+        SetTextColor 186 102 31 #
+        SetBackgroundColor 56 32 8
+        SetBorderColor 0 128 0
+        SetFontSize 45
+        PlayAlertSoundPositional 3 300
+        CustomAlertSoundOptional "bubu\bubu-特殊地圖.mp3" 300    
+        CustomAlertSoundOptional "Diablo2\48.mp3" 300
+        CustomAlertSoundOptional "Lelouch\Lelouch-魯路修_死吧4.mp3" 300
+        MinimapIcon 0 Brown Triangle
+        PlayEffect Brown
+        DisableDropSoundIfAlertSound
+
     Show #印鈔 - 終局 稀有裝
         Rarity == Rare
         Class "Claws" "Daggers" "Wands" "One Hand Swords" "One Hand Axes" "One Hand Maces" "Sceptres" "Spears" "Flails" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Quarterstaves" "Crossbows" "Traps" "Fishing Rods" "Quivers" "Shields" "Foci" "Gloves" "Boots" "Body Armours" "Helmets"
