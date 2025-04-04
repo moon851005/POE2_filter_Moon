@@ -533,6 +533,21 @@
         PlayEffect Cyan
         DisableDropSoundIfAlertSound
 
+    Show #高階特殊符文
+        Class "Socketable"
+        BaseType == "Greater Rune of Leadership" "Greater Rune of Tithing" "Greater Rune of Alacrity" "Greater Rune of Nobility"
+        SetTextColor 0 73 165 200
+        SetBackgroundColor 152 184 191
+        SetBorderColor 153 213 243
+        SetFontSize 45
+        PlayAlertSoundPositional 9 200
+        CustomAlertSoundOptional "bubu\bubu-探險文物.mp3" 200
+        CustomAlertSoundOptional "Diablo2\24.mp3" 200
+        CustomAlertSoundOptional "Lelouch\Lelouch-傑瑞米亞_發現.mp3" 200
+        MinimapIcon 0 Cyan Circle
+        PlayEffect Cyan
+        DisableDropSoundIfAlertSound
+
     Show #幻像異界
         Class "Map Fragment"
         BaseType "Simulacrum"
