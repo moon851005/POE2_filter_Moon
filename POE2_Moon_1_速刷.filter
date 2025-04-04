@@ -403,7 +403,7 @@
 #L1 3 機制
     Show #汙染精髓
         Class "Stackable Currency"
-        BaseType "Essence of Hysteriaf" "Essence of Horror" "Essence of Insanity" "Essence of Delirium"
+        BaseType "Essence of Hysteria" "Essence of Horror" "Essence of Insanity" "Essence of Delirium"
         SetTextColor 255 255 0
         SetBackgroundColor 51 0 18
         SetBorderColor 244 162 155
