@@ -490,7 +490,7 @@
 
     Hide #印鈔 - 終局 - 速刷 低階符文(冰川符文、暴風符文、心靈符文、肉體符文、啟發符文、重生符文、遠見符文、鍛鐵符文、岩石符文、沙漠符文)
         Class "Socketable"
-        BaseType == "Lesser Glacial Rune" "Lesser Storm Rune" "Lesser Mind Rune" "Lesser Body Rune" "Lesser Inspiration Rune" "Lesser Rebirth Rune" "Lesser Vision Rune" "Lesser Iron Rune" "Lesser Stone Rune" "Lesser Desert Rune"
+        BaseType == "Lesser Glacial Rune" "Lesser Storm Rune" "Lesser Mind Rune" "Lesser Body Rune" "Lesser Inspiration Rune" "Lesser Rebirth Rune" "Lesser Vision Rune" "Lesser Iron Rune" "Lesser Stone Rune" "Lesser Desert Rune" "Lesser Adept Rune" "Lesser Resolve Rune" "Lesser Robust Rune"
         SetTextColor 0 73 165 200
         SetBackgroundColor 152 184 191
         SetBorderColor 153 213 243
@@ -505,7 +505,7 @@
 
     Hide #印鈔 - 終局 符文(冰川符文、暴風符文、心靈符文、肉體符文、啟發符文、重生符文、遠見符文、鍛鐵符文、岩石符文、沙漠符文)
         Class "Socketable"
-        BaseType == "Glacial Rune" "Storm Rune" "Mind Rune" "Body Rune" "Inspiration Rune" "Rebirth Rune" "Vision Rune" "Iron Rune" "Stone Rune" "Desert Rune"
+        BaseType == "Glacial Rune" "Storm Rune" "Mind Rune" "Body Rune" "Inspiration Rune" "Rebirth Rune" "Vision Rune" "Iron Rune" "Stone Rune" "Desert Rune" "Adept Rune" "Resolve Rune" "Robust Rune"
         SetTextColor 0 73 165 200
         SetBackgroundColor 152 184 191
         SetBorderColor 153 213 243
@@ -520,7 +520,7 @@
 
     Hide #印鈔 - 終局 高階符文(冰川符文、暴風符文、心靈符文、肉體符文、啟發符文、重生符文、遠見符文、鍛鐵符文、岩石符文、沙漠符文)
         Class "Socketable"
-        BaseType == "Greater Glacial Rune" "Greater Storm Rune" "Greater Mind Rune" "Greater Body Rune" "Greater Inspiration Rune" "Greater Rebirth Rune" "Greater Vision Rune" "Greater Iron Rune" "Greater Stone Rune" "Greater Desert Rune"
+        BaseType == "Greater Glacial Rune" "Greater Storm Rune" "Greater Mind Rune" "Greater Body Rune" "Greater Inspiration Rune" "Greater Rebirth Rune" "Greater Vision Rune" "Greater Iron Rune" "Greater Stone Rune" "Greater Desert Rune" "Greater Adept Rune" "Greater Resolve Rune" "Greater Robust Rune"
         SetTextColor 0 73 165 200
         SetBackgroundColor 152 184 191
         SetBorderColor 153 213 243
@@ -898,17 +898,17 @@
         SetFontSize 42
         DisableDropSoundIfAlertSound
 
-    Show #高階金裝(長鋒)
+    Show #高階金裝(長鋒) 海玻璃長鋒|潛獵長鋒|翱翔長鋒|宏偉長鋒|尖刺長鋒|
         Rarity = Rare
-        Class "Spears"
+        BaseType "Seaglass Spear" "Stalking Spear" "Flying Spear" "Grand Spear" "Spiked Spear"
         SetTextColor 237 201 128
         SetBorderColor 255 255 0
         SetFontSize 42
         DisableDropSoundIfAlertSound
 
-    Show #高階金裝(輕盾)
+    Show #高階金裝(輕盾) 遠古輕盾
         Rarity = Rare
-        BaseType "Buckler"
+        BaseType "Ancient Buckler"
         SetTextColor 237 201 128
         SetBorderColor 255 255 0
         SetFontSize 42
@@ -977,8 +977,15 @@
         SetFontSize 35
         DisableDropSoundIfAlertSound
 
-    Hide #印鈔 - 終局 長鋒基底
-        Class "Spears"
+    Hide #印鈔 - 終局 長鋒基底 海玻璃長鋒|潛獵長鋒|翱翔長鋒|宏偉長鋒|尖刺長鋒|
+        BaseType "Seaglass Spear" "Stalking Spear" "Flying Spear" "Grand Spear" "Spiked Spear"
+        SetBorderColor 55 143 8
+        Rarity < Rare
+        SetFontSize 35
+        DisableDropSoundIfAlertSound
+
+    Hide #印鈔 - 終局 遠古輕盾
+        BaseType "Ancient Buckler"
         SetBorderColor 55 143 8
         Rarity < Rare
         SetFontSize 35
