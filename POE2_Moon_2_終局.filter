@@ -870,9 +870,9 @@
         MinimapIcon 0 White UpsideDownHouse
         DisableDropSoundIfAlertSound
 
-    Show #點機會石基底 夢語之痕|賭神芬多|獵首|均衡之符|
+    Show #點機會石基底 夢語之痕|賭神芬多|獵首|均衡之符|黑鋼塔盾
         Rarity = Normal
-        BaseType "Sapphire Ring" "Gold Ring" "Heavy Belt" "Stellar Amulet"
+        BaseType "Sapphire Ring" "Gold Ring" "Heavy Belt" "Stellar Amulet" "Blacksteel Tower Shield"
         SetTextColor 255 255 255 220
         SetBackgroundColor 255 114 0 200
         SetBorderColor 255 114 0
