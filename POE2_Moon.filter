@@ -1459,20 +1459,20 @@
 
     Show #印鈔 - 終局 稀有裝
         Rarity == Rare
-        Class "Claws" "Daggers" "Wands" "One Hand Swords" "One Hand Axes" "One Hand Maces" "Sceptres" "Spears" "Flails" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Quarterstaves" "Crossbows" "Traps" "Fishing Rods" "Quivers" "Shields" "Foci" "Gloves" "Boots" "Body Armours" "Helmets"
+        Class "Claws" "Daggers" "Wands" "One Hand Swords" "One Hand Axes" "One Hand Maces" "Sceptres" "Spears" "Flails" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Quarterstaves" "Crossbows" "Traps" "Fishing Rods" "Quivers" "Shields" "Foci" "Gloves" "Boots" "Body Armours" "Helmets" "Buckler"
         DisableDropSoundIfAlertSound
 
     Hide #隱藏高等白藍裝
         AreaLevel >= 75
         Rarity < Rare
-        Class "Claws" "Daggers" "Wands" "One Hand Swords" "One Hand Axes" "One Hand Maces" "Sceptres" "Spears" "Flails" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Quarterstaves" "Crossbows" "Traps" "Fishing Rods" "Quivers" "Shields" "Foci" "Gloves" "Boots" "Body Armours" "Helmets" "Amulets" "Rings" "Belts"
+        Class "Claws" "Daggers" "Wands" "One Hand Swords" "One Hand Axes" "One Hand Maces" "Sceptres" "Spears" "Flails" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Quarterstaves" "Crossbows" "Traps" "Fishing Rods" "Quivers" "Shields" "Foci" "Gloves" "Boots" "Body Armours" "Helmets" "Buckler" "Amulets" "Rings" "Belts"
         SetFontSize 35
         DisableDropSoundIfAlertSound
 
     Show #縮小白藍裝
         AreaLevel >= 65
         Rarity < Rare
-        Class "Claws" "Daggers" "Wands" "One Hand Swords" "One Hand Axes" "One Hand Maces" "Sceptres" "Spears" "Flails" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Quarterstaves" "Crossbows" "Traps" "Fishing Rods" "Quivers" "Shields" "Foci" "Gloves" "Boots" "Body Armours" "Helmets" "Amulets" "Rings" "Belts"
+        Class "Claws" "Daggers" "Wands" "One Hand Swords" "One Hand Axes" "One Hand Maces" "Sceptres" "Spears" "Flails" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Quarterstaves" "Crossbows" "Traps" "Fishing Rods" "Quivers" "Shields" "Foci" "Gloves" "Boots" "Body Armours" "Helmets" "Buckler" "Amulets" "Rings" "Belts"
         SetFontSize 35
         DisableDropSoundIfAlertSound
 
