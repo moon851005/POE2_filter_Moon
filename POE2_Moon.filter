@@ -505,6 +505,21 @@
         PlayEffect Blue
         DisableDropSoundIfAlertSound
 
+    Show #悉妮蔻拉的髮絲
+        Class "Stackable Currency"
+        BaseType "Hinekora's Lock"
+        SetTextColor 55 33 117 255
+        SetBackgroundColor 139 126 208 255
+        SetBorderColor 126 0 220
+        SetFontSize 45
+        PlayAlertSoundPositional 9 300
+        CustomAlertSoundOptional "bubu\bubu-要發財了.mp3" 300
+        CustomAlertSoundOptional "Diablo2\26.mp3" 300
+        CustomAlertSoundOptional "Lelouch\Lelouch-CC_真是令我吃驚.mp3" 300
+        MinimapIcon 0 Purple Moon
+        PlayEffect Purple Temp
+        DisableDropSoundIfAlertSound
+
     Show #卡蘭德的魔鏡
         Class "Stackable Currency"
         BaseType "Mirror of Kalandra"
@@ -522,7 +537,115 @@
         
     #end
 
-#L1 3 機制
+#L1 3 鑲嵌
+    Show #低階符文(冰川符文、暴風符文、心靈符文、肉體符文、啟發符文、重生符文、遠見符文、鍛鐵符文、岩石符文、沙漠符文)
+        Class "Socketable"
+        BaseType == "Lesser Glacial Rune" "Lesser Storm Rune" "Lesser Mind Rune" "Lesser Body Rune" "Lesser Inspiration Rune" "Lesser Rebirth Rune" "Lesser Vision Rune" "Lesser Iron Rune" "Lesser Stone Rune" "Lesser Desert Rune" "Lesser Adept Rune" "Lesser Resolve Rune" "Lesser Robust Rune"
+        SetTextColor 0 73 165 200
+        SetBackgroundColor 152 184 191
+        SetBorderColor 153 213 243
+        SetFontSize 38
+        PlayAlertSoundPositional 9 100
+        CustomAlertSoundOptional "bubu\bubu-加油.mp3" 100
+        CustomAlertSoundOptional "Diablo2\24.mp3" 100
+        CustomAlertSoundOptional "Lelouch\Lelouch-所以.mp3" 100
+        MinimapIcon 2 Cyan Circle
+        PlayEffect Cyan Temp
+        DisableDropSoundIfAlertSound
+
+    Show #符文(冰川符文、暴風符文、心靈符文、肉體符文、啟發符文、重生符文、遠見符文、鍛鐵符文、岩石符文、沙漠符文)
+        Class "Socketable"
+        BaseType == "Glacial Rune" "Storm Rune" "Mind Rune" "Body Rune" "Inspiration Rune" "Rebirth Rune" "Vision Rune" "Iron Rune" "Stone Rune" "Desert Rune" "Adept Rune" "Resolve Rune" "Robust Rune"
+        SetTextColor 0 73 165 200
+        SetBackgroundColor 152 184 191
+        SetBorderColor 153 213 243
+        SetFontSize 40
+        PlayAlertSoundPositional 9 100
+        CustomAlertSoundOptional "bubu\bubu-加油.mp3" 100
+        CustomAlertSoundOptional "Diablo2\24.mp3" 100
+        CustomAlertSoundOptional "Lelouch\Lelouch-所以.mp3" 100
+        MinimapIcon 2 Cyan Circle
+        PlayEffect Cyan Temp
+        DisableDropSoundIfAlertSound
+
+    Show #高階符文(冰川符文、暴風符文、心靈符文、肉體符文、啟發符文、重生符文、遠見符文、鍛鐵符文、岩石符文、沙漠符文)
+        Class "Socketable"
+        BaseType == "Greater Glacial Rune" "Greater Storm Rune" "Greater Mind Rune" "Greater Body Rune" "Greater Inspiration Rune" "Greater Rebirth Rune" "Greater Vision Rune" "Greater Iron Rune" "Greater Stone Rune" "Greater Desert Rune" "Greater Adept Rune" "Greater Resolve Rune" "Greater Robust Rune"
+        SetTextColor 0 73 165 200
+        SetBackgroundColor 152 184 191
+        SetBorderColor 153 213 243
+        SetFontSize 42
+        PlayAlertSoundPositional 9 200
+        CustomAlertSoundOptional "bubu\bubu-加油.mp3" 200
+        CustomAlertSoundOptional "Diablo2\24.mp3" 200
+        CustomAlertSoundOptional "Lelouch\Lelouch-所以.mp3" 200
+        MinimapIcon 1 Cyan Circle
+        PlayEffect Cyan Temp
+        DisableDropSoundIfAlertSound
+
+    Show #高階特殊符文
+        Class "Socketable"
+        BaseType == "Greater Rune of Leadership" "Greater Rune of Tithing" "Greater Rune of Alacrity" "Greater Rune of Nobility"
+        SetTextColor 0 73 165 200
+        SetBackgroundColor 152 184 191
+        SetBorderColor 153 213 243
+        SetFontSize 45
+        PlayAlertSoundPositional 9 200
+        CustomAlertSoundOptional "bubu\bubu-加油.mp3" 200
+        CustomAlertSoundOptional "Diablo2\24.mp3" 200
+        CustomAlertSoundOptional "Lelouch\Lelouch-所以.mp3" 200
+        MinimapIcon 0 Cyan Circle
+        PlayEffect Cyan
+        DisableDropSoundIfAlertSound
+
+    Show #靈魂核心
+        Class "Socketable"
+        BaseType "Soul Core"
+        SetTextColor 255 92 75 220
+        SetBackgroundColor 140 110 49
+        SetBorderColor 255 40 0 220
+        SetFontSize 45
+        PlayAlertSoundPositional 9 300
+        CustomAlertSoundOptional "bubu\bubu-加油.mp3" 300
+        CustomAlertSoundOptional "Diablo2\24.mp3" 300
+        CustomAlertSoundOptional "Lelouch\Lelouch-所以.mp3" 300
+        MinimapIcon 0 Red Circle
+        PlayEffect Red
+        DisableDropSoundIfAlertSound
+
+    Show #魔符
+        Class "Socketable"
+        BaseType "Talisman"
+        SetTextColor 138 255 103
+        SetBackgroundColor 0 128 0
+        SetBorderColor 70 166 70
+        SetFontSize 45
+        PlayAlertSoundPositional 9 300
+        CustomAlertSoundOptional "bubu\bubu-加油.mp3" 300
+        CustomAlertSoundOptional "Diablo2\24.mp3" 300
+        CustomAlertSoundOptional "Lelouch\Lelouch-所以.mp3" 300
+        MinimapIcon 0 Green Circle
+        PlayEffect Green
+        DisableDropSoundIfAlertSound
+
+    Show #邪眼
+        Class "Socketable"
+        BaseType "Gaze"
+        SetTextColor 217 227 116
+        SetBackgroundColor 10 60 10
+        SetBorderColor 156 112 0
+        SetFontSize 45
+        PlayAlertSoundPositional 9 300
+        CustomAlertSoundOptional "bubu\bubu-加油.mp3" 300
+        CustomAlertSoundOptional "Diablo2\24.mp3" 300
+        CustomAlertSoundOptional "Lelouch\Lelouch-所以.mp3" 300
+        MinimapIcon 0 Green Circle
+        PlayEffect Green
+        DisableDropSoundIfAlertSound
+
+    #end
+
+#L1 4 機制
     Show #汙染精髓
         Class "Stackable Currency"
         BaseType "Essence of Hysteria" "Essence of Horror" "Essence of Insanity" "Essence of Delirium"
@@ -533,13 +656,31 @@
         CustomAlertSoundOptional "bubu\bubu-精髓.mp3" 300
         DisableDropSoundIfAlertSound
 
+    Show #完美精髓
+        Class "Stackable Currency"
+        BaseType "Perfect Essence of"
+        SetTextColor 24 208 255
+        SetBackgroundColor 0 46 77
+        SetBorderColor 255 255 0
+        SetFontSize 45
+        DisableDropSoundIfAlertSound
+
     Show #高階精髓
         Class "Stackable Currency"
         BaseType "Greater Essence of"
         SetTextColor 24 208 255
         SetBackgroundColor 0 46 77
         SetBorderColor 255 255 0
-        SetFontSize 45
+        SetFontSize 42
+        DisableDropSoundIfAlertSound
+
+    Show #低階精髓
+        Class "Stackable Currency"
+        BaseType "Lesser Essence of"
+        SetTextColor 24 208 255
+        SetBackgroundColor 0 46 77
+        SetBorderColor 24 208 255
+        SetFontSize 39
         DisableDropSoundIfAlertSound
 
     Show #精髓
@@ -610,64 +751,19 @@
         PlayEffect Cyan
         DisableDropSoundIfAlertSound
 
-    Show #低階符文(冰川符文、暴風符文、心靈符文、肉體符文、啟發符文、重生符文、遠見符文、鍛鐵符文、岩石符文、沙漠符文)
-        Class "Socketable"
-        BaseType == "Lesser Glacial Rune" "Lesser Storm Rune" "Lesser Mind Rune" "Lesser Body Rune" "Lesser Inspiration Rune" "Lesser Rebirth Rune" "Lesser Vision Rune" "Lesser Iron Rune" "Lesser Stone Rune" "Lesser Desert Rune" "Lesser Adept Rune" "Lesser Resolve Rune" "Lesser Robust Rune"
-        SetTextColor 0 73 165 200
-        SetBackgroundColor 152 184 191
-        SetBorderColor 153 213 243
-        SetFontSize 38
-        PlayAlertSoundPositional 9 200
-        CustomAlertSoundOptional "bubu\bubu-探險文物.mp3" 200
-        CustomAlertSoundOptional "Diablo2\24.mp3" 200
-        CustomAlertSoundOptional "Lelouch\Lelouch-傑瑞米亞_發現.mp3" 200
-        MinimapIcon 2 Cyan Circle
-        PlayEffect Cyan
-        DisableDropSoundIfAlertSound
-
-    Show #符文(冰川符文、暴風符文、心靈符文、肉體符文、啟發符文、重生符文、遠見符文、鍛鐵符文、岩石符文、沙漠符文)
-        Class "Socketable"
-        BaseType == "Glacial Rune" "Storm Rune" "Mind Rune" "Body Rune" "Inspiration Rune" "Rebirth Rune" "Vision Rune" "Iron Rune" "Stone Rune" "Desert Rune" "Adept Rune" "Resolve Rune" "Robust Rune"
-        SetTextColor 0 73 165 200
-        SetBackgroundColor 152 184 191
-        SetBorderColor 153 213 243
-        SetFontSize 40
-        PlayAlertSoundPositional 9 200
-        CustomAlertSoundOptional "bubu\bubu-探險文物.mp3" 200
-        CustomAlertSoundOptional "Diablo2\24.mp3" 200
-        CustomAlertSoundOptional "Lelouch\Lelouch-傑瑞米亞_發現.mp3" 200
-        MinimapIcon 2 Cyan Circle
-        PlayEffect Cyan
-        DisableDropSoundIfAlertSound
-
-    Show #高階符文(冰川符文、暴風符文、心靈符文、肉體符文、啟發符文、重生符文、遠見符文、鍛鐵符文、岩石符文、沙漠符文)
-        Class "Socketable"
-        BaseType == "Greater Glacial Rune" "Greater Storm Rune" "Greater Mind Rune" "Greater Body Rune" "Greater Inspiration Rune" "Greater Rebirth Rune" "Greater Vision Rune" "Greater Iron Rune" "Greater Stone Rune" "Greater Desert Rune" "Greater Adept Rune" "Greater Resolve Rune" "Greater Robust Rune"
-        SetTextColor 0 73 165 200
-        SetBackgroundColor 152 184 191
-        SetBorderColor 153 213 243
-        SetFontSize 42
-        PlayAlertSoundPositional 9 200
-        CustomAlertSoundOptional "bubu\bubu-探險文物.mp3" 200
-        CustomAlertSoundOptional "Diablo2\24.mp3" 200
-        CustomAlertSoundOptional "Lelouch\Lelouch-傑瑞米亞_發現.mp3" 200
-        MinimapIcon 1 Cyan Circle
-        PlayEffect Cyan
-        DisableDropSoundIfAlertSound
-
-    Show #高階特殊符文
-        Class "Socketable"
-        BaseType == "Greater Rune of Leadership" "Greater Rune of Tithing" "Greater Rune of Alacrity" "Greater Rune of Nobility"
-        SetTextColor 0 73 165 200
-        SetBackgroundColor 152 184 191
-        SetBorderColor 153 213 243
-        SetFontSize 45
-        PlayAlertSoundPositional 9 200
-        CustomAlertSoundOptional "bubu\bubu-探險文物.mp3" 200
-        CustomAlertSoundOptional "Diablo2\24.mp3" 200
-        CustomAlertSoundOptional "Lelouch\Lelouch-傑瑞米亞_發現.mp3" 200
-        MinimapIcon 0 Cyan Circle
-        PlayEffect Cyan
+    Show #符文裂片
+        Class "Stackable Currency"
+        BaseType "Runic Splinter"
+        SetTextColor 255 200 0
+        SetBackgroundColor 66 148 202
+        SetBorderColor 0 0 0 255
+        SetFontSize 39
+        PlayAlertSoundPositional 9 300
+        CustomAlertSoundOptional "bubu\bubu-加油.mp3" 200
+        CustomAlertSoundOptional "Diablo2\1.mp3" 200
+        CustomAlertSoundOptional "Lelouch\Lelouch-魯路修_我的名字叫Zero2.mp3" 200
+        MinimapIcon 2 Cyan Kite
+        PlayEffect Cyan Temp
         DisableDropSoundIfAlertSound
 
     Show #幻像異界
@@ -691,7 +787,7 @@
         SetTextColor 162 134 109
         SetBackgroundColor 207 207 207
         SetBorderColor 0 0 0
-        SetFontSize 40
+        SetFontSize 39
         PlayAlertSoundPositional 9 300
         CustomAlertSoundOptional "bubu\bubu-幻象斷片.mp3" 200
         CustomAlertSoundOptional "Diablo2\1.mp3" 200
@@ -734,7 +830,7 @@
         BaseType "Breach Splinter"
         SetTextColor 194 73 216
         SetBackgroundColor 80 0 80
-        SetFontSize 40
+        SetFontSize 39
         PlayAlertSoundPositional 9 300
         CustomAlertSoundOptional "bubu\bubu-裂痕碎片.mp3" 200
         CustomAlertSoundOptional "Diablo2\1.mp3" 200
@@ -764,6 +860,21 @@
         CustomAlertSoundOptional "Lelouch\Lelouch-魯路修_死吧4.mp3" 300
         MinimapIcon 0 Purple Triangle
         PlayEffect Purple
+        DisableDropSoundIfAlertSound
+
+    Show #請願書裂片
+        Class "Stackable Currency"
+        BaseType "Petition Splinter"
+        SetTextColor 139 96 176
+        SetBackgroundColor 21 28 83
+        SetBorderColor 119 82 151
+        SetFontSize 39
+        PlayAlertSoundPositional 9 300
+        CustomAlertSoundOptional "bubu\bubu-加油.mp3" 200
+        CustomAlertSoundOptional "Diablo2\1.mp3" 200
+        CustomAlertSoundOptional "Lelouch\Lelouch-魯路修_我的名字叫Zero2.mp3" 200
+        MinimapIcon 2 Purple Kite
+        PlayEffect Purple Temp
         DisableDropSoundIfAlertSound
 
     Show #高價預兆 改善之兆|削切之兆|右旋抺除之兆|左旋抺除之兆|腐化之兆|左旋廢止之兆|右旋廢止之兆
@@ -808,18 +919,6 @@
         PlayEffect Red
         DisableDropSoundIfAlertSound    
 
-    Show #靈魂核心(力量靈魂核心、敏捷靈魂核心、智慧靈魂核心、札拉提靈魂核心、柔派克靈魂核心、特卡蒂靈魂核心、薩摩特靈魂核心、堤卡巴靈魂核心、吉卡尼靈魂核心、艾斯卡巴靈魂核心、普希瓦爾靈魂核心、塔普塔特靈魂核心、歐派理堤靈魂核心、克特帕托靈魂核心、希特克拉多靈魂核心)
-        BaseType "Soul Core of Atmohua" "Soul Core of Cholotl" "Soul Core of Zantipi" "Soul Core of Zalatl" "Soul Core of Xopec" "Soul Core of Tacati" "Soul Core of Tzamoto" "Soul Core of Ticaba" "Soul Core of Jiquani" "Soul Core of Azcapa" "Soul Core of Puhuarte" "Soul Core of Topotante" "Soul Core of Opiloti" "Soul Core of Quipolatl" "Soul Core of Citaqualotl"
-        SetTextColor 255 92 75 220
-        SetBackgroundColor 140 110 49
-        SetBorderColor 255 40 0 220
-        SetFontSize 45
-        PlayAlertSoundPositional 3 300
-        CustomAlertSoundOptional "bubu\bubu-XX之罈.mp3" 300
-        CustomAlertSoundOptional "Diablo2\22.mp3" 300
-        CustomAlertSoundOptional "Lelouch\Lelouch-傑瑞米亞_可以請你去死嗎.mp3" 300
-        DisableDropSoundIfAlertSound
-        
     Show #特殊巨靈之幣
         BaseType == "Test of Cunning Barya" "Test of Strength Barya" "Test of Time Barya" "Test of Will Barya"
         SetTextColor 191 162 0 200
@@ -867,19 +966,42 @@
         CustomAlertSoundOptional "Lelouch\Lelouch-魯路修_把達摩克利斯的按鈕交給我.mp3" 300
         DisableDropSoundIfAlertSound
 
-    Show # 魔符
-        Rarity < Unique
-        Class "Socketable"
-        BaseType "Talisman"
-        SetTextColor 138 255 103
-        SetBackgroundColor 0 128 0
-        SetBorderColor 70 166 70
-        SetFontSize 40
+    Show #Gnawed骸骨
+        Class "Stackable Currency"
+        BaseType "Gnawed Jawbone" "Gnawed Rib" "Gnawed Collarbone"
+        SetTextColor 217 227 116
+        SetBackgroundColor 11 20 3
+        SetBorderColor 119 121 100
+        SetFontSize 39
+        MinimapIcon 2 Green Kite
+        PlayEffect Green
         DisableDropSoundIfAlertSound
-    
+
+    Show #Preserved骸骨
+        Class "Stackable Currency"
+        BaseType "Preserved Jawbone" "Preserved Rib" "Preserved Collarbone" "Preserved Cranium" "Preserved Vertebrae"
+        SetTextColor 217 227 116
+        SetBackgroundColor 11 20 3
+        SetBorderColor 119 121 100
+        SetFontSize 42
+        MinimapIcon 1 Green Kite
+        PlayEffect Green
+        DisableDropSoundIfAlertSound
+
+    Show #Ancient骸骨
+        Class "Stackable Currency"
+        BaseType "Ancient Jawbone" "Ancient Rib" "Ancient Collarbone"
+        SetTextColor 217 227 116
+        SetBackgroundColor 30 46 10
+        SetBorderColor 119 121 100
+        SetFontSize 45
+        MinimapIcon 0 Green Kite
+        PlayEffect Green
+        DisableDropSoundIfAlertSound
+        
     #end
 
-#L1 4 裝備
+#L1 5 裝備
     Show #稀有傳奇基底(珠寶)
         Rarity = Unique
         BaseType == "Diamond" "Time-Lost Diamond" "Timeless Jewel" "Ruby" "Emerald" "Sapphire"
@@ -1242,7 +1364,37 @@
 
     #end
 
-#L1 5 輿圖
+#L1 6 輿圖
+    Show #艾斯祖太的偶像
+        Class "Map Fragments"
+        BaseType "Idol of Estazunti"
+        SetTextColor 210 0 0
+        SetBackgroundColor 140 110 49
+        SetBorderColor 255 40 0 220
+        SetFontSize 45
+        PlayAlertSoundPositional 2 300
+        CustomAlertSoundOptional "bubu\bubu-特殊地圖.mp3" 300    
+        CustomAlertSoundOptional "Diablo2\42.mp3"
+        CustomAlertSoundOptional "Lelouch\Lelouch-魯路修_死吧4.mp3" 300
+        MinimapIcon 0 Red Triangle
+        PlayEffect Red
+        DisableDropSoundIfAlertSound
+
+    Show #骷髏馬克的邀請
+        Class "Map Fragments"
+        BaseType "Kulemak's Invitation"
+        SetTextColor 217 227 116
+        SetBackgroundColor 10 60 10
+        SetBorderColor 28 39 23
+        SetFontSize 45
+        PlayAlertSoundPositional 2 300
+        CustomAlertSoundOptional "bubu\bubu-特殊地圖.mp3" 300    
+        CustomAlertSoundOptional "Diablo2\42.mp3" 300
+        CustomAlertSoundOptional "Lelouch\Lelouch-魯路修_死吧4.mp3" 300
+        MinimapIcon 0 Green Triangle
+        PlayEffect Green
+        DisableDropSoundIfAlertSound
+
     Show #輿圖斷片
         Class "Map Fragments"
         SetTextColor 208 32 144
@@ -1410,7 +1562,7 @@
         DisableDropSoundIfAlertSound
 
     #end
-#L1 6 藥劑
+#L1 7 藥劑
     Show #顯示高品質終極魔力藥劑
         BaseType "Ultimate Mana Flask"
         Quality > 0
@@ -1515,10 +1667,10 @@
 
     #end
 
-#L1 7 技能
+#L1 8 技能
     Show #高等技能寶石
-        ItemLevel = 20
-        BaseType "Skill Gem"
+        Class "Uncut Skill Gems"
+        BaseType "Uncut Skill Gem (Level 20)"
         SetTextColor 100 0 100
         SetBackgroundColor 20 180 160
         SetBorderColor 150 50 240
@@ -1532,7 +1684,7 @@
         DisableDropSoundIfAlertSound
 
     Show #印鈔 - 終局 技能寶石
-        BaseType "Skill Gem"
+        Class "Uncut Skill Gems"
         SetTextColor 27 162 155
         SetBackgroundColor 0 0 0
         SetBorderColor 27 162 155
@@ -1540,8 +1692,8 @@
         DisableDropSoundIfAlertSound
 
     Show #高等精魂寶石
-        ItemLevel = 20
-        BaseType "Spirit Gem"
+        Class "Uncut Spirit Gems"
+        BaseType "Uncut Spirit Gem (Level 20)"
         SetTextColor 100 0 100
         SetBackgroundColor 20 180 160
         SetBorderColor 166 142 98
@@ -1555,15 +1707,24 @@
         DisableDropSoundIfAlertSound
 
     Show #印鈔 - 終局 精魂寶石
-        BaseType "Spirit Gem"
+        Class "Uncut Spirit Gems"
         SetTextColor 27 162 155
         SetBackgroundColor 0 0 0
         SetBorderColor 166 142 98
         SetFontSize 40
         DisableDropSoundIfAlertSound
 
+    Show #高等輔助寶石
+        Class "Uncut Support Gems"
+        BaseType "Uncut Support Gem (Level 5)"
+        SetTextColor 100 0 100
+        SetBackgroundColor 20 180 160
+        SetBorderColor 237 78 15
+        SetFontSize 45
+        DisableDropSoundIfAlertSound
+
     Show #印鈔 - 終局 輔助寶石
-        BaseType "Support Gem"
+        Class "Uncut Support Gems"
         SetTextColor 27 162 155
         SetBackgroundColor 0 0 0
         SetBorderColor 237 78 15
@@ -1572,7 +1733,7 @@
 
     #end
 
-#L1 8 其他
+#L1 9 其他
     Show #遺鑰
         Class "Vault Keys"
         SetTextColor 186 102 31 #
