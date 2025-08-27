@@ -796,19 +796,49 @@
         PlayEffect Grey Temp
         DisableDropSoundIfAlertSound
 
-    Show #精煉
+    Show #稀釋液態情感
         Class "Stackable Currency"
-        BaseType "Distilled"
-        SetTextColor 99 61 146
-        SetBackgroundColor 212 212 212
-        SetBorderColor 0 0 0
+        BaseType "Diluted Liquid Ire" "Diluted Liquid Guilt" "Diluted Liquid Greed"
+        SetTextColor 255 255 255 200
+        SetBackgroundColor 0 0 0 255
+        SetBorderColor 131 156 0 255
+        SetFontSize 39
+        PlayAlertSoundPositional 3 100
+        CustomAlertSoundOptional "bubu\bubu-凋落油瓶.mp3" 200
+        CustomAlertSoundOptional "Diablo2\5.mp3" 200
+        CustomAlertSoundOptional "Lelouch\Lelouch-魯路修_你若是魔女的話 那我成為魔王就行了.mp3" 100
+        MinimapIcon 2 White Raindrop
+        PlayEffect White Temp
+        DisableDropSoundIfAlertSound
+
+    Show #液態情感
+        Class "Stackable Currency"
+        BaseType "Liquid Paranoia" "Liquid Envy" "Liquid Disgust" "Liquid Despair"
+        SetTextColor 200 156 0 255
+        SetBackgroundColor 0 0 0 255
+        SetBorderColor 131 156 0 255
+        SetFontSize 42
+        PlayAlertSoundPositional 3 200
+        CustomAlertSoundOptional "bubu\bubu-凋落油瓶.mp3" 200
+        CustomAlertSoundOptional "Diablo2\5.mp3" 200
+        CustomAlertSoundOptional "Lelouch\Lelouch-魯路修_你若是魔女的話 那我成為魔王就行了.mp3" 100
+        MinimapIcon 1 Yellow Raindrop
+        PlayEffect Yellow Temp
+        DisableDropSoundIfAlertSound
+        
+    Show #濃縮液態情感
+        Class "Stackable Currency"
+        BaseType  "Concentrated Liquid Fear" "Concentrated Liquid Suffering" "Concentrated Liquid Isolation"
+        SetTextColor 166 88 0
+        SetBackgroundColor 0 0 0 255
+        SetBorderColor 131 156 0 255
         SetFontSize 45
         PlayAlertSoundPositional 3 200
-        CustomAlertSoundOptional "bubu\bubu-譫妄玉.mp3" 300
-        CustomAlertSoundOptional "Diablo2\27.mp3" 300
-        CustomAlertSoundOptional "Lelouch\Lelouch-魯路修_無須畏懼.mp3" 300
-        MinimapIcon 0 Grey Circle
-        PlayEffect Grey
+        CustomAlertSoundOptional "bubu\bubu-高階凋落油瓶.mp3" 300
+        CustomAlertSoundOptional "Diablo2\45.mp3" 300
+        CustomAlertSoundOptional "Lelouch\Lelouch-魯路修_你若是魔女的話 那我成為魔王就行了.mp3" 200
+        MinimapIcon 0 Brown Raindrop
+        PlayEffect Brown
         DisableDropSoundIfAlertSound
 
     Show #裂痕石
@@ -1141,10 +1171,18 @@
         SetBorderColor 255 255 0
         SetFontSize 42
         DisableDropSoundIfAlertSound
-    
+
+    Show #新基底高階金裝
+        Rarity = Rare
+        BaseType "Abyssal Signet" "Pearlescent Amulet" "Akoyan Spear" "Kalguuran Forgehammer" "Morning Star" "Jade Club" "Akoyan Club" "Pointed Maul" "Totemic Greatclub" "Tawhoan Greatclub" "Hefty Quarterstaff" "Smooth Quarterstaff" "Dreaming Quarterstaff" "Artillery Bow" "Tribal Bow" "Obliterator Bow" "Blackfire Crossbow" "Piercing Crossbow" "Elegant Crossbow" "Dueling Wand" "Wrath Sceptre" "Reaping Staff" "Roaring Staff" "Paralysing Staff" "Sanctified Staff" "Commander Greathelm" "Fierce Greathelm" "Corsair Cap" "Leatherbound Hood" "Vermeil Circlet" "Jade Tiara" "Closed Helm" "Spiritbone Crown" "Solid Mask" "Imperial Greathelm" "Freebooter Cap" "Ancestral Tiara" "Gladiatorial Helm" "Cryptic Crown" "Grinning Mask" "Reefsteel Greaves" "Flared Boots" "Flax Sandals" "Covered Sabatons" "Weaver Leggings" "Steelpoint Shoes" "Tasalian Greaves" "Drakeskin Boots" "Sekhema Sandals" "Blacksteel Sabatons" "Cryptic Leggings" "Daggerfoot Shoes" "Detailed Mitts" "Fine Bracers" "Pauascale Gloves" "Plate Gauntlets" "Verisium Cuffs" "Buckled Wraps" "Massive Mitts" "Polished Bracers" "Sirenscale Gloves" "Blacksteel Gauntlets" "Adherent Cuffs" "Secured Wraps" 	"Savage Gauntlets" "Juggernaut Plate" "Chieftain Cuirass" "Corsair Vest" "Smuggler Coat" "Elementalist Robe" "Mystic Raiment" "Knight Armour" "Ancestral Mail" "Cleric Vestments" "Tideseer Mantle" "Scoundrel Jacket" "Warlord Cuirass" "Corsair Coat" "Feathered Raiment" "Thane Mail" "Seastorm Mantle" "Austere Garb" "Crucible Tower Shield" "Ancestor Tower Shield" "Stratified Targe" "Carved Targe" "Wayward Crest Shield" "Seer Crest Shield" "Tawhoan Tower Shield" "Golden Targe" "Blacksteel Crest Shield" "Laminate Buckler" "Pearl Buckler" "Desert Buckler" "Runed Focus" "Whorl Focus" "Tasalian Focus"
+        SetTextColor 237 201 128
+        SetBorderColor 255 255 0
+        SetFontSize 42
+        DisableDropSoundIfAlertSound
+
     Show #高階金裝 
         Rarity = Rare
-        BaseType "Attuned Wand" "Siphoning Wand" "Galvanic Wand" "Rattling Sceptre" "Omen Sceptre" "Fortified Hammer" "Strife Pick" "Molten Hammer" "Ruination Maul" "Fanatic Greathammer" "Ironwood Greathammer" "Snakewood Greathammer" "Gemini Bow" "Siege Crossbow" "Gemini Crossbow" "Primed Quiver" "Sacred Focus" "Kamasan Tiara" "Vile Robe" "Sandsworn Sandals" "Vaal Gloves" "Vaal Crest Shield" "Vaal Tower Shield" "Paragon Greathelm" "Soldier Cuirass" "Vaal Greaves" "Vaal Mitts" "Trapper Hood" "Slipstrike Vest" "Dragonscale Boots" "Barbed Bracers" "Rambler Jacket" "Conjurer Mantle" "Death Mantle" "Dastard Armour" "Shrouded Mail" "Ornate Plate" "Sacramental Robe" "Flowing Raiment"
+        BaseType "Attuned Wand" "Siphoning Wand" "Galvanic Wand" "Rattling Sceptre" "Omen Sceptre" "Fortified Hammer" "Strife Pick" "Molten Hammer" "Ruination Maul" "Fanatic Greathammer" "Ironwood Greathammer" "Gemini Bow" "Siege Crossbow" "Gemini Crossbow" "Primed Quiver" "Sacred Focus" "Kamasan Tiara" "Vile Robe" "Sandsworn Sandals" "Vaal Gloves" "Vaal Crest Shield" "Vaal Tower Shield" "Paragon Greathelm" "Soldier Cuirass" "Vaal Greaves" "Vaal Mitts" "Trapper Hood" "Slipstrike Vest" "Dragonscale Boots" "Barbed Bracers" "Rambler Jacket" "Conjurer Mantle" "Death Mantle" "Dastard Armour" "Shrouded Mail" "Ornate Plate" "Sacramental Robe" "Flowing Raiment"
         SetTextColor 237 201 128
         SetBorderColor 255 255 0
         SetFontSize 42
@@ -1208,8 +1246,8 @@
         SetFontSize 35
         DisableDropSoundIfAlertSound
 
-    Show #印鈔 - 終局 物理雙手錘基底 專家崩毀重錘|專家教徒巨錘|專家橡木巨錘|進階橡木巨錘
-        BaseType "Ruination Maul" "Fanatic Greathammer" "Ironwood Greathammer" "Snakewood Greathammer"
+    Show #印鈔 - 終局 物理雙手錘基底 專家崩毀重錘|專家教徒巨錘|專家橡木巨錘
+        BaseType "Ruination Maul" "Fanatic Greathammer" "Ironwood Greathammer"
         SetBorderColor 243 91 50
         Rarity < Rare
         SetFontSize 35
