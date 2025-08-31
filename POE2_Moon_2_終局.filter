@@ -583,12 +583,27 @@
         PlayEffect Cyan Temp
         DisableDropSoundIfAlertSound
 
-    Show #高階特殊符文
+    Show #高階符文(領導、奉獻、迅捷、崇高)
         Class "Socketable"
         BaseType == "Greater Rune of Leadership" "Greater Rune of Tithing" "Greater Rune of Alacrity" "Greater Rune of Nobility"
         SetTextColor 0 73 165 200
         SetBackgroundColor 152 184 191
         SetBorderColor 153 213 243
+        SetFontSize 45
+        PlayAlertSoundPositional 9 200
+        CustomAlertSoundOptional "bubu\bubu-加油.mp3" 200
+        CustomAlertSoundOptional "Diablo2\24.mp3" 200
+        CustomAlertSoundOptional "Lelouch\Lelouch-所以.mp3" 200
+        MinimapIcon 0 Cyan Circle
+        PlayEffect Cyan
+        DisableDropSoundIfAlertSound
+
+    Show #特殊符文
+        Class "Socketable"
+        BaseType "'s Rune of" 
+        SetTextColor 249 235 254
+        SetBackgroundColor 65 29 132
+        SetBorderColor 101 4 189
         SetFontSize 45
         PlayAlertSoundPositional 9 200
         CustomAlertSoundOptional "bubu\bubu-加油.mp3" 200
@@ -1162,6 +1177,17 @@
         SetFontSize 41
         MinimapIcon 1 Purple UpsideDownHouse
         PlayEffect Purple Temp
+        DisableDropSoundIfAlertSound
+
+    Show #高品質裝備
+        Quality >= 25
+        Rarity <= Rare
+        SetTextColor 30 30 30
+        SetBackgroundColor 255 221 100
+        SetBorderColor 255 255 255
+        SetFontSize 45
+        MinimapIcon 0 Yellow UpsideDownHouse
+        PlayEffect Yellow Temp
         DisableDropSoundIfAlertSound
 
     Show #高階級未鑑定金裝
@@ -1767,6 +1793,20 @@
         SetBackgroundColor 0 0 0
         SetBorderColor 237 78 15
         SetFontSize 40
+        DisableDropSoundIfAlertSound
+
+    Show #族裔輔助寶石
+        Class "Support Gems"
+        BaseType "'s"
+        SetTextColor 27 162 155
+        SetBackgroundColor 82 18 18 255
+        SetBorderColor 210 0 220
+        SetFontSize 42
+        CustomAlertSoundOptional "bubu\bubu-不尋常寶石.mp3" 300
+        CustomAlertSoundOptional "Diablo2\21.mp3" 300
+        CustomAlertSoundOptional "Lelouch\Lelouch-CC.mp3" 300
+        MinimapIcon 1 Cyan Pentagon
+        PlayEffect Cyan
         DisableDropSoundIfAlertSound
 
     #end
