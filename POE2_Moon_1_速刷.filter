@@ -1,3 +1,4 @@
+Import "自定義過濾/自定義配置.filter" Optional
 #L1 1 任務
     Show #任務道具
         Class "Quest Item"
@@ -15,6 +16,7 @@
 
 #L1 2 通貨
     Show #知識卷軸
+        AreaLevel > 64
         Class "Stackable Currency"
         BaseType "Scroll of Wisdom" "Scroll Fragment"
         SetBorderColor 210 0 0
@@ -24,7 +26,7 @@
     Show #金幣(堆疊>=5000)
         StackSize >= 5000
         Class "Stackable Currency"
-        BaseType "Gold"
+        BaseType == "Gold"
         SetTextColor 246 220 130
         SetBackgroundColor 0 0 0 240
         SetBorderColor 246 220 130
@@ -37,7 +39,7 @@
     Show #金幣(堆疊>=1000)
         StackSize >= 1000
         Class "Stackable Currency"
-        BaseType "Gold"
+        BaseType == "Gold"
         SetTextColor 246 220 130
         SetBackgroundColor 0 0 0 240
         SetBorderColor 246 220 130
@@ -50,7 +52,7 @@
     Show #印鈔 - 終局 黃金(堆疊>=300)
         StackSize >= 300
         Class "Stackable Currency"
-        BaseType "Gold"
+        BaseType == "Gold"
         SetTextColor 246 220 130
         SetBackgroundColor 0 0 0 240
         SetBorderColor 246 220 130 0
@@ -134,17 +136,21 @@
     Show #高階蛻變石
         Class "Stackable Currency"
         BaseType == "Greater Orb of Transmutation"
-        SetTextColor 255 94 97
-        SetBorderColor 255 192 203
-        SetFontSize 39
+        SetTextColor 0 0 0
+        SetBackgroundColor 255 165 0
+        SetBorderColor 150 0 0
+        SetFontSize 43
+        PlayAlertSoundPositional ShGeneral 300
         DisableDropSoundIfAlertSound
 
     Show #完美蛻變石
         Class "Stackable Currency"
         BaseType == "Perfect Orb of Transmutation"
-        SetTextColor 255 94 97
-        SetBorderColor 255 192 203
-        SetFontSize 39
+        SetTextColor 0 0 0
+        SetBackgroundColor 255 165 0
+        SetBorderColor 150 0 0
+        SetFontSize 43
+        PlayAlertSoundPositional ShGeneral 300
         DisableDropSoundIfAlertSound
 
     Show #印鈔 - 終局 增幅石
@@ -158,17 +164,21 @@
     Show #高階增幅石
         Class "Stackable Currency"
         BaseType == "Greater Orb of Augmentation"
-        SetTextColor 255 94 97
-        SetBorderColor 255 192 203
-        SetFontSize 39
+        SetTextColor 0 0 0
+        SetBackgroundColor 255 165 0
+        SetBorderColor 150 0 0
+        SetFontSize 43
+        PlayAlertSoundPositional ShGeneral 300
         DisableDropSoundIfAlertSound
 
     Show #完美增幅石
         Class "Stackable Currency"
         BaseType == "Perfect Orb of Augmentation"
-        SetTextColor 255 94 97
-        SetBorderColor 255 192 203
-        SetFontSize 39
+        SetTextColor 0 0 0
+        SetBackgroundColor 255 165 0
+        SetBorderColor 150 0 0
+        SetFontSize 43
+        PlayAlertSoundPositional ShGeneral 300
         DisableDropSoundIfAlertSound
 
     Show #護甲片
@@ -329,30 +339,30 @@
     Show #高階混沌石
         Class "Stackable Currency"
         BaseType == "Greater Chaos Orb"
-        SetTextColor 0 0 0
-        SetBackgroundColor 255 165 0
-        SetBorderColor 150 0 0
+        SetTextColor 255 144 0 255
+        SetBackgroundColor 37 54 112
+        SetBorderColor 255 200 0
         SetFontSize 43
         PlayAlertSoundPositional ShChaos 300
         CustomAlertSoundOptional "bubu\bubu-混沌石.mp3" 300
-        CustomAlertSoundOptional "Diablo2\28.mp3" 200
+        CustomAlertSoundOptional "Diablo2\27.mp3" 200
         CustomAlertSoundOptional "Lelouch\Lelouch-魯路修_富有被射中的覺悟才有資格開槍2.mp3" 300
-        MinimapIcon 1 Yellow Diamond
+        MinimapIcon 0 Yellow Diamond
         PlayEffect Yellow Temp
         DisableDropSoundIfAlertSound
 
     Show #完美混沌石
         Class "Stackable Currency"
         BaseType == "Perfect Chaos Orb"
-        SetTextColor 0 0 0
-        SetBackgroundColor 255 165 0
-        SetBorderColor 150 0 0
+        SetTextColor 255 144 0 255
+        SetBackgroundColor 37 54 112
+        SetBorderColor 255 200 0
         SetFontSize 43
         PlayAlertSoundPositional ShChaos 300
         CustomAlertSoundOptional "bubu\bubu-混沌石.mp3" 300
-        CustomAlertSoundOptional "Diablo2\28.mp3" 200
+        CustomAlertSoundOptional "Diablo2\27.mp3" 200
         CustomAlertSoundOptional "Lelouch\Lelouch-魯路修_富有被射中的覺悟才有資格開槍2.mp3" 300
-        MinimapIcon 1 Yellow Diamond
+        MinimapIcon 0 Yellow Diamond
         PlayEffect Yellow Temp
         DisableDropSoundIfAlertSound
 
@@ -374,30 +384,30 @@
     Show #高階富豪石
         Class "Stackable Currency"
         BaseType == "Greater Regal Orb"
-        SetTextColor 0 0 0
-        SetBackgroundColor 255 165 0
-        SetBorderColor 150 0 0
+        SetTextColor 255 144 0 255
+        SetBackgroundColor 37 54 112
+        SetBorderColor 255 200 0
         SetFontSize 43
         PlayAlertSoundPositional ShRegal 300
         CustomAlertSoundOptional "bubu\bubu-富豪石.mp3" 300
-        CustomAlertSoundOptional "Diablo2\28.mp3" 200
+        CustomAlertSoundOptional "Diablo2\27.mp3" 200
         CustomAlertSoundOptional "Lelouch\Lelouch-魯路修_富有被射中的覺悟才有資格開槍2.mp3" 300
-        MinimapIcon 1 Yellow Diamond
+        MinimapIcon 0 Yellow Diamond
         PlayEffect Yellow Temp
         DisableDropSoundIfAlertSound
 
     Show #完美富豪石
         Class "Stackable Currency"
         BaseType == "Perfect Regal Orb"
-        SetTextColor 0 0 0
-        SetBackgroundColor 255 165 0
-        SetBorderColor 150 0 0
+        SetTextColor 255 144 0 255
+        SetBackgroundColor 37 54 112
+        SetBorderColor 255 200 0
         SetFontSize 43
         PlayAlertSoundPositional ShRegal 300
         CustomAlertSoundOptional "bubu\bubu-富豪石.mp3" 300
-        CustomAlertSoundOptional "Diablo2\28.mp3" 200
+        CustomAlertSoundOptional "Diablo2\27.mp3" 200
         CustomAlertSoundOptional "Lelouch\Lelouch-魯路修_富有被射中的覺悟才有資格開槍2.mp3" 300
-        MinimapIcon 1 Yellow Diamond
+        MinimapIcon 0 Yellow Diamond
         PlayEffect Yellow Temp
         DisableDropSoundIfAlertSound
 
@@ -421,11 +431,11 @@
         BaseType "Orb of Annulment"
         SetTextColor 30 83 255
         SetBorderColor 30 144 255
-        SetFontSize 43
+        SetFontSize 45
         PlayAlertSoundPositional ShGeneral 300
         CustomAlertSoundOptional "bubu\bubu-無效石.mp3" 300
         CustomAlertSoundOptional "Diablo2\27.mp3" 300
-        CustomAlertSoundOptional "Lelouch\Lelouch-魯路修_若無力是罪惡.mp3" 200
+        CustomAlertSoundOptional "Lelouch\Lelouch-魯路修_若無力是罪惡.mp3" 300
         MinimapIcon 0 Blue Diamond
         PlayEffect Blue
         DisableDropSoundIfAlertSound
@@ -440,8 +450,8 @@
         PlayAlertSoundPositional ShExalted 300
         CustomAlertSoundOptional "bubu\bubu-崇高石.mp3" 300
         CustomAlertSoundOptional "Diablo2\27.mp3" 300
-        CustomAlertSoundOptional "Lelouch\Lelouch-魯路修_若無力是罪惡.mp3" 200
-        MinimapIcon 0 Orange Diamond
+        CustomAlertSoundOptional "Lelouch\Lelouch-魯路修_若無力是罪惡.mp3" 300
+        MinimapIcon 1 Orange Diamond
         PlayEffect Orange
         DisableDropSoundIfAlertSound
 
@@ -451,11 +461,11 @@
         SetTextColor 255 144 0 255
         SetBackgroundColor 37 54 112
         SetBorderColor 255 200 0
-        SetFontSize 43
+        SetFontSize 45
         PlayAlertSoundPositional ShExalted 300
         CustomAlertSoundOptional "bubu\bubu-崇高石.mp3" 300
         CustomAlertSoundOptional "Diablo2\27.mp3" 300
-        CustomAlertSoundOptional "Lelouch\Lelouch-魯路修_若無力是罪惡.mp3" 200
+        CustomAlertSoundOptional "Lelouch\Lelouch-魯路修_若無力是罪惡.mp3" 300
         MinimapIcon 0 Orange Diamond
         PlayEffect Orange
         DisableDropSoundIfAlertSound
@@ -463,15 +473,15 @@
     Show #完美崇高石
         Class "Stackable Currency"
         BaseType == "Perfect Exalted Orb"
-        SetTextColor 255 144 0 255
-        SetBackgroundColor 37 54 112
+        SetTextColor 236 242 145
+        SetBackgroundColor 55 1 59
         SetBorderColor 255 200 0
-        SetFontSize 43
+        SetFontSize 45
         PlayAlertSoundPositional ShExalted 300
         CustomAlertSoundOptional "bubu\bubu-崇高石.mp3" 300
-        CustomAlertSoundOptional "Diablo2\27.mp3" 300
-        CustomAlertSoundOptional "Lelouch\Lelouch-魯路修_若無力是罪惡.mp3" 200
-        MinimapIcon 0 Orange Diamond
+        CustomAlertSoundOptional "Diablo2\26.mp3" 300
+        CustomAlertSoundOptional "Lelouch\Lelouch-夏陸陸.mp3" 300
+        MinimapIcon 0 Orange Moon
         PlayEffect Orange
         DisableDropSoundIfAlertSound
 
@@ -496,12 +506,12 @@
         SetTextColor 81 106 243 249
         SetBackgroundColor 0 0 60
         SetBorderColor 255 200 0
-        SetFontSize 45
+        SetFontSize 43
         PlayAlertSoundPositional ShDivine 300
-        CustomAlertSoundOptional "bubu\bubu-神聖石.mp3" 300
-        CustomAlertSoundOptional "Diablo2\26.mp3" 300
-        CustomAlertSoundOptional "Lelouch\Lelouch-夏陸陸.mp3" 300
-        MinimapIcon 0 Blue Moon
+        CustomAlertSoundOptional "bubu\bubu-加油.mp3" 200
+        CustomAlertSoundOptional "Diablo2\27.mp3" 300
+        CustomAlertSoundOptional "Lelouch\Lelouch-魯路修_若無力是罪惡.mp3" 300
+        MinimapIcon 1 Blue Moon
         PlayEffect Blue
         DisableDropSoundIfAlertSound
 
@@ -515,9 +525,9 @@
         PlayAlertSoundPositional 9 300
         CustomAlertSoundOptional "bubu\bubu-要發財了.mp3" 300
         CustomAlertSoundOptional "Diablo2\26.mp3" 300
-        CustomAlertSoundOptional "Lelouch\Lelouch-CC_真是令我吃驚.mp3" 300
+        CustomAlertSoundOptional "Lelouch\Lelouch-夏陸陸_All Hail Britannia4.mp3" 300
         MinimapIcon 0 Purple Moon
-        PlayEffect Purple Temp
+        PlayEffect Purple
         DisableDropSoundIfAlertSound
 
     Show #卡蘭德的魔鏡
@@ -884,14 +894,6 @@
         PlayEffect Purple Temp
         DisableDropSoundIfAlertSound
 
-    Show #裂痕戒指
-        BaseType "Breach Ring"
-        SetTextColor 128 0 128
-        SetBackgroundColor 255 218 136 202
-        SetBorderColor 128 0 128
-        SetFontSize 42
-        DisableDropSoundIfAlertSound
-
     Show #謁見國王
         Class "Map Fragment"
         BaseType "An Audience With The King"
@@ -922,9 +924,9 @@
         PlayEffect Purple Temp
         DisableDropSoundIfAlertSound
 
-    Show #高價預兆 改善之兆|削切之兆|右旋抺除之兆|左旋抺除之兆|腐化之兆|左旋廢止之兆|右旋廢止之兆
+    Show #高價預兆 改善之兆|削切之兆|右旋抺除之兆|左旋抺除之兆|腐化之兆|左旋廢止之兆|右旋廢止之兆|均勻喜悅之兆|均勻加冕之兆|重組之兆|聖化之兆|右旋結晶之兆|左旋結晶之兆
         Class "Omen"
-        BaseType "Omen of Amelioration" "Omen of Whittling" "Omen of Dextral Erasure" "Omen of Sinistral Erasure" "Omen of Corruption" "Omen of Sinistral Annulment" "Omen of Dextral Annulment"
+        BaseType "Omen of Amelioration" "Omen of Whittling" "Omen of Dextral Erasure" "Omen of Sinistral Erasure" "Omen of Corruption" "Omen of Sinistral Annulment" "Omen of Dextral Annulment" "Omen of Homogenising Exaltation" "Omen of Homogenising Coronation" "Omen of Recombination" "Omen of Sanctification" "Omen of Dextral Crystallisation" "Omen of Sinistral Crystallisation"
         SetTextColor 55 33 117 255
         SetBackgroundColor 139 126 208 255
         SetBorderColor 75 20 142 255
@@ -935,6 +937,21 @@
         CustomAlertSoundOptional "Lelouch\Lelouch-所以.mp3" 300
         MinimapIcon 0 Purple Circle
         PlayEffect Purple Temp
+        DisableDropSoundIfAlertSound
+
+    Show #深淵預兆 深淵迴響之兆|腐敗之兆|光明之兆|左旋死靈術之兆|右旋死靈術之兆|領主之兆|諸侯之兆|黑血者之兆
+        Class "Omen"
+        BaseType "Omen of Abyssal Echoes" "Omen of Putrefaction" "Omen of Light" "Omen of Sinistral Necromancy" "Omen of Dextral Necromancy" "Omen of the Sovereign" "Omen of the Liege" "Omen of the Blackblooded"
+        SetTextColor 59 67 26
+        SetBackgroundColor 147 169 59 255
+        SetBorderColor 59 67 26
+        SetFontSize 45
+        PlayAlertSoundPositional 9 300
+        CustomAlertSoundOptional "bubu\bubu-要發財了.mp3" 300
+        CustomAlertSoundOptional "Diablo2\24.mp3" 300
+        CustomAlertSoundOptional "Lelouch\Lelouch-所以.mp3" 300
+        MinimapIcon 0 Green Circle
+        PlayEffect Green Temp
         DisableDropSoundIfAlertSound
 
     Show #預兆
@@ -1011,7 +1028,7 @@
         CustomAlertSoundOptional "Lelouch\Lelouch-魯路修_把達摩克利斯的按鈕交給我.mp3" 300
         DisableDropSoundIfAlertSound
 
-    Show #Gnawed骸骨
+    Show #破碎的深淵骸骨
         Class "Stackable Currency"
         BaseType "Gnawed Jawbone" "Gnawed Rib" "Gnawed Collarbone"
         SetTextColor 217 227 116
@@ -1022,7 +1039,7 @@
         PlayEffect Green
         DisableDropSoundIfAlertSound
 
-    Show #Preserved骸骨
+    Show #保存良好的深淵骸骨
         Class "Stackable Currency"
         BaseType "Preserved Jawbone" "Preserved Rib" "Preserved Collarbone" "Preserved Cranium" "Preserved Vertebrae"
         SetTextColor 217 227 116
@@ -1033,7 +1050,7 @@
         PlayEffect Green
         DisableDropSoundIfAlertSound
 
-    Show #Ancient骸骨
+    Show #古老的深淵骸骨
         Class "Stackable Currency"
         BaseType "Ancient Jawbone" "Ancient Rib" "Ancient Collarbone"
         SetTextColor 217 227 116
@@ -1042,389 +1059,730 @@
         SetFontSize 45
         MinimapIcon 0 Green Kite
         PlayEffect Green
+        PlayAlertSoundPositional 9 300
+        CustomAlertSoundOptional "bubu\bubu-要發財了.mp3" 300
+        CustomAlertSoundOptional "Diablo2\26.mp3" 300
+        CustomAlertSoundOptional "Lelouch\Lelouch-CC_真是令我吃驚.mp3" 300
         DisableDropSoundIfAlertSound
         
     #end
 
 #L1 5 裝備
-    Show #稀有傳奇基底(珠寶)
-        Rarity = Unique
-        BaseType == "Diamond" "Time-Lost Diamond" "Timeless Jewel" "Ruby" "Emerald" "Sapphire"
-        SetTextColor 175 96 37
-        SetBackgroundColor 82 18 18 255
-        SetBorderColor 255 168 0 255
-        SetFontSize 45
-        PlayAlertSoundPositional 1 300
-        CustomAlertSoundOptional "bubu\bubu-傳說裝備.mp3" 300
-        CustomAlertSoundOptional "Diablo2\33.mp3" 300
-        CustomAlertSoundOptional "Lelouch\Lelouch-魯路修_世界聽命於我.mp3" 300
-        MinimapIcon 0 Orange UpsideDownHouse
-        PlayEffect Orange
-        DisableDropSoundIfAlertSound
+    #L2 5.1 傳奇
+        Show #稀有傳奇基底(珠寶)
+            Rarity = Unique
+            BaseType == "Diamond" "Time-Lost Diamond" "Timeless Jewel" "Ruby" "Emerald" "Sapphire"
+            SetTextColor 175 96 37
+            SetBackgroundColor 82 18 18 255
+            SetBorderColor 255 168 0 255
+            SetFontSize 45
+            PlayAlertSoundPositional 1 300
+            CustomAlertSoundOptional "bubu\bubu-傳說裝備.mp3" 300
+            CustomAlertSoundOptional "Diablo2\33.mp3" 300
+            CustomAlertSoundOptional "Lelouch\Lelouch-魯路修_世界聽命於我.mp3" 300
+            MinimapIcon 0 Orange UpsideDownHouse
+            PlayEffect Orange
+            DisableDropSoundIfAlertSound
+            
+        Show #稀有傳奇基底(聖物) 香爐聖物(終焉烈焰)|器皿聖物(第二聖事)
+            Rarity = Unique
+            BaseType == "Incense Relic" "Vase Relic"
+            SetTextColor 175 96 37
+            SetBackgroundColor 82 18 18 255
+            SetBorderColor 255 168 0 255
+            SetFontSize 45
+            PlayAlertSoundPositional 1 300
+            CustomAlertSoundOptional "bubu\bubu-傳說裝備.mp3" 300
+            CustomAlertSoundOptional "Diablo2\33.mp3" 300
+            CustomAlertSoundOptional "Lelouch\Lelouch-魯路修_世界聽命於我.mp3" 300
+            MinimapIcon 0 Orange UpsideDownHouse
+            PlayEffect Orange
+            DisableDropSoundIfAlertSound
+
+        Show #稀有傳奇基底 藍玉戒指(夢語之痕)|恆星項鍊(均衡之符)|重革腰帶(獵首)|實用腰帶(獨創)|終極生命藥劑(奧爾羅斯的決心)|終極魔力藥劑(融解漩渦)|戒指(卡蘭德之觸)|隱秘裹手(智行之手)
+            Rarity = Unique
+            BaseType == "Sapphire Ring" "Stellar Amulet" "Heavy Belt" "Utility Belt" "Ultimate Life Flask" "Ultimate Mana Flask" "Ring" "Furtive Wraps"
+            SetTextColor 175 96 37
+            SetBackgroundColor 82 18 18 255
+            SetBorderColor 255 168 0 255
+            SetFontSize 45
+            PlayAlertSoundPositional 1 300
+            CustomAlertSoundOptional "bubu\bubu-傳說裝備.mp3" 300
+            CustomAlertSoundOptional "Diablo2\33.mp3" 300
+            CustomAlertSoundOptional "Lelouch\Lelouch-魯路修_世界聽命於我.mp3" 300
+            MinimapIcon 0 Orange UpsideDownHouse
+            PlayEffect Orange
+            DisableDropSoundIfAlertSound
+
+        Show #傳奇裝備(全)
+            Rarity = Unique
+            SetTextColor 227 92 9 220
+            SetBackgroundColor 0 0 0
+            SetBorderColor 180 81 0
+            SetFontSize 42
+            PlayAlertSoundPositional 1 200
+            CustomAlertSoundOptional "bubu\bubu-傳說裝備.mp3" 100
+            CustomAlertSoundOptional "Diablo2\33.mp3" 200
+            CustomAlertSoundOptional "Lelouch\Lelouch-魯路修_世界聽命於我2.mp3" 300
+            MinimapIcon 2 Orange UpsideDownHouse
+            PlayEffect Orange
+            DisableDropSoundIfAlertSound
+
+        #end
+
+    #L2 5.2 珠寶
+        Show #鑽石
+            Class "Jewel"
+            BaseType "Diamond"
+            SetTextColor 209 232 255
+            SetBackgroundColor 10 10 50
+            SetBorderColor 245 245 245
+            SetFontSize 42
+            DisableDropSoundIfAlertSound
+
+        Show #藍玉
+            Class "Jewel"
+            BaseType "Sapphire"
+            SetTextColor 70 200 200
+            SetBackgroundColor 10 10 50
+            SetBorderColor 70 200 200
+            SetFontSize 42
+            DisableDropSoundIfAlertSound
+
+        Show #紅玉
+            Class "Jewel"
+            BaseType "Ruby"
+            SetTextColor 200 35 35 
+            SetBackgroundColor 50 10 10        
+            SetBorderColor 200 35 35
+            SetFontSize 42
+            DisableDropSoundIfAlertSound
+
+        Show #翠綠碧雲
+            Class "Jewel"
+            BaseType "Emerald"
+            SetTextColor 71 161 103
+            SetBackgroundColor 10 50 10   
+            SetBorderColor 71 161 103
+            SetFontSize 42
+            DisableDropSoundIfAlertSound
+
+        #end
         
-    Show #稀有傳奇基底(聖物) 香爐聖物(終焉烈焰)|器皿聖物(第二聖事)
-        Rarity = Unique
-        BaseType == "Incense Relic" "Vase Relic"
-        SetTextColor 175 96 37
-        SetBackgroundColor 82 18 18 255
-        SetBorderColor 255 168 0 255
-        SetFontSize 45
-        PlayAlertSoundPositional 1 300
-        CustomAlertSoundOptional "bubu\bubu-傳說裝備.mp3" 300
-        CustomAlertSoundOptional "Diablo2\33.mp3" 300
-        CustomAlertSoundOptional "Lelouch\Lelouch-魯路修_世界聽命於我.mp3" 300
-        MinimapIcon 0 Orange UpsideDownHouse
-        PlayEffect Orange
-        DisableDropSoundIfAlertSound
+    #L2 5.3 罕見基底
+        Show #卓越 高品質裝備(26~30)
+            Quality > 25
+            Rarity <= Rare
+            SetTextColor 30 30 30
+            SetBackgroundColor 255 221 100
+            SetBorderColor 255 255 255
+            SetFontSize 45
+            MinimapIcon 0 Yellow UpsideDownHouse
+            PlayEffect Yellow Temp
+            DisableDropSoundIfAlertSound
 
-    Show #稀有傳奇基底 藍玉戒指(夢語之痕)|恆星項鍊(均衡之符)|重革腰帶(獵首)|實用腰帶(獨創)|終極生命藥劑(奧爾羅斯的決心)|終極魔力藥劑(融解漩渦)|戒指(卡蘭德之觸)|隱秘裹手(智行之手)
-        Rarity = Unique
-        BaseType == "Sapphire Ring" "Stellar Amulet" "Heavy Belt" "Utility Belt" "Ultimate Life Flask" "Ultimate Mana Flask" "Ring" "Furtive Wraps"
-        SetTextColor 175 96 37
-        SetBackgroundColor 82 18 18 255
-        SetBorderColor 255 168 0 255
-        SetFontSize 45
-        PlayAlertSoundPositional 1 300
-        CustomAlertSoundOptional "bubu\bubu-傳說裝備.mp3" 300
-        CustomAlertSoundOptional "Diablo2\33.mp3" 300
-        CustomAlertSoundOptional "Lelouch\Lelouch-魯路修_世界聽命於我.mp3" 300
-        MinimapIcon 0 Orange UpsideDownHouse
-        PlayEffect Orange
-        DisableDropSoundIfAlertSound
+        Show #卓越 高品質裝備(20~25)
+            Quality > 20
+            Rarity <= Rare
+            SetTextColor 30 30 30
+            SetBackgroundColor 255 221 100
+            SetBorderColor 255 255 255
+            SetFontSize 43
+            MinimapIcon 1 Yellow UpsideDownHouse
+            PlayEffect Yellow Temp
+            DisableDropSoundIfAlertSound
 
-    Show #傳奇裝備(全)
-        Rarity = Unique
-        SetTextColor 227 92 9 220
-        SetBackgroundColor 0 0 0
-        SetBorderColor 180 81 0
-        SetFontSize 42
-        PlayAlertSoundPositional 1 200
-        CustomAlertSoundOptional "bubu\bubu-傳說裝備.mp3" 100
-        CustomAlertSoundOptional "Diablo2\33.mp3" 200
-        CustomAlertSoundOptional "Lelouch\Lelouch-魯路修_世界聽命於我2.mp3" 300
-        MinimapIcon 2 Orange UpsideDownHouse
-        PlayEffect Orange
-        DisableDropSoundIfAlertSound
+        Show #卓越 雙孔>三孔
+            Rarity <= Rare
+            Class "Body Armours" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Quarterstaves" "Crossbows" "Traps" "Fishing Rods"
+            Sockets == 3
+            SetTextColor 30 30 30
+            SetBackgroundColor 255 221 100
+            SetBorderColor 255 255 255
+            SetFontSize 45
+            MinimapIcon 0 Yellow UpsideDownHouse
+            PlayEffect Yellow Temp
 
-    Show #鑽石
-        Class "Jewel"
-        BaseType "Diamond"
-        SetTextColor 209 232 255
-        SetBackgroundColor 10 10 50
-        SetBorderColor 245 245 245
-        SetFontSize 42
-        DisableDropSoundIfAlertSound
+        Show #卓越 單孔>雙孔
+            Rarity <= Rare
+            Class "Gloves" "Boots" "Helmets" "Shields" "Bucklers" "Foci" "Claws" "Daggers" "Wands" "One Hand Swords" "One Hand Axes" "One Hand Maces" "Sceptres" "Spears" "Flails"
+            Sockets == 2
+            SetTextColor 30 30 30
+            SetBackgroundColor 255 221 100
+            SetBorderColor 255 255 255
+            SetFontSize 45
+            MinimapIcon 0 Yellow UpsideDownHouse
+            PlayEffect Yellow Temp
 
-    Show #藍玉
-        Class "Jewel"
-        BaseType "Sapphire"
-        SetTextColor 70 200 200
-        SetBackgroundColor 10 10 50
-        SetBorderColor 70 200 200
-        SetFontSize 42
-        DisableDropSoundIfAlertSound
+        Show #點機會石基底 夢語之痕|賭神芬多|獵首|均衡之符|黑鋼塔盾
+            Rarity = Normal
+            BaseType "Sapphire Ring" "Gold Ring" "Heavy Belt" "Stellar Amulet" "Blacksteel Tower Shield"
+            SetTextColor 255 255 255 220
+            SetBackgroundColor 255 114 0 200
+            SetBorderColor 255 114 0
+            SetFontSize 40
+            DisableDropSoundIfAlertSound
 
-    Show #紅玉
-        Class "Jewel"
-        BaseType "Ruby"
-        SetTextColor 200 35 35 
-        SetBackgroundColor 50 10 10        
-        SetBorderColor 200 35 35
-        SetFontSize 42
-        DisableDropSoundIfAlertSound
+        Show #高階級金裝
+            Rarity = Rare
+            UnidentifiedItemTier >= 4
+            SetTextColor 237 201 128
+            SetBorderColor 255 255 0
+            SetFontSize 42
+            MinimapIcon 2 Yellow UpsideDownHouse
+            PlayEffect Yellow Temp
+            DisableDropSoundIfAlertSound
 
-    Show #翠綠碧雲
-        Class "Jewel"
-        BaseType "Emerald"
-        SetTextColor 71 161 103
-        SetBackgroundColor 10 50 10   
-        SetBorderColor 71 161 103
-        SetFontSize 42
-        DisableDropSoundIfAlertSound
+        #end
 
-    Show #高階金裝(飾品)
-        Rarity = Rare
-        Class "Rings" "Amulets" "Belts"
-        SetTextColor 237 201 128
-        SetBorderColor 255 255 0
-        SetFontSize 42
-        DisableDropSoundIfAlertSound
+    #L2 5.4 拆解基底
+        Show #品質權杖
+            Rarity <= Rare
+            Quality > 0
+            SetFontSize 45
+            Class "Sceptre"
+            SetBorderColor 220 220 220
+            MinimapIcon 0 White UpsideDownHouse
+            DisableDropSoundIfAlertSound
 
-    Show #品質權杖
-        Rarity <= Rare
-        Quality > 0
-        SetFontSize 45
-        Class "Sceptre"
-        SetBorderColor 220 220 220
-        MinimapIcon 0 White UpsideDownHouse
-        DisableDropSoundIfAlertSound
+        #end
 
-    Show #點機會石基底 夢語之痕|賭神芬多|獵首|均衡之符|黑鋼塔盾
-        Rarity = Normal
-        BaseType "Sapphire Ring" "Gold Ring" "Heavy Belt" "Stellar Amulet" "Blacksteel Tower Shield"
-        SetTextColor 255 255 255 220
-        SetBackgroundColor 255 114 0 200
-        SetBorderColor 255 114 0
-        SetFontSize 40
-        DisableDropSoundIfAlertSound    
+    #L2 5.5 限定基底
+        Show #卡蘭德迷湖限定戒指
+            Rarity <= Rare
+            BaseType "Dusk Ring" "Gloam Ring" "Penumbra Ring" "Tenebrous Ring" "Dusk Amulet" "Gloam Amulet" "Penumbra Amulet" "Tenebrous Amulet"
+            SetTextColor 255 255 255 255
+            SetBackgroundColor 0 74 192 120
+            SetBorderColor 255 200 0
+            SetFontSize 41
+            MinimapIcon 1 Purple UpsideDownHouse
+            PlayEffect Purple Temp
+            DisableDropSoundIfAlertSound
 
-    Show #卡蘭德迷湖限定戒指
-        Rarity <= Rare
-        BaseType "Dusk Ring" "Gloam Ring" "Penumbra Ring" "Tenebrous Ring" "Dusk Amulet" "Gloam Amulet" "Penumbra Amulet" "Tenebrous Amulet"
-        SetTextColor 255 255 255 255
-        SetBackgroundColor 0 74 192 120
-        SetBorderColor 255 200 0
-        SetFontSize 41
-        MinimapIcon 1 Purple UpsideDownHouse
-        PlayEffect Purple Temp
-        DisableDropSoundIfAlertSound
+        Show #裂痕戒指
+            BaseType "Breach Ring"
+            SetTextColor 128 0 128
+            SetBackgroundColor 255 218 136 202
+            SetBorderColor 128 0 128
+            SetFontSize 42
+            DisableDropSoundIfAlertSound
 
-    Show #高品質裝備
-        Quality >= 25
-        Rarity <= Rare
-        SetTextColor 30 30 30
-        SetBackgroundColor 255 221 100
-        SetBorderColor 255 255 255
-        SetFontSize 45
-        MinimapIcon 0 Yellow UpsideDownHouse
-        PlayEffect Yellow Temp
-        DisableDropSoundIfAlertSound
+        Show #深淵戒指
+            BaseType "Breach Ring"
+            SetTextColor 147 169 59
+            SetBackgroundColor 59 67 26
+            SetBorderColor 147 169 59
+            SetFontSize 42
+            DisableDropSoundIfAlertSound
 
-    Show #高階級未鑑定金裝
-        Rarity = Rare
-        UnidentifiedItemTier >= 4
-        SetTextColor 237 201 128
-        SetBorderColor 255 255 0
-        SetFontSize 42
-        DisableDropSoundIfAlertSound
+        #end
 
-    Show #新基底高階金裝
-        Rarity = Rare
-        BaseType "Abyssal Signet" "Pearlescent Amulet" "Akoyan Spear" "Kalguuran Forgehammer" "Morning Star" "Jade Club" "Akoyan Club" "Pointed Maul" "Totemic Greatclub" "Tawhoan Greatclub" "Hefty Quarterstaff" "Smooth Quarterstaff" "Dreaming Quarterstaff" "Artillery Bow" "Tribal Bow" "Obliterator Bow" "Blackfire Crossbow" "Piercing Crossbow" "Elegant Crossbow" "Dueling Wand" "Wrath Sceptre" "Reaping Staff" "Roaring Staff" "Paralysing Staff" "Sanctified Staff" "Commander Greathelm" "Fierce Greathelm" "Corsair Cap" "Leatherbound Hood" "Vermeil Circlet" "Jade Tiara" "Closed Helm" "Spiritbone Crown" "Solid Mask" "Imperial Greathelm" "Freebooter Cap" "Ancestral Tiara" "Gladiatorial Helm" "Cryptic Crown" "Grinning Mask" "Reefsteel Greaves" "Flared Boots" "Flax Sandals" "Covered Sabatons" "Weaver Leggings" "Steelpoint Shoes" "Tasalian Greaves" "Drakeskin Boots" "Sekhema Sandals" "Blacksteel Sabatons" "Cryptic Leggings" "Daggerfoot Shoes" "Detailed Mitts" "Fine Bracers" "Pauascale Gloves" "Plate Gauntlets" "Verisium Cuffs" "Buckled Wraps" "Massive Mitts" "Polished Bracers" "Sirenscale Gloves" "Blacksteel Gauntlets" "Adherent Cuffs" "Secured Wraps" "Juggernaut Plate" "Chieftain Cuirass" "Corsair Vest" "Smuggler Coat" "Elementalist Robe" "Mystic Raiment" "Knight Armour" "Ancestral Mail" "Cleric Vestments" "Tideseer Mantle" "Scoundrel Jacket" "Warlord Cuirass" "Corsair Coat" "Feathered Raiment" "Thane Mail" "Seastorm Mantle" "Austere Garb" "Crucible Tower Shield" "Ancestor Tower Shield" "Stratified Targe" "Carved Targe" "Wayward Crest Shield" "Seer Crest Shield" "Tawhoan Tower Shield" "Golden Targe" "Blacksteel Crest Shield" "Laminate Buckler" "Pearl Buckler" "Desert Buckler" "Runed Focus" "Whorl Focus" "Tasalian Focus"
-        SetTextColor 237 201 128
-        SetBorderColor 255 255 0
-        SetFontSize 42
-        DisableDropSoundIfAlertSound
+    #L2 5.6 有價基底
+        Show #有價基底 攻城十字弓|蒼涼十字弓|雙子之弓|雜響權杖|徵兆權杖
+            Rarity <= Magic
+            BaseType "Siege Crossbow" "Desolate Crossbow" "Gemini Bow" "Rattling Sceptre" "Omen Sceptre"
+            SetTextColor 30 30 30
+            SetBackgroundColor 184 218 242
+            SetBorderColor 255 255 255
+            SetFontSize 41
+            DisableDropSoundIfAlertSound
 
-    Show #高階金裝 
-        Rarity = Rare
-        BaseType "Attuned Wand" "Siphoning Wand" "Galvanic Wand" "Rattling Sceptre" "Omen Sceptre" "Fortified Hammer" "Strife Pick" "Molten Hammer" "Ruination Maul" "Fanatic Greathammer" "Ironwood Greathammer" "Gemini Bow" "Siege Crossbow" "Gemini Crossbow" "Primed Quiver" "Sacred Focus" "Kamasan Tiara" "Vile Robe" "Sandsworn Sandals" "Vaal Gloves" "Vaal Crest Shield" "Vaal Tower Shield" "Paragon Greathelm" "Soldier Cuirass" "Vaal Greaves" "Vaal Mitts" "Trapper Hood" "Slipstrike Vest" "Dragonscale Boots" "Barbed Bracers" "Rambler Jacket" "Conjurer Mantle" "Death Mantle" "Dastard Armour" "Shrouded Mail" "Ornate Plate" "Sacramental Robe" "Flowing Raiment"
-        SetTextColor 237 201 128
-        SetBorderColor 255 255 0
-        SetFontSize 42
-        DisableDropSoundIfAlertSound
+        #end
 
-    Show #高階金裝(長鋒) 海玻璃長鋒|潛獵長鋒|翱翔長鋒|宏偉長鋒|尖刺長鋒|
-        Rarity = Rare
-        BaseType "Seaglass Spear" "Stalking Spear" "Flying Spear" "Grand Spear" "Spiked Spear"
-        SetTextColor 237 201 128
-        SetBorderColor 255 255 0
-        SetFontSize 42
-        DisableDropSoundIfAlertSound
+    #L2 5.7 飾品
+        Show #印鈔 - 終局 項鍊基底 蒼藍項鍊|帝金護身符|日耀項鍊|赤紅項鍊|琥珀護身符|翠玉護身符|海玉護身符|海玉護身符|海玉護身符|恆星項鍊|珠光項鍊
+            Rarity <= Rare
+            BaseType "Azure Amulet" "Gold Amulet" "Solar Amulet" "Crimson Amulet" "Amber Amulet" "Jade Amulet" "Lapis Amulet" "Lunar Amulet" "Bloodstone Amulet" "Stellar Amulet" "Pearlescent Amulet"
+            SetBorderColor 200 200 210
+            SetFontSize 39
+            DisableDropSoundIfAlertSound
 
-    Show #高階金裝(輕盾) 遠古輕盾
-        Rarity = Rare
-        BaseType "Ancient Buckler"
-        SetTextColor 237 201 128
-        SetBorderColor 255 255 0
-        SetFontSize 42
-        DisableDropSoundIfAlertSound
+        Show #印鈔 - 終局 戒指基底 鍛鐵戒指|青金石戒指|紅玉戒指|藍玉戒指|黃玉戒指|紫晶戒指|綠寶石戒指|珍珠戒指|三相戒指|金光戒指|潛能之戒
+            Rarity <= Rare
+            BaseType "Iron Ring" "Lazuli Ring" "Ruby Ring" "Sapphire Ring" "Topaz Ring" "Amethyst Ring" "Emerald Ring" "Pearl Ring" "Prismatic Ring" "Gold Ring" "Unset Ring"
+            SetBorderColor 200 200 210
+            SetFontSize 39
+            DisableDropSoundIfAlertSound
+            
+        Show #印鈔 - 終局 腰帶 金羽腰帶|板甲腰帶|精良腰帶|實用腰帶|重革腰帶
+            Rarity <= Rare
+            BaseType "Golden Obi" "Plate Belt" "Fine Belt" "Utility Belt" "Heavy Belt"
+            SetBorderColor 200 200 210
+            SetFontSize 39
+            DisableDropSoundIfAlertSound
 
-    Show #印鈔 - 終局 項鍊基底 蒼藍項鍊|帝金護身符|日耀項鍊|赤紅項鍊|琥珀護身符|翠玉護身符|海玉護身符|海玉護身符|海玉護身符|恆星項鍊
-        BaseType "Azure Amulet" "Gold Amulet" "Solar Amulet" "Crimson Amulet" "Amber Amulet" "Jade Amulet" "Lapis Amulet" "Lunar Amulet" "Bloodstone Amulet" "Stellar Amulet"
-        SetBorderColor 222 72 212
-        Rarity < Rare
-        SetFontSize 35
-        DisableDropSoundIfAlertSound
+        Show #印鈔 - 稀有護身符
+            Rarity = Rare
+            Class "Amulets"
+            DisableDropSoundIfAlertSound
 
-    Show #印鈔 - 終局 戒指基底 鍛鐵戒指|青金石戒指|紅玉戒指|藍玉戒指|黃玉戒指|紫晶戒指|綠寶石戒指|珍珠戒指|三相戒指|金光戒指|潛能之戒
-        BaseType "Iron Ring" "Lazuli Ring" "Ruby Ring" "Sapphire Ring" "Topaz Ring" "Amethyst Ring" "Emerald Ring" "Pearl Ring" "Prismatic Ring" "Gold Ring" "Unset Ring"
-        SetBorderColor 222 72 212
-        Rarity < Rare
-        SetFontSize 35
-        DisableDropSoundIfAlertSound
-        
-    Show #印鈔 - 終局 腰帶 金羽腰帶|板甲腰帶|精良腰帶|實用腰帶|重革腰帶
-        BaseType "Golden Obi" "Plate Belt" "Fine Belt" "Utility Belt" "Heavy Belt"
-        SetBorderColor 222 72 212
-        Rarity < Rare
-        SetFontSize 35
-        DisableDropSoundIfAlertSound
+        #end
 
-    Show #印鈔 - 終局 法術基底 調和法杖|虹吸法杖|電能法杖
-        BaseType "Attuned Wand" "Siphoning Wand" "Galvanic Wand"
-        SetBorderColor 27 103 255
-        Rarity < Rare
-        SetFontSize 35
-        DisableDropSoundIfAlertSound
+    #L2 5.8 高等特殊基底
+        Show #印鈔 - 高等特殊敏智基底
+            Rarity <= Rare
+            BaseType "Austere Garb" "Falconer's Jacket" "Rambler Jacket"
+            ItemLevel >= 82
+            SetBackgroundColor 0 50 50
+            SetBorderColor 30 150 150
+            SetFontSize 39
+            DisableDropSoundIfAlertSound
 
-    Show #印鈔 - 終局 召喚基底 調和法杖|虹吸法杖|電能法杖|雜響權杖|徵兆權杖
-        BaseType  "Rattling Sceptre" "Omen Sceptre"
-        SetBorderColor 84 211 143
-        Rarity < Rare
-        SetFontSize 35
-        DisableDropSoundIfAlertSound
+        Show #印鈔 - 高等特殊力智基底
+            Rarity <= Rare
+            BaseType "Seastorm Mantle" "Death Mantle" "Conjurer Mantle"
+            ItemLevel >= 82
+            SetBackgroundColor 50 0 50
+            SetBorderColor 160 90 180
+            SetFontSize 39
+            DisableDropSoundIfAlertSound
 
-    Show #印鈔 - 終局 物理單手錘基底 專家建造錘|專家戰鎬|專家鍛造錘
-        BaseType "Fortified Hammer" "Strife Pick" "Molten Hammer"
-        SetBorderColor 243 91 50
-        Rarity < Rare
-        SetFontSize 35
-        DisableDropSoundIfAlertSound
+        Show #印鈔 - 高等特殊力敏基底
+            Rarity <= Rare
+            BaseType "Thane Mail" "Shrouded Mail" "Dastard Armour"
+            ItemLevel >= 82
+            SetBackgroundColor 50 50 0
+            SetBorderColor 180 140 40
+            SetFontSize 39
+            DisableDropSoundIfAlertSound
+            
+        Show #印鈔 - 高等特殊智慧基底
+            Rarity <= Rare
+            BaseType "Feathered Raiment" "Sacramental Robe" "Flowing Raiment"
+            ItemLevel >= 82
+            SetBackgroundColor 0 0 50
+            SetBorderColor 27 103 255
+            SetFontSize 39
+            DisableDropSoundIfAlertSound
 
-    Show #印鈔 - 終局 物理雙手錘基底 專家崩毀重錘|專家教徒巨錘|專家橡木巨錘
-        BaseType "Ruination Maul" "Fanatic Greathammer" "Ironwood Greathammer"
-        SetBorderColor 243 91 50
-        Rarity < Rare
-        SetFontSize 35
-        DisableDropSoundIfAlertSound
+        Show #印鈔 - 高等特殊敏捷基底
+            Rarity <= Rare
+            BaseType "Corsair Coat" "Wyrmscale Coat" "Swiftstalker Coat"
+            ItemLevel >= 82
+            SetBackgroundColor 0 50 0
+            SetBorderColor 55 143 8
+            SetFontSize 39
+            DisableDropSoundIfAlertSound
 
-    Show #印鈔 - 終局 物理弓基底 專家雙弦弓
-        BaseType "Gemini Bow"
-        SetBorderColor 55 143 8
-        Rarity < Rare
-        SetFontSize 35
-        DisableDropSoundIfAlertSound
+        Show #印鈔 - 高等特殊力量基底
+            Rarity <= Rare
+            BaseType "Warlord Cuirass" "Utzaal Cuirass" "Ornate Plate"
+            ItemLevel >= 82
+            SetBackgroundColor 50 0 0
+            SetBorderColor 243 91 50
+            SetFontSize 39
+            DisableDropSoundIfAlertSound
 
-    Show #印鈔 - 終局 物理十字弓基底 專家轟炸十字弓|專家成對十字弓
-        BaseType "Siege Crossbow" "Gemini Crossbow"
-        SetBorderColor 55 143 8
-        Rarity < Rare
-        SetFontSize 35
-        DisableDropSoundIfAlertSound
+        #end
 
-    Show #印鈔 - 終局 長鋒基底 海玻璃長鋒|潛獵長鋒|翱翔長鋒|宏偉長鋒|尖刺長鋒|
-        BaseType "Seaglass Spear" "Stalking Spear" "Flying Spear" "Grand Spear" "Spiked Spear"
-        SetBorderColor 55 143 8
-        Rarity < Rare
-        SetFontSize 35
-        DisableDropSoundIfAlertSound
+    #L2 5.9 高等高級基底
+        Show #印鈔 - 高等高級敏智基底
+            Rarity <= Rare
+            BaseType "Secured Wraps" "Daggerfoot Shoes" "Sleek Jacket" "Grinning Mask"
+            ItemLevel >= 82
+            SetBackgroundColor 0 50 50
+            SetBorderColor 0 155 155 255
+            SetFontSize 39
+            DisableDropSoundIfAlertSound
 
-    Show #印鈔 - 終局 遠古輕盾
-        BaseType "Ancient Buckler"
-        SetBorderColor 55 143 8
-        Rarity < Rare
-        SetFontSize 35
-        DisableDropSoundIfAlertSound
+        Show #印鈔 - 高等高級力智基底
+            Rarity <= Rare
+            BaseType "Adherent Cuffs" "Cryptic Leggings" "Wolfskin Mantle" "Cryptic Crown"
+            ItemLevel >= 82
+            SetBackgroundColor 50 0 50
+            SetBorderColor 155 0 155 255
+            SetFontSize 39
+            DisableDropSoundIfAlertSound
 
-    Show #印鈔 - 終局 物理箭袋基底 灌注箭袋
-        BaseType "Primed Quiver"
-        SetBorderColor 55 143 8
-        Rarity < Rare
-        SetFontSize 35
-        DisableDropSoundIfAlertSound
+        Show #印鈔 - 高等高級力敏基底
+            Rarity <= Rare
+            BaseType "Blacksteel Gauntlets" "Blacksteel Sabatons" "Death Mail" "Gladiatorial Helm"
+            ItemLevel >= 82
+            SetBackgroundColor 50 50 0
+            SetBorderColor 155 155 0 255
+            SetFontSize 39
+            DisableDropSoundIfAlertSound
+            
+        Show #印鈔 - 高等高級智慧基底
+            Rarity <= Rare
+            BaseType "Sirenscale Gloves" "Sekhema Sandals" "Vile Robe" "Ancestral Tiara"
+            ItemLevel >= 82
+            SetBackgroundColor 0 0 50
+            SetBorderColor 27 103 255
+            SetFontSize 39
+            DisableDropSoundIfAlertSound
 
-    Show #印鈔 - 終局 盾牌智力基底 專家羽毛法器
-        BaseType "Sacred Focus"
-        SetBorderColor 27 103 255
-        Rarity < Rare
-        SetFontSize 35
-        DisableDropSoundIfAlertSound
+        Show #印鈔 - 高等高級敏捷基底
+            Rarity <= Rare
+            BaseType "Polished Bracers" "Drakeskin Boots" "Tasalian Greaves" "Slipstrike Vest" "Freebooter Cap"
+            ItemLevel >= 82
+            SetBackgroundColor 0 50 0
+            SetBorderColor 55 143 8
+            SetFontSize 39
+            DisableDropSoundIfAlertSound
 
-    Show #印鈔 - 終局 頭盔智力基底 專家羽毛頭冠
-        BaseType "Kamasan Tiara"
-        SetBorderColor 27 103 255
-        Rarity < Rare
-        SetFontSize 35
-        DisableDropSoundIfAlertSound
+        Show #印鈔 - 高等高級力量基底
+            Rarity <= Rare
+            BaseType "Massive Mitts" "Soldier Cuirass" "Imperial Greathelm"
+            ItemLevel >= 82
+            SetBackgroundColor 50 0 0
+            SetBorderColor 243 91 50
+            SetFontSize 39
+            DisableDropSoundIfAlertSound
 
-    Show #印鈔 - 終局 盔甲智力基底 專家咒術師長袍
-        BaseType "Vile Robe"
-        SetBorderColor 27 103 255
-        Rarity < Rare
-        SetFontSize 35
-        DisableDropSoundIfAlertSound
+        #end
 
-    Show #印鈔 - 終局 鞋子智力基底 專家羽毛便鞋
-        BaseType "Sandsworn Sandals"
-        SetBorderColor 27 103 255
-        Rarity < Rare
-        SetFontSize 35
-        DisableDropSoundIfAlertSound
-        
-    Show #印鈔 - 終局 手套智力基底 專家精妙手套
-        BaseType "Vaal Gloves"
-        SetBorderColor 27 103 255
-        Rarity < Rare
-        SetFontSize 35
-        DisableDropSoundIfAlertSound
+    #L2 5.10 特殊基底
+        Show #印鈔 - 終局 特殊敏智基底
+            Rarity <= Rare
+            BaseType "Austere Garb" "Falconer's Jacket" "Rambler Jacket"
+            SetBorderColor 0 155 155 255
+            SetFontSize 35
+            DisableDropSoundIfAlertSound
 
-    Show #印鈔 - 終局 盾牌力智基底 專家預兆紋章盾
-        BaseType "Vaal Crest Shield"
-        SetBorderColor 243 91 50
-        Rarity < Rare
-        SetFontSize 35
-        DisableDropSoundIfAlertSound
+        Show #印鈔 - 終局 特殊力智基底
+            Rarity <= Rare
+            BaseType "Seastorm Mantle" "Death Mantle" "Conjurer Mantle"
+            SetBorderColor 155 0 155 255
+            SetFontSize 35
+            DisableDropSoundIfAlertSound
 
-    Show #印鈔 - 終局 盾牌力量基底 專家岩石塔盾
-        BaseType "Vaal Tower Shield"
-        SetBorderColor 243 91 50
-        Rarity < Rare
-        SetFontSize 35
-        DisableDropSoundIfAlertSound
+        Show #印鈔 - 終局 特殊力敏基底
+            Rarity <= Rare
+            BaseType "Thane Mail" "Shrouded Mail" "Dastard Armour"
+            SetBorderColor 155 155 0 255
+            SetFontSize 35
+            DisableDropSoundIfAlertSound
+            
+        Show #印鈔 - 終局 特殊智慧基底
+            Rarity <= Rare
+            BaseType "Feathered Raiment" "Sacramental Robe" "Flowing Raiment"
+            SetBorderColor 27 103 255
+            SetFontSize 35
+            DisableDropSoundIfAlertSound
 
-    Show #印鈔 - 終局 頭盔力量基底 專家菁英巨盔
-        BaseType "Paragon Greathelm"
-        SetBorderColor 243 91 50
-        Rarity < Rare
-        SetFontSize 35
-        DisableDropSoundIfAlertSound
+        Show #印鈔 - 終局 特殊敏捷基底
+            Rarity <= Rare
+            BaseType "Corsair Coat" "Wyrmscale Coat" "Swiftstalker Coat"
+            SetBorderColor 55 143 8
+            SetFontSize 35
+            DisableDropSoundIfAlertSound
 
-    Show #印鈔 - 終局 盔甲力量基底 專家鍛鐵胸甲
-        BaseType "Soldier Cuirass"
-        SetBorderColor 243 91 50
-        Rarity < Rare
-        SetFontSize 35
-        DisableDropSoundIfAlertSound
+        Show #印鈔 - 終局 特殊力量基底
+            Rarity <= Rare
+            BaseType "Warlord Cuirass" "Utzaal Cuirass" "Ornate Plate"
+            SetBorderColor 243 91 50
+            SetFontSize 35
+            DisableDropSoundIfAlertSound
 
-    Show #印鈔 - 終局 鞋子力量基底 專家岩石脛甲
-        BaseType "Vaal Greaves"
-        SetBorderColor 243 91 50
-        Rarity < Rare
-        SetFontSize 35
-        DisableDropSoundIfAlertSound
+        #end
 
-    Show #印鈔 - 終局 手套力量基底 專家鑄模長手套
-        BaseType "Vaal Mitts"
-        SetBorderColor 243 91 50
-        Rarity < Rare
-        SetFontSize 35
-        DisableDropSoundIfAlertSound
+    #L2 5.11 高級基底
+        Show #印鈔 - 終局 高級敏智基底
+            Rarity <= Rare
+            BaseType "Secured Wraps" "Daggerfoot Shoes" "Sleek Jacket" "Grinning Mask"
+            SetBorderColor 0 155 155 255
+            SetFontSize 35
+            DisableDropSoundIfAlertSound
 
-    Show #印鈔 - 終局 頭盔敏捷基底 專家獵者之兜
-        BaseType "Trapper Hood"
-        SetBorderColor 55 143 8
-        Rarity < Rare
-        SetFontSize 35
-        DisableDropSoundIfAlertSound
+        Show #印鈔 - 終局 高級力智基底
+            Rarity <= Rare
+            BaseType "Adherent Cuffs" "Cryptic Leggings" "Wolfskin Mantle" "Cryptic Crown"
+            SetBorderColor 155 0 155 255
+            SetFontSize 35
+            DisableDropSoundIfAlertSound
 
-    Show #印鈔 - 終局 盔甲敏捷基底 專家鑲釘背心
-        BaseType "Slipstrike Vest"
-        SetBorderColor 55 143 8
-        Rarity < Rare
-        SetFontSize 35
-        DisableDropSoundIfAlertSound
+        Show #印鈔 - 終局 高級力敏基底
+            Rarity <= Rare
+            BaseType "Blacksteel Gauntlets" "Blacksteel Sabatons" "Death Mail" "Gladiatorial Helm"
+            SetBorderColor 155 155 0 255
+            SetFontSize 35
+            DisableDropSoundIfAlertSound
+            
+        Show #印鈔 - 終局 高級智慧基底
+            Rarity <= Rare
+            BaseType "Sirenscale Gloves" "Sekhema Sandals" "Vile Robe" "Ancestral Tiara"
+            SetBorderColor 27 103 255
+            SetFontSize 35
+            DisableDropSoundIfAlertSound
 
-    Show #印鈔 - 終局 鞋子敏捷基底 專家蜥蜴鱗長靴
-        BaseType "Dragonscale Boots"
-        SetBorderColor 55 143 8
-        Rarity < Rare
-        SetFontSize 35
-        DisableDropSoundIfAlertSound
+        Show #印鈔 - 終局 高級敏捷基底
+            Rarity <= Rare
+            BaseType "Polished Bracers" "Drakeskin Boots" "Tasalian Greaves" "Slipstrike Vest" "Freebooter Cap"
+            SetBorderColor 55 143 8
+            SetFontSize 35
+            DisableDropSoundIfAlertSound
 
-    Show #印鈔 - 終局 手套敏捷基底 專家棘刺護腕
-        BaseType "Barbed Bracers"
-        SetBorderColor 55 143 8
-        Rarity < Rare
-        SetFontSize 35
-        DisableDropSoundIfAlertSound
+        Show #印鈔 - 終局 高級力量基底
+            Rarity <= Rare
+            BaseType "Massive Mitts" "Soldier Cuirass" "Imperial Greathelm"
+            SetBorderColor 243 91 50
+            SetFontSize 35
+            DisableDropSoundIfAlertSound
 
-    Show #印鈔 - 終局 盔甲特殊基底 專家旅人外衣|專家薩滿披肩|專家獻祭披肩|專家盜賊護甲|專家斗篷鎖甲|專家堅鋼鎧甲|專家祭壇長袍|專家凱斯之衣
-        BaseType "Rambler Jacket" "Conjurer Mantle" "Death Mantle" "Dastard Armour" "Shrouded Mail" "Ornate Plate" "Sacramental Robe" "Flowing Raiment"
-        SetBorderColor 84 211 143
-        Rarity < Rare
-        SetFontSize 35
-        DisableDropSoundIfAlertSound
+        #end
+
+    #L2 5.12 次級基底
+        Hide #印鈔 - 終局 - 速刷 次級敏智基底
+            Rarity <= Rare
+            BaseType "Vaal Wraps" "Quickslip Shoes" "Soaring Mask"
+            SetBorderColor 0 155 155 255
+            SetFontSize 35
+            DisableDropSoundIfAlertSound
+
+        Hide #印鈔 - 終局 - 速刷 次級力智基底
+            Rarity <= Rare
+            BaseType "Gleaming Cuffs" "Warlock Leggings" "Divine Crown"
+            SetBorderColor 155 0 155 255
+            SetFontSize 35
+            DisableDropSoundIfAlertSound
+
+        Hide #印鈔 - 終局 - 速刷 次級力敏基底
+            Rarity <= Rare
+            BaseType "Cultist Gauntlets" "Fortress Sabatons" "Champion Helm"
+            SetBorderColor 155 155 0 255
+            SetFontSize 35
+            DisableDropSoundIfAlertSound
+            
+        Hide #印鈔 - 終局 - 速刷 次級智慧基底
+            Rarity <= Rare
+            BaseType "Vaal Gloves" "Sandsworn Sandals" "Kamasan Tiara"
+            SetBorderColor 27 103 255
+            SetFontSize 35
+            DisableDropSoundIfAlertSound
+
+        Hide #印鈔 - 終局 - 速刷 次級敏捷基底
+            Rarity <= Rare
+            BaseType "Barbed Bracers" "Dragonscale Boots" "Trapper Hood"
+            SetBorderColor 55 143 8
+            SetFontSize 35
+            DisableDropSoundIfAlertSound
+
+        Hide #印鈔 - 終局 - 速刷 次級力量基底
+            Rarity <= Rare
+            BaseType "Vaal Mitts" "Paragon Greathelm" "Vaal Greaves"
+            SetBorderColor 243 91 50
+            SetFontSize 35
+            DisableDropSoundIfAlertSound
+
+        #end
+
+    #L2 5.13 高等副手基底
+        Show #高階金裝(輕盾) 遠古輕盾|Desert Buckler
+            Rarity <= Rare
+            BaseType "Ancient Buckler" "Desert Buckler"
+            ItemLevel >= 82
+            SetBorderColor 55 143 8
+            SetFontSize 39
+            DisableDropSoundIfAlertSound
+
+        Show #印鈔 - 物理箭袋基底 灌注箭袋
+            Rarity <= Rare
+            BaseType "Primed Quiver"
+            ItemLevel >= 82
+            SetBorderColor 55 143 8
+            SetFontSize 39
+            DisableDropSoundIfAlertSound
+
+        Show #印鈔 - 盾牌智力基底 神聖法器
+            Rarity <= Rare
+            BaseType "Sacred Focus"
+            ItemLevel >= 82
+            SetBorderColor 27 103 255
+            SetFontSize 39
+            DisableDropSoundIfAlertSound
+            
+        Show #印鈔 - 盾牌力量基底 瓦爾塔盾|Tawhoan Tower Shield
+            Rarity <= Rare
+            BaseType "Vaal Tower Shield" "Tawhoan Tower Shield"
+            ItemLevel >= 82
+            SetBorderColor 243 91 50
+            SetFontSize 39
+            DisableDropSoundIfAlertSound
+
+        Show #印鈔 - 盾牌力智基底 瓦爾紋章盾|Blacksteel Crest Shield
+            Rarity <= Rare
+            BaseType "Vaal Crest Shield" "Blacksteel Crest Shield"
+            ItemLevel >= 82
+            SetBorderColor 160 90 180
+            SetFontSize 39
+            DisableDropSoundIfAlertSound
+
+        Show #印鈔 - 盾牌力敏基底 翱翔圓盾|Golden Targe
+            Rarity <= Rare
+            BaseType "Soaring Targe" "Golden Targe"
+            ItemLevel >= 82
+            SetBorderColor 180 140 40
+            SetFontSize 39
+            DisableDropSoundIfAlertSound
+
+        #end
+
+    #L2 5.14 副手基底
+        Show #高階金裝(輕盾) 遠古輕盾|Desert Buckler
+            Rarity <= Rare
+            BaseType "Ancient Buckler" "Desert Buckler"
+            SetBorderColor 55 143 8
+            SetFontSize 35
+            DisableDropSoundIfAlertSound
+
+        Show #印鈔 - 終局 物理箭袋基底 灌注箭袋
+            BaseType "Primed Quiver"
+            SetBorderColor 55 143 8
+            Rarity <= Rare
+            SetFontSize 35
+            DisableDropSoundIfAlertSound
+
+        Show #印鈔 - 終局 盾牌智力基底 神聖法器
+            BaseType "Sacred Focus"
+            SetBorderColor 27 103 255
+            Rarity <= Rare
+            SetFontSize 35
+            DisableDropSoundIfAlertSound
+            
+        Show #印鈔 - 終局 盾牌力量基底 瓦爾塔盾|Tawhoan Tower Shield
+            BaseType "Vaal Tower Shield" "Tawhoan Tower Shield"
+            SetBorderColor 243 91 50
+            Rarity <= Rare
+            SetFontSize 35
+            DisableDropSoundIfAlertSound
+
+        Show #印鈔 - 終局 盾牌力智基底 瓦爾紋章盾|Blacksteel Crest Shield
+            BaseType "Vaal Crest Shield" "Blacksteel Crest Shield"
+            SetBorderColor 160 90 180
+            Rarity <= Rare
+            SetFontSize 35
+            DisableDropSoundIfAlertSound
+
+        Show #印鈔 - 終局 盾牌力敏基底 翱翔圓盾|Golden Targe
+            BaseType "Soaring Targe" "Golden Targe"
+            SetBorderColor 180 140 40
+            Rarity <= Rare
+            SetFontSize 35
+            DisableDropSoundIfAlertSound
+
+        #end
+    #L2 5.16 高等武器基底
+        Show #印鈔 - 權杖基底 雜響權杖|徵兆權杖|暴怒權杖
+            Rarity <= Rare
+            BaseType "Rattling Sceptre" "Omen Sceptre" "Wrath Sceptre"
+            ItemLevel >= 82
+            SetBorderColor 160 90 180
+            SetFontSize 39
+            DisableDropSoundIfAlertSound
+
+        Show #印鈔 - 法杖基底 調和法杖|虹吸法杖|電能法杖|單挑法杖
+            Rarity <= Rare
+            BaseType "Attuned Wand" "Siphoning Wand" "Galvanic Wand" "Dueling Wand"
+            ItemLevel >= 81
+            SetBorderColor 27 103 255
+            SetFontSize 39
+            DisableDropSoundIfAlertSound
+
+        Show #印鈔 - 長杖基底 鳴響長杖|死神長杖|咆哮長杖|牧師長杖|麻木長杖
+            Rarity <= Rare
+            BaseType "Chiming Staff" "Reaping Staff" "Roaring Staff" "Sanctified Staff" "Paralysing Staff"
+            ItemLevel >= 81
+            SetBorderColor 27 103 255
+            SetFontSize 39
+            DisableDropSoundIfAlertSound
+
+        Show #印鈔 - 物理單手錘基底 強化之錘|鬥爭鎬|熔火之錘|Akoyan Club
+            Rarity <= Rare
+            BaseType "Fortified Hammer" "Strife Pick" "Molten Hammer" "Akoyan Club"
+            ItemLevel >= 82
+            SetBorderColor 243 91 50
+            SetFontSize 39
+            DisableDropSoundIfAlertSound
+
+        Show #印鈔 - 物理雙手錘基底 毀滅重錘|盲信巨錘|鐵木巨錘|Tawhoan Greatclub
+            Rarity <= Rare
+            BaseType "Ruination Maul" "Fanatic Greathammer" "Ironwood Greathammer" "Tawhoan Greatclub"
+            ItemLevel >= 82
+            SetBorderColor 243 91 50
+            SetFontSize 39
+            DisableDropSoundIfAlertSound
+
+        Show #印鈔 - 長鋒基底 海玻璃長鋒|潛獵長鋒|翱翔長鋒|宏偉長鋒|尖刺長鋒|Akoyan Spear
+            Rarity <= Rare
+            BaseType "Seaglass Spear" "Stalking Spear" "Flying Spear" "Grand Spear" "Spiked Spear" "Akoyan Spear"
+            ItemLevel >= 82
+            SetBorderColor 55 143 8
+            DisableDropSoundIfAlertSound
+
+        Show #印鈔 - 物理弓基底 雙子之弓|Obliterator Bow
+            Rarity <= Rare
+            BaseType "Gemini Bow" "Obliterator Bow"
+            ItemLevel >= 82
+            SetBorderColor 55 143 8
+            SetFontSize 39
+            DisableDropSoundIfAlertSound
+
+        Show #印鈔 - 物理十字弓基底 攻城十字弓|雙子十字弓|蒼涼十字弓|Elegant Crossbow
+            Rarity <= Rare
+            BaseType "Siege Crossbow" "Gemini Crossbow" "Desolate Crossbow" "Elegant Crossbow"
+            ItemLevel >= 82
+            SetBorderColor 180 140 40
+            SetFontSize 39
+            DisableDropSoundIfAlertSound
+
+        #end
+
+    #L2 5.16 武器基底
+        Show #印鈔 - 終局 權杖基底 雜響權杖|徵兆權杖|暴怒權杖
+            Rarity <= Rare
+            BaseType  "Rattling Sceptre" "Omen Sceptre" "Wrath Sceptre"
+            SetBorderColor 160 90 180
+            SetFontSize 35
+            DisableDropSoundIfAlertSound
+
+        Show #印鈔 - 終局 法杖基底 調和法杖|虹吸法杖|電能法杖|單挑法杖
+            Rarity <= Rare
+            BaseType "Attuned Wand" "Siphoning Wand" "Galvanic Wand" "Dueling Wand"
+            SetBorderColor 27 103 255
+            SetFontSize 35
+            DisableDropSoundIfAlertSound
+
+        Show #印鈔 - 終局 長杖基底 鳴響長杖|死神長杖|咆哮長杖|牧師長杖|麻木長杖
+            Rarity <= Rare
+            BaseType "Chiming Staff" "Reaping Staff" "Roaring Staff" "Sanctified Staff" "Paralysing Staff"
+            SetBorderColor 27 103 255
+            SetFontSize 35
+            DisableDropSoundIfAlertSound
+
+        Show #印鈔 - 終局 物理單手錘基底 強化之錘|鬥爭鎬|熔火之錘|Akoyan Club
+            Rarity <= Rare
+            BaseType "Fortified Hammer" "Strife Pick" "Molten Hammer" "Akoyan Club"
+            SetBorderColor 243 91 50
+            SetFontSize 35
+            DisableDropSoundIfAlertSound
+
+        Show #印鈔 - 終局 物理雙手錘基底 毀滅重錘|盲信巨錘|鐵木巨錘|Tawhoan Greatclub
+            Rarity <= Rare
+            BaseType "Ruination Maul" "Fanatic Greathammer" "Ironwood Greathammer" "Tawhoan Greatclub"
+            SetBorderColor 243 91 50
+            SetFontSize 35
+            DisableDropSoundIfAlertSound
+
+        Show #印鈔 - 終局 長鋒基底 海玻璃長鋒|潛獵長鋒|翱翔長鋒|宏偉長鋒|尖刺長鋒|Akoyan Spear
+            Rarity <= Rare
+            BaseType "Seaglass Spear" "Stalking Spear" "Flying Spear" "Grand Spear" "Spiked Spear" "Akoyan Spear"
+            SetBorderColor 55 143 8
+            DisableDropSoundIfAlertSound
+
+        Show #印鈔 - 終局 物理弓基底 雙子之弓|Obliterator Bow
+            Rarity <= Rare
+            BaseType "Gemini Bow" "Obliterator Bow"
+            SetBorderColor 55 143 8
+            SetFontSize 35
+            DisableDropSoundIfAlertSound
+
+        Show #印鈔 - 終局 物理十字弓基底 攻城十字弓|雙子十字弓|蒼涼十字弓|Elegant Crossbow
+            Rarity <= Rare
+            BaseType "Siege Crossbow" "Gemini Crossbow" "Desolate Crossbow" "Elegant Crossbow"
+            SetBorderColor 180 140 40
+            SetFontSize 35
+            DisableDropSoundIfAlertSound
 
     #end
 
@@ -1627,9 +1985,60 @@
 
     #end
 #L1 7 藥劑
-    Show #顯示高品質終極魔力藥劑
+    Show #顯示高品質終極魔力藥劑(26~30)
         BaseType "Ultimate Mana Flask"
-        Quality > 0
+        Quality > 25
+        Class "Mana Flask"
+        SetTextColor 0 0 0
+        SetBackgroundColor 30 144 255
+        SetBorderColor 184 218 242
+        SetFontSize 40
+        CustomAlertSoundOptional "Diablo2\6.mp3" 100
+        CustomAlertSoundOptional "Lelouch\Lelouch-水滴.mp3" 300
+        MinimapIcon 0 Blue Raindrop
+        DisableDropSoundIfAlertSound
+
+    Show #顯示高品質終極生命藥劑(26~30)
+        BaseType "Ultimate Life Flask"
+        Quality > 25
+        Class "Life Flask"
+        SetTextColor 0 0 0
+        SetBackgroundColor 150 0 0
+        SetBorderColor 184 218 242
+        SetFontSize 40
+        CustomAlertSoundOptional "Diablo2\5.mp3" 100
+        CustomAlertSoundOptional "Lelouch\Lelouch-水滴.mp3" 300
+        MinimapIcon 0 Red Raindrop
+        DisableDropSoundIfAlertSound
+
+    Show #印鈔 - 終局 - 顯示高品質終極魔力藥劑(21~25)
+        BaseType "Ultimate Mana Flask"
+        Quality > 20
+        Class "Mana Flask"
+        SetTextColor 0 0 0
+        SetBackgroundColor 30 144 255
+        SetBorderColor 184 218 242
+        SetFontSize 40
+        CustomAlertSoundOptional "Diablo2\6.mp3" 100
+        CustomAlertSoundOptional "Lelouch\Lelouch-水滴.mp3" 300
+        MinimapIcon 1 Blue Raindrop
+        DisableDropSoundIfAlertSound
+
+    Show #印鈔 - 終局 - 顯示高品質終極生命藥劑(21~25)
+        BaseType "Ultimate Life Flask"
+        Quality > 20
+        Class "Life Flask"
+        SetTextColor 0 0 0
+        SetBackgroundColor 150 0 0
+        SetBorderColor 184 218 242
+        SetFontSize 40
+        CustomAlertSoundOptional "Diablo2\5.mp3" 100
+        CustomAlertSoundOptional "Lelouch\Lelouch-水滴.mp3" 300
+        MinimapIcon 1 Red Raindrop
+        DisableDropSoundIfAlertSound
+
+    Hide #印鈔 - 終局 - 速刷 終極魔力藥劑
+        BaseType "Ultimate Mana Flask"
         Class "Mana Flask"
         SetTextColor 30 144 255
         SetBackgroundColor 0 0 0
@@ -1640,9 +2049,8 @@
         MinimapIcon 2 Blue Raindrop
         DisableDropSoundIfAlertSound
 
-    Show #顯示高品質終極生命藥劑
+    Hide #印鈔 - 終局 - 速刷 終極生命藥劑
         BaseType "Ultimate Life Flask"
-        Quality > 0
         Class "Life Flask"
         SetTextColor 150 0 0
         SetBackgroundColor 0 0 0
@@ -1826,9 +2234,10 @@
         PlayEffect Brown
         DisableDropSoundIfAlertSound
 
-    Show #印鈔 - 終局 稀有裝
+    Hide #印鈔 - 終局 - 速刷 稀有裝
         Rarity == Rare
-        Class "Claws" "Daggers" "Wands" "One Hand Swords" "One Hand Axes" "One Hand Maces" "Sceptres" "Spears" "Flails" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Quarterstaves" "Crossbows" "Traps" "Fishing Rods" "Quivers" "Shields" "Foci" "Gloves" "Boots" "Body Armours" "Helmets" "Buckler"
+        Class "Claws" "Daggers" "Wands" "One Hand Swords" "One Hand Axes" "One Hand Maces" "Sceptres" "Spears" "Flails" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Quarterstaves" "Crossbows" "Traps" "Fishing Rods" "Quivers" "Shields" "Foci" "Gloves" "Boots" "Body Armours" "Helmets" "Buckler" "Amulets" "Rings" "Belts"
+        SetFontSize 35
         DisableDropSoundIfAlertSound
 
     Hide #隱藏高等白藍裝
