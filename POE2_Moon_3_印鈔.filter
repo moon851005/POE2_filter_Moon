@@ -149,6 +149,7 @@ Import "自定義過濾/自定義配置.filter" Optional
         SetFontSize 43
         PlayAlertSoundPositional ShGeneral 300
         CustomAlertSoundOptional "bubu\bubu-加油.mp3" 200
+        CustomAlertSoundOptional "Diablo2\28.mp3" 200
         CustomAlertSoundOptional "Lelouch\Lelouch-魯路修_事嗎.mp3" 300
         DisableDropSoundIfAlertSound
 
@@ -161,6 +162,7 @@ Import "自定義過濾/自定義配置.filter" Optional
         SetFontSize 43
         PlayAlertSoundPositional ShGeneral 300
         CustomAlertSoundOptional "bubu\bubu-加油.mp3" 200
+        CustomAlertSoundOptional "Diablo2\28.mp3" 200
         CustomAlertSoundOptional "Lelouch\Lelouch-魯路修_事嗎.mp3" 300
         DisableDropSoundIfAlertSound
 
@@ -181,6 +183,7 @@ Import "自定義過濾/自定義配置.filter" Optional
         SetFontSize 43
         PlayAlertSoundPositional ShGeneral 300
         CustomAlertSoundOptional "bubu\bubu-加油.mp3" 200
+        CustomAlertSoundOptional "Diablo2\28.mp3" 200
         CustomAlertSoundOptional "Lelouch\Lelouch-魯路修_事嗎.mp3" 300
         DisableDropSoundIfAlertSound
 
@@ -193,6 +196,7 @@ Import "自定義過濾/自定義配置.filter" Optional
         SetFontSize 43
         PlayAlertSoundPositional ShGeneral 300
         CustomAlertSoundOptional "bubu\bubu-加油.mp3" 200
+        CustomAlertSoundOptional "Diablo2\28.mp3" 200
         CustomAlertSoundOptional "Lelouch\Lelouch-魯路修_事嗎.mp3" 300
         DisableDropSoundIfAlertSound
 
