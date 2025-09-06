@@ -205,7 +205,7 @@
         BaseType "Armourer's Scrap"
         SetBackgroundColor 45 0 0
         SetBorderColor 150 0 0
-        SetFontSize 42
+        SetFontSize 45
         MinimapIcon 2 Grey Circle
         DisableDropSoundIfAlertSound
 
@@ -214,7 +214,7 @@
         BaseType "Blacksmith's Whetstone"
         SetBackgroundColor 45 0 0
         SetBorderColor 150 0 0
-        SetFontSize 42
+        SetFontSize 45
         MinimapIcon 2 Grey Circle
         DisableDropSoundIfAlertSound
 
@@ -223,7 +223,7 @@
         BaseType "Arcanist's Etcher"
         SetBackgroundColor 45 0 0
         SetBorderColor 150 0 0
-        SetFontSize 42
+        SetFontSize 45
         MinimapIcon 2 Grey Circle
         DisableDropSoundIfAlertSound
 
@@ -1233,9 +1233,9 @@
             MinimapIcon 0 Yellow UpsideDownHouse
             PlayEffect Yellow Temp
 
-        Show #點機會石基底 夢語之痕|賭神芬多|獵首|均衡之符|黑鋼塔盾
+        Show #點機會石基底 獵首|均衡之符|黑鋼塔盾|限制之令
             Rarity = Normal
-            BaseType "Sapphire Ring" "Gold Ring" "Heavy Belt" "Stellar Amulet" "Blacksteel Tower Shield"
+            BaseType "Heavy Belt" "Stellar Amulet" "Blacksteel Tower Shield" "Viper Cap"
             SetTextColor 255 255 255 220
             SetBackgroundColor 255 114 0 200
             SetBorderColor 255 114 0
@@ -1297,9 +1297,9 @@
         #end
 
     #L2 5.6 有價基底
-        Show #有價基底 攻城十字弓|蒼涼十字弓|雙子之弓|雜響權杖|徵兆權杖|內臟箭袋
+        Show #有價基底 攻城十字弓|蒼涼十字弓|雙子之弓|雜響權杖|徵兆權杖|內臟箭袋|灌注箭袋
             Rarity <= Rare
-            BaseType "Siege Crossbow" "Desolate Crossbow" "Gemini Bow" "Rattling Sceptre" "Omen Sceptre" "Visceral Quiver"
+            BaseType "Siege Crossbow" "Desolate Crossbow" "Gemini Bow" "Rattling Sceptre" "Omen Sceptre" "Visceral Quiver" "Primed Quiver"
             SetTextColor 30 30 30
             SetBackgroundColor 184 218 242
             SetBorderColor 255 255 255
@@ -1456,42 +1456,42 @@
             Rarity <= Rare
             BaseType "Austere Garb" "Falconer's Jacket" "Rambler Jacket"
             SetBorderColor 0 155 155 255
-            SetFontSize 35
+            SetFontSize 39
             DisableDropSoundIfAlertSound
 
         Show #印鈔 - 終局 特殊力智基底
             Rarity <= Rare
             BaseType "Seastorm Mantle" "Death Mantle" "Conjurer Mantle"
             SetBorderColor 155 0 155 255
-            SetFontSize 35
+            SetFontSize 39
             DisableDropSoundIfAlertSound
 
         Show #印鈔 - 終局 特殊力敏基底
             Rarity <= Rare
             BaseType "Thane Mail" "Shrouded Mail" "Dastard Armour"
             SetBorderColor 155 155 0 255
-            SetFontSize 35
+            SetFontSize 39
             DisableDropSoundIfAlertSound
             
         Show #印鈔 - 終局 特殊智慧基底
             Rarity <= Rare
             BaseType "Feathered Raiment" "Sacramental Robe" "Flowing Raiment"
             SetBorderColor 27 103 255
-            SetFontSize 35
+            SetFontSize 39
             DisableDropSoundIfAlertSound
 
         Show #印鈔 - 終局 特殊敏捷基底
             Rarity <= Rare
             BaseType "Corsair Coat" "Wyrmscale Coat" "Swiftstalker Coat"
             SetBorderColor 55 143 8
-            SetFontSize 35
+            SetFontSize 39
             DisableDropSoundIfAlertSound
 
         Show #印鈔 - 終局 特殊力量基底
             Rarity <= Rare
             BaseType "Warlord Cuirass" "Utzaal Cuirass" "Ornate Plate"
             SetBorderColor 243 91 50
-            SetFontSize 35
+            SetFontSize 39
             DisableDropSoundIfAlertSound
 
         #end
@@ -1501,42 +1501,42 @@
             Rarity <= Rare
             BaseType "Secured Wraps" "Daggerfoot Shoes" "Sleek Jacket" "Grinning Mask"
             SetBorderColor 0 155 155 255
-            SetFontSize 35
+            SetFontSize 39
             DisableDropSoundIfAlertSound
 
         Show #印鈔 - 終局 高級力智基底
             Rarity <= Rare
             BaseType "Adherent Cuffs" "Cryptic Leggings" "Wolfskin Mantle" "Cryptic Crown"
             SetBorderColor 155 0 155 255
-            SetFontSize 35
+            SetFontSize 39
             DisableDropSoundIfAlertSound
 
         Show #印鈔 - 終局 高級力敏基底
             Rarity <= Rare
             BaseType "Blacksteel Gauntlets" "Blacksteel Sabatons" "Death Mail" "Gladiatorial Helm"
             SetBorderColor 155 155 0 255
-            SetFontSize 35
+            SetFontSize 39
             DisableDropSoundIfAlertSound
             
         Show #印鈔 - 終局 高級智慧基底
             Rarity <= Rare
             BaseType "Sirenscale Gloves" "Sekhema Sandals" "Vile Robe" "Ancestral Tiara"
             SetBorderColor 27 103 255
-            SetFontSize 35
+            SetFontSize 39
             DisableDropSoundIfAlertSound
 
         Show #印鈔 - 終局 高級敏捷基底
             Rarity <= Rare
             BaseType "Polished Bracers" "Drakeskin Boots" "Tasalian Greaves" "Slipstrike Vest" "Freebooter Cap"
             SetBorderColor 55 143 8
-            SetFontSize 35
+            SetFontSize 39
             DisableDropSoundIfAlertSound
 
         Show #印鈔 - 終局 高級力量基底
             Rarity <= Rare
             BaseType "Massive Mitts" "Soldier Cuirass" "Imperial Greathelm"
             SetBorderColor 243 91 50
-            SetFontSize 35
+            SetFontSize 39
             DisableDropSoundIfAlertSound
 
         #end
@@ -1546,42 +1546,42 @@
             Rarity <= Rare
             BaseType "Vaal Wraps" "Quickslip Shoes" "Soaring Mask"
             SetBorderColor 0 155 155 255
-            SetFontSize 35
+            SetFontSize 39
             DisableDropSoundIfAlertSound
 
         Show #印鈔 - 終局 - 速刷 次級力智基底
             Rarity <= Rare
             BaseType "Gleaming Cuffs" "Warlock Leggings" "Divine Crown"
             SetBorderColor 155 0 155 255
-            SetFontSize 35
+            SetFontSize 39
             DisableDropSoundIfAlertSound
 
         Show #印鈔 - 終局 - 速刷 次級力敏基底
             Rarity <= Rare
             BaseType "Cultist Gauntlets" "Fortress Sabatons" "Champion Helm"
             SetBorderColor 155 155 0 255
-            SetFontSize 35
+            SetFontSize 39
             DisableDropSoundIfAlertSound
             
         Show #印鈔 - 終局 - 速刷 次級智慧基底
             Rarity <= Rare
             BaseType "Vaal Gloves" "Sandsworn Sandals" "Kamasan Tiara"
             SetBorderColor 27 103 255
-            SetFontSize 35
+            SetFontSize 39
             DisableDropSoundIfAlertSound
 
         Show #印鈔 - 終局 - 速刷 次級敏捷基底
             Rarity <= Rare
             BaseType "Barbed Bracers" "Dragonscale Boots" "Trapper Hood"
             SetBorderColor 55 143 8
-            SetFontSize 35
+            SetFontSize 39
             DisableDropSoundIfAlertSound
 
         Show #印鈔 - 終局 - 速刷 次級力量基底
             Rarity <= Rare
             BaseType "Vaal Mitts" "Paragon Greathelm" "Vaal Greaves"
             SetBorderColor 243 91 50
-            SetFontSize 35
+            SetFontSize 39
             DisableDropSoundIfAlertSound
 
         #end
@@ -1642,42 +1642,42 @@
             Rarity <= Rare
             BaseType "Ancient Buckler" "Desert Buckler"
             SetBorderColor 55 143 8
-            SetFontSize 35
+            SetFontSize 39
             DisableDropSoundIfAlertSound
 
         Show #印鈔 - 終局 物理箭袋基底 灌注箭袋
             BaseType "Primed Quiver"
             SetBorderColor 55 143 8
             Rarity <= Rare
-            SetFontSize 35
+            SetFontSize 39
             DisableDropSoundIfAlertSound
 
         Show #印鈔 - 終局 盾牌智力基底 神聖法器
             BaseType "Sacred Focus"
             SetBorderColor 27 103 255
             Rarity <= Rare
-            SetFontSize 35
+            SetFontSize 39
             DisableDropSoundIfAlertSound
             
         Show #印鈔 - 終局 盾牌力量基底 瓦爾塔盾|Tawhoan Tower Shield
             BaseType "Vaal Tower Shield" "Tawhoan Tower Shield"
             SetBorderColor 243 91 50
             Rarity <= Rare
-            SetFontSize 35
+            SetFontSize 39
             DisableDropSoundIfAlertSound
 
         Show #印鈔 - 終局 盾牌力智基底 瓦爾紋章盾|Blacksteel Crest Shield
             BaseType "Vaal Crest Shield" "Blacksteel Crest Shield"
             SetBorderColor 160 90 180
             Rarity <= Rare
-            SetFontSize 35
+            SetFontSize 39
             DisableDropSoundIfAlertSound
 
         Show #印鈔 - 終局 盾牌力敏基底 翱翔圓盾|Golden Targe
             BaseType "Soaring Targe" "Golden Targe"
             SetBorderColor 180 140 40
             Rarity <= Rare
-            SetFontSize 35
+            SetFontSize 39
             DisableDropSoundIfAlertSound
 
         #end
@@ -1752,35 +1752,35 @@
             Rarity <= Rare
             BaseType  "Rattling Sceptre" "Omen Sceptre" "Wrath Sceptre"
             SetBorderColor 160 90 180
-            SetFontSize 35
+            SetFontSize 39
             DisableDropSoundIfAlertSound
 
         Show #印鈔 - 終局 法杖基底 調和法杖|虹吸法杖|電能法杖|單挑法杖
             Rarity <= Rare
             BaseType "Attuned Wand" "Siphoning Wand" "Galvanic Wand" "Dueling Wand"
             SetBorderColor 27 103 255
-            SetFontSize 35
+            SetFontSize 39
             DisableDropSoundIfAlertSound
 
         Show #印鈔 - 終局 長杖基底 鳴響長杖|死神長杖|咆哮長杖|牧師長杖|麻木長杖
             Rarity <= Rare
             BaseType "Chiming Staff" "Reaping Staff" "Roaring Staff" "Sanctified Staff" "Paralysing Staff"
             SetBorderColor 27 103 255
-            SetFontSize 35
+            SetFontSize 39
             DisableDropSoundIfAlertSound
 
         Show #印鈔 - 終局 物理單手錘基底 強化之錘|鬥爭鎬|熔火之錘|Akoyan Club
             Rarity <= Rare
             BaseType "Fortified Hammer" "Strife Pick" "Molten Hammer" "Akoyan Club"
             SetBorderColor 243 91 50
-            SetFontSize 35
+            SetFontSize 39
             DisableDropSoundIfAlertSound
 
         Show #印鈔 - 終局 物理雙手錘基底 毀滅重錘|盲信巨錘|鐵木巨錘|Tawhoan Greatclub
             Rarity <= Rare
             BaseType "Ruination Maul" "Fanatic Greathammer" "Ironwood Greathammer" "Tawhoan Greatclub"
             SetBorderColor 243 91 50
-            SetFontSize 35
+            SetFontSize 39
             DisableDropSoundIfAlertSound
 
         Show #印鈔 - 終局 長鋒基底 海玻璃長鋒|潛獵長鋒|翱翔長鋒|宏偉長鋒|尖刺長鋒|Akoyan Spear
@@ -1793,14 +1793,14 @@
             Rarity <= Rare
             BaseType "Gemini Bow" "Obliterator Bow"
             SetBorderColor 55 143 8
-            SetFontSize 35
+            SetFontSize 39
             DisableDropSoundIfAlertSound
 
         Show #印鈔 - 終局 物理十字弓基底 攻城十字弓|雙子十字弓|蒼涼十字弓|Elegant Crossbow
             Rarity <= Rare
             BaseType "Siege Crossbow" "Gemini Crossbow" "Desolate Crossbow" "Elegant Crossbow"
             SetBorderColor 180 140 40
-            SetFontSize 35
+            SetFontSize 39
             DisableDropSoundIfAlertSound
 
     #end
