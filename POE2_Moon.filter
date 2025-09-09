@@ -605,10 +605,10 @@
         SetBorderColor 153 213 243
         SetFontSize 42
         PlayAlertSoundPositional 9 200
-        CustomAlertSoundOptional "bubu\bubu-加油.mp3" 200
-        CustomAlertSoundOptional "Diablo2\24.mp3" 200
-        CustomAlertSoundOptional "Lelouch\Lelouch-所以.mp3" 200
-        MinimapIcon 1 Cyan Circle
+        CustomAlertSoundOptional "bubu\bubu-加油.mp3" 100
+        CustomAlertSoundOptional "Diablo2\24.mp3" 100
+        CustomAlertSoundOptional "Lelouch\Lelouch-所以.mp3" 100
+        MinimapIcon 2 Cyan Circle
         PlayEffect Cyan Temp
         DisableDropSoundIfAlertSound
 
@@ -1314,18 +1314,18 @@
             SetFontSize 41
             DisableDropSoundIfAlertSound
 
-        Show #有價基底 攻城十字弓|蒼涼十字弓|雙子之弓|雜響權杖|徵兆權杖|內臟箭袋|灌注箭袋
+        Show #有價基底 攻城十字弓|蒼涼十字弓|雙子之弓|雜響權杖|徵兆權杖|內臟箭袋|灌注箭袋|單挑法杖|金光戒指
             Rarity == Magic
-            BaseType "Siege Crossbow" "Desolate Crossbow" "Gemini Bow" "Rattling Sceptre" "Omen Sceptre" "Visceral Quiver" "Primed Quiver"
+            BaseType "Siege Crossbow" "Desolate Crossbow" "Gemini Bow" "Rattling Sceptre" "Omen Sceptre" "Visceral Quiver" "Primed Quiver" "Dueling Wand" "Gold Ring"
             SetTextColor 30 30 30
             SetBackgroundColor 184 218 242
             SetBorderColor 49 94 255
             SetFontSize 41
             DisableDropSoundIfAlertSound
 
-        Show #有價基底 攻城十字弓|蒼涼十字弓|雙子之弓|雜響權杖|徵兆權杖|內臟箭袋|灌注箭袋
+        Show #有價基底 攻城十字弓|蒼涼十字弓|雙子之弓|雜響權杖|徵兆權杖|內臟箭袋|灌注箭袋|單挑法杖|金光戒指
             Rarity == Normal
-            BaseType "Siege Crossbow" "Desolate Crossbow" "Gemini Bow" "Rattling Sceptre" "Omen Sceptre" "Visceral Quiver" "Primed Quiver"
+            BaseType "Siege Crossbow" "Desolate Crossbow" "Gemini Bow" "Rattling Sceptre" "Omen Sceptre" "Visceral Quiver" "Primed Quiver" "Dueling Wand" "Gold Ring"
             SetTextColor 30 30 30
             SetBackgroundColor 184 218 242
             SetBorderColor 255 255 255
