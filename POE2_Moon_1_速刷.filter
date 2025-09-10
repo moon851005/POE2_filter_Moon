@@ -1780,7 +1780,7 @@ Import "自定義過濾/自定義配置.filter" Optional
         Show #印鈔 - 物理單手錘基底 強化之錘|鬥爭鎬|熔火之錘|Akoyan Club
             Rarity <= Rare
             BaseType "Fortified Hammer" "Strife Pick" "Molten Hammer" "Akoyan Club"
-            ItemLevel >= 82
+            ItemLevel >= 81
             SetBackgroundColor 50 0 0
             SetBorderColor 243 91 50
             SetFontSize 39
@@ -1789,7 +1789,7 @@ Import "自定義過濾/自定義配置.filter" Optional
         Show #印鈔 - 物理雙手錘基底 毀滅重錘|盲信巨錘|鐵木巨錘|Tawhoan Greatclub
             Rarity <= Rare
             BaseType "Ruination Maul" "Fanatic Greathammer" "Ironwood Greathammer" "Tawhoan Greatclub"
-            ItemLevel >= 82
+            ItemLevel >= 81
             SetBackgroundColor 50 0 0
             SetBorderColor 243 91 50
             SetFontSize 39
@@ -1798,24 +1798,33 @@ Import "自定義過濾/自定義配置.filter" Optional
         Show #印鈔 - 長鋒基底 海玻璃長鋒|潛獵長鋒|翱翔長鋒|宏偉長鋒|尖刺長鋒|Akoyan Spear
             Rarity <= Rare
             BaseType "Seaglass Spear" "Stalking Spear" "Flying Spear" "Grand Spear" "Spiked Spear" "Akoyan Spear"
-            ItemLevel >= 82
+            ItemLevel >= 81
             SetBackgroundColor 0 50 0
             SetBorderColor 55 143 8
             DisableDropSoundIfAlertSound
 
-        Show #印鈔 - 物理弓基底 雙子之弓|Obliterator Bow
+        Show #印鈔 - 物理弓基底 毀滅者之弓
             Rarity <= Rare
-            BaseType "Gemini Bow" "Obliterator Bow"
+            BaseType "Obliterator Bow"
             ItemLevel >= 82
             SetBackgroundColor 0 50 0
             SetBorderColor 55 143 8
             SetFontSize 39
             DisableDropSoundIfAlertSound
 
-        Show #印鈔 - 物理十字弓基底 攻城十字弓|雙子十字弓|蒼涼十字弓|Elegant Crossbow
+        Show #印鈔 - 元素弓基底 雙子之弓
+            Rarity <= Rare
+            BaseType "Gemini Bow"
+            ItemLevel >= 81
+            SetBackgroundColor 0 50 0
+            SetBorderColor 55 143 8
+            SetFontSize 39
+            DisableDropSoundIfAlertSound
+
+        Show #印鈔 - 物理/元素十字弓基底 攻城十字弓|雙子十字弓|蒼涼十字弓|Elegant Crossbow
             Rarity <= Rare
             BaseType "Siege Crossbow" "Gemini Crossbow" "Desolate Crossbow" "Elegant Crossbow"
-            ItemLevel >= 82
+            ItemLevel >= 81
             SetBackgroundColor 50 50 0
             SetBorderColor 180 140 40
             SetFontSize 39
