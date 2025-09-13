@@ -343,15 +343,15 @@ Import "自定義過濾/自定義配置.filter" Optional
     Show #混沌石
         Class "Stackable Currency"
         BaseType == "Chaos Orb"
-        SetTextColor 0 0 0
-        SetBackgroundColor 255 165 0
-        SetBorderColor 150 0 0
+        SetTextColor 255 144 0 255
+        SetBackgroundColor 37 54 112
+        SetBorderColor 255 200 0
         SetFontSize 43
         PlayAlertSoundPositional ShChaos 300
         CustomAlertSoundOptional "bubu\bubu-混沌石.mp3" 300
-        CustomAlertSoundOptional "Diablo2\28.mp3" 200
+        CustomAlertSoundOptional "Diablo2\27.mp3" 200
         CustomAlertSoundOptional "Lelouch\Lelouch-魯路修_富有被射中的覺悟才有資格開槍2.mp3" 300
-        MinimapIcon 1 Yellow Diamond
+        MinimapIcon 0 Yellow Diamond
         PlayEffect Yellow Temp
         DisableDropSoundIfAlertSound
 
@@ -373,16 +373,16 @@ Import "自定義過濾/自定義配置.filter" Optional
     Show #完美混沌石
         Class "Stackable Currency"
         BaseType == "Perfect Chaos Orb"
-        SetTextColor 255 144 0 255
-        SetBackgroundColor 37 54 112
+        SetTextColor 236 242 145
+        SetBackgroundColor 55 1 59
         SetBorderColor 255 200 0
-        SetFontSize 43
-        PlayAlertSoundPositional ShChaos 300
-        CustomAlertSoundOptional "bubu\bubu-混沌石.mp3" 300
-        CustomAlertSoundOptional "Diablo2\27.mp3" 200
-        CustomAlertSoundOptional "Lelouch\Lelouch-魯路修_富有被射中的覺悟才有資格開槍2.mp3" 300
-        MinimapIcon 0 Yellow Diamond
-        PlayEffect Yellow Temp
+        SetFontSize 45
+        PlayAlertSoundPositional ShExalted 300
+        CustomAlertSoundOptional "bubu\bubu-崇高石.mp3" 300
+        CustomAlertSoundOptional "Diablo2\26.mp3" 300
+        CustomAlertSoundOptional "Lelouch\Lelouch-夏陸陸.mp3" 300
+        MinimapIcon 0 Orange Moon
+        PlayEffect Orange
         DisableDropSoundIfAlertSound
 
     Show #富豪石
@@ -410,7 +410,7 @@ Import "自定義過濾/自定義配置.filter" Optional
         PlayAlertSoundPositional ShRegal 300
         CustomAlertSoundOptional "bubu\bubu-富豪石.mp3" 300
         CustomAlertSoundOptional "Diablo2\27.mp3" 200
-        CustomAlertSoundOptional "Lelouch\Lelouch-魯路修_富有被射中的覺悟才有資格開槍2.mp3" 300
+        CustomAlertSoundOptional "Lelouch\Lelouch-魯路修_若無力是罪惡.mp3" 300
         MinimapIcon 0 Yellow Diamond
         PlayEffect Yellow Temp
         DisableDropSoundIfAlertSound
@@ -421,13 +421,13 @@ Import "自定義過濾/自定義配置.filter" Optional
         SetTextColor 255 144 0 255
         SetBackgroundColor 37 54 112
         SetBorderColor 255 200 0
-        SetFontSize 43
+        SetFontSize 45
         PlayAlertSoundPositional ShRegal 300
         CustomAlertSoundOptional "bubu\bubu-富豪石.mp3" 300
-        CustomAlertSoundOptional "Diablo2\27.mp3" 200
-        CustomAlertSoundOptional "Lelouch\Lelouch-魯路修_富有被射中的覺悟才有資格開槍2.mp3" 300
-        MinimapIcon 0 Yellow Diamond
-        PlayEffect Yellow Temp
+        CustomAlertSoundOptional "Diablo2\27.mp3" 300
+        CustomAlertSoundOptional "Lelouch\Lelouch-魯路修_若無力是罪惡.mp3" 300
+        MinimapIcon 0 Orange Diamond
+        PlayEffect Orange
         DisableDropSoundIfAlertSound
 
     Show #瓦爾寶珠
@@ -528,8 +528,8 @@ Import "自定義過濾/自定義配置.filter" Optional
         SetFontSize 43
         PlayAlertSoundPositional ShDivine 300
         CustomAlertSoundOptional "bubu\bubu-水啦.mp3" 300
-        CustomAlertSoundOptional "Diablo2\27.mp3" 300
-        CustomAlertSoundOptional "Lelouch\Lelouch-魯路修_若無力是罪惡.mp3" 300
+        CustomAlertSoundOptional "Diablo2\26.mp3" 300
+        CustomAlertSoundOptional "Lelouch\Lelouch-夏陸陸.mp3" 300
         MinimapIcon 1 Blue Moon
         PlayEffect Blue
         DisableDropSoundIfAlertSound
@@ -567,7 +567,7 @@ Import "自定義過濾/自定義配置.filter" Optional
     #end
 
 #L1 3 鑲嵌
-    Show #低階符文(冰川符文、暴風符文、心靈符文、肉體符文、啟發符文、重生符文、遠見符文、鍛鐵符文、岩石符文、沙漠符文)
+    Show #印鈔 - 終局 低階符文(冰川符文、暴風符文、心靈符文、肉體符文、啟發符文、重生符文、遠見符文、鍛鐵符文、岩石符文、沙漠符文)
         Class "Socketable"
         BaseType == "Lesser Glacial Rune" "Lesser Storm Rune" "Lesser Mind Rune" "Lesser Body Rune" "Lesser Inspiration Rune" "Lesser Rebirth Rune" "Lesser Vision Rune" "Lesser Iron Rune" "Lesser Stone Rune" "Lesser Desert Rune" "Lesser Adept Rune" "Lesser Resolve Rune" "Lesser Robust Rune"
         SetTextColor 0 73 165 200
@@ -582,7 +582,7 @@ Import "自定義過濾/自定義配置.filter" Optional
         PlayEffect Cyan Temp
         DisableDropSoundIfAlertSound
 
-    Show #符文(冰川符文、暴風符文、心靈符文、肉體符文、啟發符文、重生符文、遠見符文、鍛鐵符文、岩石符文、沙漠符文)
+    Show #印鈔 - 終局 符文(冰川符文、暴風符文、心靈符文、肉體符文、啟發符文、重生符文、遠見符文、鍛鐵符文、岩石符文、沙漠符文)
         Class "Socketable"
         BaseType == "Glacial Rune" "Storm Rune" "Mind Rune" "Body Rune" "Inspiration Rune" "Rebirth Rune" "Vision Rune" "Iron Rune" "Stone Rune" "Desert Rune" "Adept Rune" "Resolve Rune" "Robust Rune"
         SetTextColor 0 73 165 200
@@ -597,7 +597,7 @@ Import "自定義過濾/自定義配置.filter" Optional
         PlayEffect Cyan Temp
         DisableDropSoundIfAlertSound
 
-    Show #高階符文(冰川符文、暴風符文、心靈符文、肉體符文、啟發符文、重生符文、遠見符文、鍛鐵符文、岩石符文、沙漠符文)
+    Show #印鈔 - 終局 高階符文(冰川符文、暴風符文、心靈符文、肉體符文、啟發符文、重生符文、遠見符文、鍛鐵符文、岩石符文、沙漠符文)
         Class "Socketable"
         BaseType == "Greater Glacial Rune" "Greater Storm Rune" "Greater Mind Rune" "Greater Body Rune" "Greater Inspiration Rune" "Greater Rebirth Rune" "Greater Vision Rune" "Greater Iron Rune" "Greater Stone Rune" "Greater Desert Rune" "Greater Adept Rune" "Greater Resolve Rune" "Greater Robust Rune"
         SetTextColor 0 73 165 200
@@ -1028,7 +1028,7 @@ Import "自定義過濾/自定義配置.filter" Optional
         PlayEffect Yellow
         DisableDropSoundIfAlertSound
 
-    Show #巨靈之幣
+    Show #印鈔 - 終局 巨靈之幣
         BaseType == "Djinn Barya"
         SetTextColor 191 162 0 200
         SetBackgroundColor 50 40 0
@@ -1247,9 +1247,9 @@ Import "自定義過濾/自定義配置.filter" Optional
             MinimapIcon 0 Yellow UpsideDownHouse
             PlayEffect Yellow Temp
 
-        Show #點機會石基底 獵首|均衡之符|黑鋼塔盾|限制之令
+        Show #點機會石基底 獵首|均衡之符|黑鋼塔盾|限制之令|獻祭之心
             Rarity = Normal
-            BaseType "Heavy Belt" "Stellar Amulet" "Blacksteel Tower Shield" "Viper Cap"
+            BaseType "Heavy Belt" "Stellar Amulet" "Blacksteel Tower Shield" "Viper Cap" "Sacred Focus"
             SetTextColor 255 255 255 220
             SetBackgroundColor 255 114 0 200
             SetBorderColor 255 114 0
