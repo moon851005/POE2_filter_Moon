@@ -1203,28 +1203,6 @@
         #end
         
     #L2 5.3 罕見基底
-        Show #卓越 高品質裝備(26~30)
-            Quality > 25
-            Rarity <= Rare
-            SetTextColor 30 30 30
-            SetBackgroundColor 255 221 100
-            SetBorderColor 255 255 255
-            SetFontSize 45
-            MinimapIcon 0 Yellow UpsideDownHouse
-            PlayEffect Yellow Temp
-            DisableDropSoundIfAlertSound
-
-        Show #卓越 高品質裝備(20~25)
-            Quality > 20
-            Rarity <= Rare
-            SetTextColor 30 30 30
-            SetBackgroundColor 255 221 100
-            SetBorderColor 255 255 255
-            SetFontSize 43
-            MinimapIcon 1 Yellow UpsideDownHouse
-            PlayEffect Yellow Temp
-            DisableDropSoundIfAlertSound
-
         Show #卓越 雙孔>三孔
             Rarity <= Rare
             Class "Body Armours" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Quarterstaves" "Crossbows" "Traps" "Fishing Rods"
@@ -1246,6 +1224,28 @@
             SetFontSize 45
             MinimapIcon 0 Yellow UpsideDownHouse
             PlayEffect Yellow Temp
+            
+        Show #卓越 高品質裝備(26~30)
+            Quality > 25
+            Rarity <= Rare
+            SetTextColor 30 30 30
+            SetBackgroundColor 255 221 100
+            SetBorderColor 255 255 255
+            SetFontSize 45
+            MinimapIcon 0 Yellow UpsideDownHouse
+            PlayEffect Yellow Temp
+            DisableDropSoundIfAlertSound
+
+        Show #印鈔 - 卓越 高品質裝備(20~25)
+            Quality > 20
+            Rarity <= Rare
+            SetTextColor 30 30 30
+            SetBackgroundColor 255 221 100
+            SetBorderColor 255 255 255
+            SetFontSize 43
+            MinimapIcon 1 Yellow UpsideDownHouse
+            PlayEffect Yellow Temp
+            DisableDropSoundIfAlertSound
 
         Show #點機會石基底 獵首|均衡之符|黑鋼塔盾|限制之令|獻祭之心
             Rarity = Normal
@@ -1319,7 +1319,17 @@
         #end
 
     #L2 5.6 有價基底
-        Show #有價基底 攻城十字弓|蒼涼十字弓|雙子之弓|雜響權杖|徵兆權杖|內臟箭袋|灌注箭袋
+        Show #高等有價基底 攻城十字弓|蒼涼十字弓|雙子之弓|雙子十字弓|單挑法杖
+            Rarity == Normal
+            ItemLevel >= 81
+            BaseType "Siege Crossbow" "Desolate Crossbow" "Gemini Bow" "Gemini Crossbow" "Dueling Wand"
+            SetTextColor 30 30 30
+            SetBackgroundColor 184 218 242
+            SetBorderColor 255 0 0
+            SetFontSize 45
+            DisableDropSoundIfAlertSound
+
+        Show #印鈔 - 有價基底 攻城十字弓|蒼涼十字弓|雙子之弓|雜響權杖|徵兆權杖|內臟箭袋|灌注箭袋
             Rarity == Rare
             BaseType "Siege Crossbow" "Desolate Crossbow" "Gemini Bow" "Rattling Sceptre" "Omen Sceptre" "Visceral Quiver" "Primed Quiver"
             SetTextColor 30 30 30
@@ -1328,7 +1338,7 @@
             SetFontSize 41
             DisableDropSoundIfAlertSound
 
-        Show #有價基底 攻城十字弓|蒼涼十字弓|雙子之弓|雜響權杖|徵兆權杖|內臟箭袋|灌注箭袋|單挑法杖|金光戒指
+        Show #印鈔 - 有價基底 攻城十字弓|蒼涼十字弓|雙子之弓|雜響權杖|徵兆權杖|內臟箭袋|灌注箭袋|單挑法杖|金光戒指
             Rarity == Magic
             BaseType "Siege Crossbow" "Desolate Crossbow" "Gemini Bow" "Rattling Sceptre" "Omen Sceptre" "Visceral Quiver" "Primed Quiver" "Dueling Wand" "Gold Ring"
             SetTextColor 30 30 30
@@ -1337,7 +1347,7 @@
             SetFontSize 41
             DisableDropSoundIfAlertSound
 
-        Show #有價基底 攻城十字弓|蒼涼十字弓|雙子之弓|雜響權杖|徵兆權杖|內臟箭袋|灌注箭袋|單挑法杖|金光戒指
+        Show #印鈔 - 有價基底 攻城十字弓|蒼涼十字弓|雙子之弓|雜響權杖|徵兆權杖|內臟箭袋|灌注箭袋|單挑法杖|金光戒指
             Rarity == Normal
             BaseType "Siege Crossbow" "Desolate Crossbow" "Gemini Bow" "Rattling Sceptre" "Omen Sceptre" "Visceral Quiver" "Primed Quiver" "Dueling Wand" "Gold Ring"
             SetTextColor 30 30 30
@@ -2347,7 +2357,7 @@
 
     Show #族裔輔助寶石
         Class "Support Gems"
-        BaseType "'s"
+        BaseType "'s" "s'"
         SetTextColor 27 162 155
         SetBackgroundColor 82 18 18 255
         SetBorderColor 210 0 220
