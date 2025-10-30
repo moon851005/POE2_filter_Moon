@@ -1740,7 +1740,7 @@ Import "自定義過濾/自定義配置.filter" Optional
         #end
 
     #L2 5.15 副手基底
-        Show #高階金裝(輕盾) 遠古輕盾|Desert Buckler
+        Hide #印鈔 - 終局 高階金裝(輕盾) 遠古輕盾|Desert Buckler
             Rarity <= Rare
             BaseType "Ancient Buckler" "Desert Buckler"
             SetBorderColor 55 143 8
@@ -2150,9 +2150,9 @@ Import "自定義過濾/自定義配置.filter" Optional
         DisableDropSoundIfAlertSound
 
     Hide #印鈔 - 終局 - 顯示高品質終極魔力藥劑(21~25)
+        Class "Mana Flask"
         BaseType "Ultimate Mana Flask"
         Quality > 20
-        Class "Mana Flask"
         SetTextColor 0 0 0
         SetBackgroundColor 30 144 255
         SetBorderColor 184 218 242
@@ -2163,9 +2163,9 @@ Import "自定義過濾/自定義配置.filter" Optional
         DisableDropSoundIfAlertSound
 
     Hide #印鈔 - 終局 - 顯示高品質終極生命藥劑(21~25)
+        Class "Life Flask"
         BaseType "Ultimate Life Flask"
         Quality > 20
-        Class "Life Flask"
         SetTextColor 0 0 0
         SetBackgroundColor 150 0 0
         SetBorderColor 184 218 242
@@ -2175,9 +2175,11 @@ Import "自定義過濾/自定義配置.filter" Optional
         MinimapIcon 1 Red Raindrop
         DisableDropSoundIfAlertSound
 
-    Hide #印鈔 - 終局 - 速刷 終極魔力藥劑
-        BaseType "Ultimate Mana Flask"
+    Show #印鈔 - 高等終極魔力藥劑
+        Rarity == Normal
         Class "Mana Flask"
+        BaseType "Ultimate Mana Flask"
+        ItemLevel >= 81
         SetTextColor 30 144 255
         SetBackgroundColor 0 0 0
         SetBorderColor 184 218 242
@@ -2187,9 +2189,35 @@ Import "自定義過濾/自定義配置.filter" Optional
         MinimapIcon 2 Blue Raindrop
         DisableDropSoundIfAlertSound
 
-    Hide #印鈔 - 終局 - 速刷 終極生命藥劑
-        BaseType "Ultimate Life Flask"
+    Hide #印鈔 - 終局 - 速刷 終極魔力藥劑
+        Class "Mana Flask"
+        BaseType "Ultimate Mana Flask"
+        SetTextColor 30 144 255
+        SetBackgroundColor 0 0 0
+        SetBorderColor 184 218 242
+        SetFontSize 35
+        CustomAlertSoundOptional "Diablo2\6.mp3" 100
+        CustomAlertSoundOptional "Lelouch\Lelouch-水滴.mp3" 300
+        MinimapIcon 2 Blue Raindrop
+        DisableDropSoundIfAlertSound
+
+    Show #印鈔 - 高等終極生命藥劑
+        Rarity == Normal
         Class "Life Flask"
+        BaseType "Ultimate Life Flask"
+        ItemLevel >= 81
+        SetTextColor 150 0 0
+        SetBackgroundColor 0 0 0
+        SetBorderColor 184 218 242
+        SetFontSize 35
+        CustomAlertSoundOptional "Diablo2\5.mp3" 100
+        CustomAlertSoundOptional "Lelouch\Lelouch-水滴.mp3" 300
+        MinimapIcon 2 Red Raindrop
+        DisableDropSoundIfAlertSound
+
+    Hide #印鈔 - 終局 - 速刷 終極生命藥劑
+        Class "Life Flask"
+        BaseType "Ultimate Life Flask"
         SetTextColor 150 0 0
         SetBackgroundColor 0 0 0
         SetBorderColor 184 218 242
