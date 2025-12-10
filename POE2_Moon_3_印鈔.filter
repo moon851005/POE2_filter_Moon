@@ -203,8 +203,9 @@ Import "自定義過濾/自定義配置.filter" Optional
     Show #護甲片
         Class "Stackable Currency"
         BaseType "Armourer's Scrap"
-        SetBackgroundColor 45 0 0
-        SetBorderColor 150 0 0
+        SetTextColor 170 158 129
+        SetBackgroundColor 57 54 45
+        SetBorderColor 158 112 0
         SetFontSize 45
         MinimapIcon 2 Grey Circle
         DisableDropSoundIfAlertSound
@@ -212,8 +213,9 @@ Import "自定義過濾/自定義配置.filter" Optional
     Show #磨刀石
         Class "Stackable Currency"
         BaseType "Blacksmith's Whetstone"
-        SetBackgroundColor 45 0 0
-        SetBorderColor 150 0 0
+        SetTextColor 170 158 129
+        SetBackgroundColor 57 54 45
+        SetBorderColor 158 112 0
         SetFontSize 45
         MinimapIcon 2 Grey Circle
         DisableDropSoundIfAlertSound
@@ -221,10 +223,21 @@ Import "自定義過濾/自定義配置.filter" Optional
     Show #奧術蝕刻師
         Class "Stackable Currency"
         BaseType "Arcanist's Etcher"
+        SetTextColor 132 129 170
+        SetBackgroundColor 0 0 45
+        SetBorderColor 0 0 150
+        SetFontSize 45
+        MinimapIcon 2 Grey Circle
+        DisableDropSoundIfAlertSound
+
+    Show #瓦爾灌注器
+        Class "Stackable Currency"
+        BaseType "Vaal Infuser"
+        SetTextColor 170 129 129
         SetBackgroundColor 45 0 0
         SetBorderColor 150 0 0
         SetFontSize 45
-        MinimapIcon 2 Grey Circle
+        MinimapIcon 1 Grey Circle
         DisableDropSoundIfAlertSound
 
     Show #寶石匠的稜鏡
@@ -307,6 +320,20 @@ Import "自定義過濾/自定義配置.filter" Optional
         CustomAlertSoundOptional "Diablo2\2.mp3" 100
         CustomAlertSoundOptional "Lelouch\Lelouch-魯路修_事嗎.mp3" 300
         MinimapIcon 2 White Diamond
+        PlayEffect White Temp
+        DisableDropSoundIfAlertSound
+
+    Show #萃取石
+        Class "Stackable Currency"
+        BaseType "Orb of Extraction"
+        SetTextColor 255 255 255
+        SetBorderColor 255 192 203
+        SetFontSize 39
+        PlayAlertSoundPositional 4 100
+        CustomAlertSoundOptional "bubu\bubu-小通貨.mp3" 300
+        CustomAlertSoundOptional "Diablo2\2.mp3" 100
+        CustomAlertSoundOptional "Lelouch\Lelouch-魯路修_事嗎.mp3" 300
+        MinimapIcon 1 White Diamond
         PlayEffect White Temp
         DisableDropSoundIfAlertSound
 
@@ -534,6 +561,36 @@ Import "自定義過濾/自定義配置.filter" Optional
         PlayEffect Blue
         DisableDropSoundIfAlertSound
 
+    Show #腐化通貨
+        Class "Stackable Currency"
+        BaseType "Core Destabiliser" "Architect's Orb" "Ancient Infuser" "Crystallised Corruption"
+        SetTextColor 0 0 0
+        SetBackgroundColor 189 109 118
+        SetBorderColor 143 2 121
+        SetFontSize 43
+        PlayAlertSoundPositional ShVaal 300
+        CustomAlertSoundOptional "bubu\bubu-瓦爾寶珠.mp3" 300
+        CustomAlertSoundOptional "Diablo2\28.mp3" 200
+        CustomAlertSoundOptional "Lelouch\Lelouch-魯路修_富有被射中的覺悟才有資格開槍2.mp3" 300
+        MinimapIcon 1 Yellow Diamond
+        PlayEffect Yellow Temp
+        DisableDropSoundIfAlertSound
+
+    Show #瓦爾栽培寶珠
+        Class "Stackable Currency"
+        BaseType "Vaal Cultivation Orb"
+        SetTextColor 255 72 0
+        SetBackgroundColor 80 0 0
+        SetBorderColor 255 191 105
+        SetFontSize 43
+        PlayAlertSoundPositional ShVaal 300
+        CustomAlertSoundOptional "bubu\bubu-瓦爾寶珠.mp3" 300
+        CustomAlertSoundOptional "Diablo2\28.mp3" 200
+        CustomAlertSoundOptional "Lelouch\Lelouch-魯路修_富有被射中的覺悟才有資格開槍2.mp3" 300
+        MinimapIcon 1 Yellow Diamond
+        PlayEffect Yellow Temp
+        DisableDropSoundIfAlertSound
+    
     Show #悉妮蔻拉的髮絲
         Class "Stackable Currency"
         BaseType "Hinekora's Lock"
@@ -568,7 +625,7 @@ Import "自定義過濾/自定義配置.filter" Optional
 
 #L1 3 鑲嵌
     Hide #印鈔 - 終局 低階符文(冰川符文、暴風符文、心靈符文、肉體符文、啟發符文、重生符文、遠見符文、鍛鐵符文、岩石符文、沙漠符文)
-        Class "Socketable"
+        Class "Augment"
         BaseType == "Lesser Glacial Rune" "Lesser Storm Rune" "Lesser Mind Rune" "Lesser Body Rune" "Lesser Inspiration Rune" "Lesser Rebirth Rune" "Lesser Vision Rune" "Lesser Iron Rune" "Lesser Stone Rune" "Lesser Desert Rune" "Lesser Adept Rune" "Lesser Resolve Rune" "Lesser Robust Rune"
         SetTextColor 0 73 165 200
         SetBackgroundColor 152 184 191
@@ -583,7 +640,7 @@ Import "自定義過濾/自定義配置.filter" Optional
         DisableDropSoundIfAlertSound
 
     Hide #印鈔 - 終局 符文(冰川符文、暴風符文、心靈符文、肉體符文、啟發符文、重生符文、遠見符文、鍛鐵符文、岩石符文、沙漠符文)
-        Class "Socketable"
+        Class "Augment"
         BaseType == "Glacial Rune" "Storm Rune" "Mind Rune" "Body Rune" "Inspiration Rune" "Rebirth Rune" "Vision Rune" "Iron Rune" "Stone Rune" "Desert Rune" "Adept Rune" "Resolve Rune" "Robust Rune"
         SetTextColor 0 73 165 200
         SetBackgroundColor 152 184 191
@@ -598,7 +655,7 @@ Import "自定義過濾/自定義配置.filter" Optional
         DisableDropSoundIfAlertSound
 
     Hide #印鈔 - 終局 高階符文(冰川符文、暴風符文、心靈符文、肉體符文、啟發符文、重生符文、遠見符文、鍛鐵符文、岩石符文、沙漠符文)
-        Class "Socketable"
+        Class "Augment"
         BaseType == "Greater Glacial Rune" "Greater Storm Rune" "Greater Mind Rune" "Greater Body Rune" "Greater Inspiration Rune" "Greater Rebirth Rune" "Greater Vision Rune" "Greater Iron Rune" "Greater Stone Rune" "Greater Desert Rune" "Greater Adept Rune" "Greater Resolve Rune" "Greater Robust Rune"
         SetTextColor 0 73 165 200
         SetBackgroundColor 152 184 191
@@ -613,7 +670,7 @@ Import "自定義過濾/自定義配置.filter" Optional
         DisableDropSoundIfAlertSound
 
     Show #高階符文(領導、奉獻、迅捷、崇高)
-        Class "Socketable"
+        Class "Augment"
         BaseType == "Greater Rune of Leadership" "Greater Rune of Tithing" "Greater Rune of Alacrity" "Greater Rune of Nobility"
         SetTextColor 0 73 165 200
         SetBackgroundColor 152 184 191
@@ -628,7 +685,7 @@ Import "自定義過濾/自定義配置.filter" Optional
         DisableDropSoundIfAlertSound
 
     Show #特殊符文
-        Class "Socketable"
+        Class "Augment"
         BaseType "'s Rune of" "s' Rune of "
         SetTextColor 249 235 254
         SetBackgroundColor 65 29 132
@@ -643,7 +700,7 @@ Import "自定義過濾/自定義配置.filter" Optional
         DisableDropSoundIfAlertSound
 
     Show #靈魂核心
-        Class "Socketable"
+        Class "Augment"
         BaseType "Soul Core"
         SetTextColor 255 92 75 220
         SetBackgroundColor 140 110 49
@@ -657,9 +714,9 @@ Import "自定義過濾/自定義配置.filter" Optional
         PlayEffect Red
         DisableDropSoundIfAlertSound
 
-    Show #魔符
-        Class "Socketable"
-        BaseType "Talisman"
+    Show #魔偶
+        Class "Augment"
+        BaseType "Idol"
         SetTextColor 138 255 103
         SetBackgroundColor 0 128 0
         SetBorderColor 70 166 70
@@ -673,7 +730,7 @@ Import "自定義過濾/自定義配置.filter" Optional
         DisableDropSoundIfAlertSound
 
     Show #邪眼
-        Class "Socketable"
+        Class "Augment"
         BaseType "Gaze"
         SetTextColor 217 227 116
         SetBackgroundColor 10 60 10
@@ -685,6 +742,21 @@ Import "自定義過濾/自定義配置.filter" Optional
         CustomAlertSoundOptional "Lelouch\Lelouch-所以.mp3" 300
         MinimapIcon 0 Green Circle
         PlayEffect Green
+        DisableDropSoundIfAlertSound
+
+    Show #Ancient Augment
+        Class "Augment"
+        BaseType "Thesis"
+        SetTextColor 255 92 75 220
+        SetBackgroundColor 140 110 49
+        SetBorderColor 255 40 0 220
+        SetFontSize 45
+        PlayAlertSoundPositional 9 300
+        CustomAlertSoundOptional "bubu\bubu-加油.mp3" 300
+        CustomAlertSoundOptional "Diablo2\24.mp3" 300
+        CustomAlertSoundOptional "Lelouch\Lelouch-所以.mp3" 300
+        MinimapIcon 0 Red Circle
+        PlayEffect Red
         DisableDropSoundIfAlertSound
 
     #end
@@ -943,9 +1015,9 @@ Import "自定義過濾/自定義配置.filter" Optional
         PlayEffect Purple Temp
         DisableDropSoundIfAlertSound
 
-    Show #高價預兆 改善之兆|削切之兆|右旋抺除之兆|左旋抺除之兆|腐化之兆|左旋廢止之兆|右旋廢止之兆|均勻喜悅之兆|均勻加冕之兆|重組之兆|聖化之兆|右旋結晶之兆|左旋結晶之兆
+    Show #高價預兆 改善之兆|削切之兆|右旋抺除之兆|左旋抺除之兆|腐化之兆|左旋廢止之兆|右旋廢止之兆|重組之兆|聖化之兆|右旋結晶之兆|左旋結晶之兆
         Class "Omen"
-        BaseType "Omen of Amelioration" "Omen of Whittling" "Omen of Dextral Erasure" "Omen of Sinistral Erasure" "Omen of Corruption" "Omen of Sinistral Annulment" "Omen of Dextral Annulment" "Omen of Homogenising Exaltation" "Omen of Homogenising Coronation" "Omen of Recombination" "Omen of Sanctification" "Omen of Dextral Crystallisation" "Omen of Sinistral Crystallisation"
+        BaseType "Omen of Amelioration" "Omen of Whittling" "Omen of Dextral Erasure" "Omen of Sinistral Erasure" "Omen of Corruption" "Omen of Sinistral Annulment" "Omen of Dextral Annulment" "Omen of Recombination" "Omen of Sanctification" "Omen of Dextral Crystallisation" "Omen of Sinistral Crystallisation"
         SetTextColor 55 33 117 255
         SetBackgroundColor 139 126 208 255
         SetBorderColor 75 20 142 255
@@ -1102,6 +1174,51 @@ Import "自定義過濾/自定義配置.filter" Optional
 
 #L1 5 裝備
     #L2 5.1 傳奇
+        Show #傳奇裝備(雙重腐化)
+            Rarity = Unique
+            TwiceCorrupted = True
+            SetTextColor 175 96 37
+            SetBackgroundColor 82 18 18 255
+            SetBorderColor 255 0 0
+            SetFontSize 45
+            PlayAlertSoundPositional 1 300
+            CustomAlertSoundOptional "bubu\bubu-傳說裝備.mp3" 300
+            CustomAlertSoundOptional "Diablo2\33.mp3" 300
+            CustomAlertSoundOptional "Lelouch\Lelouch-魯路修_世界聽命於我.mp3" 300
+            MinimapIcon 1 Red UpsideDownHouse
+            PlayEffect Red
+            DisableDropSoundIfAlertSound
+
+        Show #瓦爾獨特詞綴
+            Rarity = Unique
+            IsVaalUnique = True
+            SetTextColor 175 96 37
+            SetBackgroundColor 82 18 18 255
+            SetBorderColor 255 0 0
+            SetFontSize 42
+            PlayAlertSoundPositional 1 300
+            CustomAlertSoundOptional "bubu\bubu-傳說裝備.mp3" 300
+            CustomAlertSoundOptional "Diablo2\33.mp3" 300
+            CustomAlertSoundOptional "Lelouch\Lelouch-魯路修_世界聽命於我.mp3" 300
+            MinimapIcon 2 Red UpsideDownHouse
+            PlayEffect Red
+            DisableDropSoundIfAlertSound
+
+        Show #瓦爾傳奇
+            Rarity = Unique
+            IsVaalUnique = True
+            SetTextColor 175 96 37
+            SetBackgroundColor 82 18 18 255
+            SetBorderColor 255 0 0
+            SetFontSize 42
+            PlayAlertSoundPositional 1 300
+            CustomAlertSoundOptional "bubu\bubu-傳說裝備.mp3" 300
+            CustomAlertSoundOptional "Diablo2\33.mp3" 300
+            CustomAlertSoundOptional "Lelouch\Lelouch-魯路修_世界聽命於我.mp3" 300
+            MinimapIcon 2 Red UpsideDownHouse
+            PlayEffect Red
+            DisableDropSoundIfAlertSound
+
         Show #稀有傳奇基底(珠寶)
             Rarity = Unique
             BaseType == "Diamond" "Time-Lost Diamond" "Timeless Jewel" "Ruby" "Emerald" "Sapphire"
@@ -1784,6 +1901,15 @@ Import "自定義過濾/自定義配置.filter" Optional
 
         #end
     #L2 5.16 高等武器基底
+        Hide #印鈔 -魔符基底
+            Rarity <= Rare
+            BaseType "Fang Talisman" "Fungal Talisman" "Voltfang Talisman" "Wildwood Talisman" "Wingbeat Talisman" "Changeling Talisman"
+            ItemLevel >= 82
+            SetBackgroundColor 50 0 50
+            SetBorderColor 160 90 180
+            SetFontSize 39
+            DisableDropSoundIfAlertSound
+
         Hide #印鈔 - 權杖基底 雜響權杖|徵兆權杖|暴怒權杖
             Rarity <= Rare
             BaseType "Rattling Sceptre" "Omen Sceptre" "Wrath Sceptre"
@@ -1867,9 +1993,16 @@ Import "自定義過濾/自定義配置.filter" Optional
         #end
 
     #L2 5.17 武器基底
+        Hide #印鈔 - 終局 魔符基底
+            Rarity <= Rare
+            BaseType "Fang Talisman" "Fungal Talisman" "Voltfang Talisman" "Wildwood Talisman" "Wingbeat Talisman" "Changeling Talisman"
+            SetBorderColor 160 90 180
+            SetFontSize 39
+            DisableDropSoundIfAlertSound
+
         Hide #印鈔 - 終局 權杖基底 雜響權杖|徵兆權杖|暴怒權杖
             Rarity <= Rare
-            BaseType  "Rattling Sceptre" "Omen Sceptre" "Wrath Sceptre"
+            BaseType "Rattling Sceptre" "Omen Sceptre" "Wrath Sceptre"
             SetBorderColor 160 90 180
             SetFontSize 39
             DisableDropSoundIfAlertSound
@@ -2093,9 +2226,9 @@ Import "自定義過濾/自定義配置.filter" Optional
         PlayEffect Purple
         DisableDropSoundIfAlertSound
 
-    Show #裂痕碑牌|探險碑牌|譫妄碑牌|祭祀碑牌
+    Show #裂痕碑牌|探險碑牌|譫妄碑牌|祭祀碑牌|深淵石碑
         Class "Tablet"
-        BaseType "Breach Precursor Tablet" "Expedition Precursor Tablet" "Delirium Precursor Tablet" "Ritual Precursor Tablet"
+        BaseType "Breach Precursor Tablet" "Expedition Precursor Tablet" "Delirium Precursor Tablet" "Ritual Precursor Tablet" "Abyss Precursor Tablet"
         SetTextColor 246 173 255
         SetBorderColor 30 144 255
         SetFontSize 45
@@ -2428,6 +2561,20 @@ Import "自定義過濾/自定義配置.filter" Optional
         Rarity == Rare
         Class "Claws" "Daggers" "Wands" "One Hand Swords" "One Hand Axes" "One Hand Maces" "Sceptres" "Spears" "Flails" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Quarterstaves" "Crossbows" "Traps" "Fishing Rods" "Quivers" "Shields" "Foci" "Gloves" "Boots" "Body Armours" "Helmets" "Buckler" "Amulets" "Rings" "Belts"
         SetFontSize 35
+        DisableDropSoundIfAlertSound
+
+    Show #培育器
+        Class "Incubators"
+        SetTextColor 0 0 0 255
+        SetBackgroundColor 191 153 7 255
+        SetBorderColor 128 0 128 255
+        SetFontSize 42
+        PlayAlertSoundPositional 3 200
+        CustomAlertSoundOptional "bubu\bubu-培育器.mp3" 300
+        CustomAlertSoundOptional "Diablo2\22.mp3" 300
+        CustomAlertSoundOptional "Lelouch\Lelouch-傑瑞米亞_早安.mp3" 300
+        MinimapIcon 1 Brown Circle
+        PlayEffect Brown Temp
         DisableDropSoundIfAlertSound
 
     Hide #隱藏高等白藍裝
