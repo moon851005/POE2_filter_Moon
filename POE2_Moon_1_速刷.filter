@@ -56,7 +56,7 @@ Import "自定義過濾/自定義配置.filter" Optional
         MinimapIcon 1 Yellow Circle
         DisableDropSoundIfAlertSound  
 
-    Show #印鈔 - 終局 黃金(堆疊>=300)
+    Show # %H1 黃金(堆疊>=300)
         StackSize >= 300
         Class "Stackable Currency"
         BaseType == "Gold"
@@ -69,7 +69,7 @@ Import "自定義過濾/自定義配置.filter" Optional
         MinimapIcon 2 Yellow Circle
         DisableDropSoundIfAlertSound 
 
-    Hide #印鈔 - 終局 - 速刷 黃金
+    Hide # %H0 黃金
         Class "Stackable Currency"
         BaseType == "Gold"
         SetTextColor 246 220 130
@@ -78,26 +78,26 @@ Import "自定義過濾/自定義配置.filter" Optional
         SetFontSize 34
         DisableDropSoundIfAlertSound
 
-    Hide #印鈔 - 終局 - 速刷 蛻變石碎片
+    Hide # %H0 蛻變石碎片
         Class "Stackable Currency"
         BaseType "Transmutation Shard"
         SetTextColor 255 94 97
         DisableDropSoundIfAlertSound
 
-    Show #印鈔 - 終局 工匠碎片
+    Show # %H1 工匠碎片
         Class "Stackable Currency"
         BaseType "Artificer's Shard"
         SetTextColor 124 255 196 202
         DisableDropSoundIfAlertSound
 
-    Show #印鈔 - 終局 點金石碎片
+    Show # %H1 點金石碎片
         Class "Stackable Currency"
         BaseType "Alchemy Shard"
         SetTextColor 0 0 0
         SetBackgroundColor 255 165 0
         DisableDropSoundIfAlertSound
 
-    Show #印鈔 - 終局 富豪石碎片
+    Show # %H1 富豪石碎片
         Class "Stackable Currency"
         BaseType "Regal Shard"
         SetTextColor 0 0 0
@@ -132,7 +132,7 @@ Import "自定義過濾/自定義配置.filter" Optional
         CustomAlertSoundOptional "Lelouch\Lelouch-夏陸陸_刻印.mp3" 300
         DisableDropSoundIfAlertSound
         
-    Show #印鈔 - 終局 蛻變石
+    Show # %H1 蛻變石
         Class "Stackable Currency"
         BaseType == "Orb of Transmutation"
         SetTextColor 255 94 97
@@ -166,7 +166,7 @@ Import "自定義過濾/自定義配置.filter" Optional
         CustomAlertSoundOptional "Lelouch\Lelouch-魯路修_事嗎.mp3" 300
         DisableDropSoundIfAlertSound
 
-    Show #印鈔 - 終局 增幅石
+    Show # %H1 增幅石
         Class "Stackable Currency"
         BaseType == "Orb of Augmentation"
         SetTextColor 255 94 97
@@ -255,7 +255,7 @@ Import "自定義過濾/自定義配置.filter" Optional
         PlayEffect Green Temp
         DisableDropSoundIfAlertSound 
 
-    Show #印鈔 - 終局 低階工匠石
+    Show # %H1 低階工匠石
         Class "Stackable Currency"
         BaseType "Lesser Jeweller's Orb"
         SetTextColor 252 239 175
@@ -624,7 +624,7 @@ Import "自定義過濾/自定義配置.filter" Optional
     #end
 
 #L1 3 鑲嵌
-    Show #印鈔 - 終局 低階符文(冰川符文、暴風符文、心靈符文、肉體符文、啟發符文、重生符文、遠見符文、鍛鐵符文、岩石符文、沙漠符文)
+    Show # %H1 低階符文(冰川符文、暴風符文、心靈符文、肉體符文、啟發符文、重生符文、遠見符文、鍛鐵符文、岩石符文、沙漠符文)
         Class "Augment"
         BaseType == "Lesser Glacial Rune" "Lesser Storm Rune" "Lesser Mind Rune" "Lesser Body Rune" "Lesser Inspiration Rune" "Lesser Rebirth Rune" "Lesser Vision Rune" "Lesser Iron Rune" "Lesser Stone Rune" "Lesser Desert Rune" "Lesser Adept Rune" "Lesser Resolve Rune" "Lesser Robust Rune"
         SetTextColor 0 73 165 200
@@ -639,7 +639,7 @@ Import "自定義過濾/自定義配置.filter" Optional
         PlayEffect Cyan Temp
         DisableDropSoundIfAlertSound
 
-    Show #印鈔 - 終局 符文(冰川符文、暴風符文、心靈符文、肉體符文、啟發符文、重生符文、遠見符文、鍛鐵符文、岩石符文、沙漠符文)
+    Show # %H1 符文(冰川符文、暴風符文、心靈符文、肉體符文、啟發符文、重生符文、遠見符文、鍛鐵符文、岩石符文、沙漠符文)
         Class "Augment"
         BaseType == "Glacial Rune" "Storm Rune" "Mind Rune" "Body Rune" "Inspiration Rune" "Rebirth Rune" "Vision Rune" "Iron Rune" "Stone Rune" "Desert Rune" "Adept Rune" "Resolve Rune" "Robust Rune"
         SetTextColor 0 73 165 200
@@ -654,7 +654,7 @@ Import "自定義過濾/自定義配置.filter" Optional
         PlayEffect Cyan Temp
         DisableDropSoundIfAlertSound
 
-    Show #印鈔 - 終局 高階符文(冰川符文、暴風符文、心靈符文、肉體符文、啟發符文、重生符文、遠見符文、鍛鐵符文、岩石符文、沙漠符文)
+    Show # %H1 高階符文(冰川符文、暴風符文、心靈符文、肉體符文、啟發符文、重生符文、遠見符文、鍛鐵符文、岩石符文、沙漠符文)
         Class "Augment"
         BaseType == "Greater Glacial Rune" "Greater Storm Rune" "Greater Mind Rune" "Greater Body Rune" "Greater Inspiration Rune" "Greater Rebirth Rune" "Greater Vision Rune" "Greater Iron Rune" "Greater Stone Rune" "Greater Desert Rune" "Greater Adept Rune" "Greater Resolve Rune" "Greater Robust Rune"
         SetTextColor 0 73 165 200
@@ -1100,7 +1100,7 @@ Import "自定義過濾/自定義配置.filter" Optional
         PlayEffect Yellow
         DisableDropSoundIfAlertSound
 
-    Show #印鈔 - 終局 巨靈之幣
+    Show # %H1 巨靈之幣
         BaseType == "Djinn Barya"
         SetTextColor 191 162 0 200
         SetBackgroundColor 50 40 0
@@ -1353,7 +1353,7 @@ Import "自定義過濾/自定義配置.filter" Optional
             PlayEffect Yellow Temp
             DisableDropSoundIfAlertSound
 
-        Show #印鈔 - 卓越 高品質裝備(20~25)
+        Show # %H2 卓越 高品質裝備(20~25)
             Quality > 20
             Rarity <= Rare
             SetTextColor 30 30 30
@@ -1456,7 +1456,7 @@ Import "自定義過濾/自定義配置.filter" Optional
             SetFontSize 45
             DisableDropSoundIfAlertSound
 
-        Show #印鈔 - 有價基底 攻城十字弓|蒼涼十字弓|雙子之弓|雜響權杖|徵兆權杖|內臟箭袋|灌注箭袋
+        Show # %H2 有價基底 攻城十字弓|蒼涼十字弓|雙子之弓|雜響權杖|徵兆權杖|內臟箭袋|灌注箭袋
             Rarity == Rare
             BaseType "Siege Crossbow" "Desolate Crossbow" "Gemini Bow" "Rattling Sceptre" "Omen Sceptre" "Visceral Quiver" "Primed Quiver"
             SetTextColor 30 30 30
@@ -1465,7 +1465,7 @@ Import "自定義過濾/自定義配置.filter" Optional
             SetFontSize 41
             DisableDropSoundIfAlertSound
 
-        Show #印鈔 - 有價基底 攻城十字弓|蒼涼十字弓|雙子之弓|雜響權杖|徵兆權杖|內臟箭袋|灌注箭袋|單挑法杖|金光戒指
+        Show # %H2 有價基底 攻城十字弓|蒼涼十字弓|雙子之弓|雜響權杖|徵兆權杖|內臟箭袋|灌注箭袋|單挑法杖|金光戒指
             Rarity == Magic
             BaseType "Siege Crossbow" "Desolate Crossbow" "Gemini Bow" "Rattling Sceptre" "Omen Sceptre" "Visceral Quiver" "Primed Quiver" "Dueling Wand" "Gold Ring"
             SetTextColor 30 30 30
@@ -1474,7 +1474,7 @@ Import "自定義過濾/自定義配置.filter" Optional
             SetFontSize 41
             DisableDropSoundIfAlertSound
 
-        Show #印鈔 - 有價基底 攻城十字弓|蒼涼十字弓|雙子之弓|雜響權杖|徵兆權杖|內臟箭袋|灌注箭袋|單挑法杖|金光戒指
+        Show # %H2 有價基底 攻城十字弓|蒼涼十字弓|雙子之弓|雜響權杖|徵兆權杖|內臟箭袋|灌注箭袋|單挑法杖|金光戒指
             Rarity == Normal
             BaseType "Siege Crossbow" "Desolate Crossbow" "Gemini Bow" "Rattling Sceptre" "Omen Sceptre" "Visceral Quiver" "Primed Quiver" "Dueling Wand" "Gold Ring"
             SetTextColor 30 30 30
@@ -1486,7 +1486,7 @@ Import "自定義過濾/自定義配置.filter" Optional
         #end
 
     #L2 5.7 高等飾品
-        Show #印鈔 - 項鍊基底 日耀項鍊
+        Show # %H2 項鍊基底 日耀項鍊
             Rarity <= Rare
             BaseType "Solar Amulet"
             ItemLevel >= 81
@@ -1495,7 +1495,7 @@ Import "自定義過濾/自定義配置.filter" Optional
             SetFontSize 39
             DisableDropSoundIfAlertSound
 
-        Show #印鈔 - 戒指基底 紫晶戒指|珍珠戒指|潛能之戒
+        Show # %H2 戒指基底 紫晶戒指|珍珠戒指|潛能之戒
             Rarity <= Rare
             BaseType "Amethyst Ring" "Pearl Ring" "Unset Ring"
             ItemLevel >= 81
@@ -1504,7 +1504,7 @@ Import "自定義過濾/自定義配置.filter" Optional
             SetFontSize 39
             DisableDropSoundIfAlertSound
             
-        Show #印鈔 - 腰帶基底 金羽腰帶|精良腰帶|實用腰帶
+        Show # %H2 腰帶基底 金羽腰帶|精良腰帶|實用腰帶
             Rarity <= Rare
             BaseType "Golden Obi" "Fine Belt" "Utility Belt"
             ItemLevel >= 81
@@ -1513,7 +1513,7 @@ Import "自定義過濾/自定義配置.filter" Optional
             SetFontSize 39
             DisableDropSoundIfAlertSound
 
-        Show #印鈔 - 稀有護身符
+        Show # %H2 稀有護身符
             Rarity = Rare
             ItemLevel >= 81
             Class "Amulets"
@@ -1522,28 +1522,28 @@ Import "自定義過濾/自定義配置.filter" Optional
         #end
 
     #L2 5.8 飾品
-        Show #印鈔 - 終局 項鍊基底 日耀項鍊
+        Show # %H1 項鍊基底 日耀項鍊
             Rarity <= Rare
             BaseType "Solar Amulet"
             SetBorderColor 200 200 210
             SetFontSize 39
             DisableDropSoundIfAlertSound
 
-        Show #印鈔 - 終局 戒指基底 紫晶戒指|珍珠戒指|潛能之戒
+        Show # %H1 戒指基底 紫晶戒指|珍珠戒指|潛能之戒
             Rarity <= Rare
             BaseType "Amethyst Ring" "Pearl Ring" "Unset Ring"
             SetBorderColor 200 200 210
             SetFontSize 39
             DisableDropSoundIfAlertSound
             
-        Show #印鈔 - 終局 腰帶基底 金羽腰帶|精良腰帶|實用腰帶
+        Show # %H1 腰帶基底 金羽腰帶|精良腰帶|實用腰帶
             Rarity <= Rare
             BaseType "Golden Obi" "Fine Belt" "Utility Belt"
             SetBorderColor 200 200 210
             SetFontSize 39
             DisableDropSoundIfAlertSound
 
-        Show #印鈔 - 終局 - 稀有護身符
+        Show # %H1 - 稀有護身符
             Rarity = Rare
             Class "Amulets"
             DisableDropSoundIfAlertSound
@@ -1551,7 +1551,7 @@ Import "自定義過濾/自定義配置.filter" Optional
         #end
 
     #L2 5.9 高等特殊基底
-        Show #印鈔 - 高等特殊敏智基底
+        Show # %H2 高等特殊敏智基底
             Rarity <= Rare
             BaseType "Austere Garb" "Falconer's Jacket" "Rambler Jacket"
             ItemLevel >= 82
@@ -1560,7 +1560,7 @@ Import "自定義過濾/自定義配置.filter" Optional
             SetFontSize 39
             DisableDropSoundIfAlertSound
 
-        Show #印鈔 - 高等特殊力智基底
+        Show # %H2 高等特殊力智基底
             Rarity <= Rare
             BaseType "Seastorm Mantle" "Death Mantle" "Conjurer Mantle"
             ItemLevel >= 82
@@ -1569,7 +1569,7 @@ Import "自定義過濾/自定義配置.filter" Optional
             SetFontSize 39
             DisableDropSoundIfAlertSound
 
-        Show #印鈔 - 高等特殊力敏基底
+        Show # %H2 高等特殊力敏基底
             Rarity <= Rare
             BaseType "Thane Mail" "Shrouded Mail" "Dastard Armour"
             ItemLevel >= 82
@@ -1578,7 +1578,7 @@ Import "自定義過濾/自定義配置.filter" Optional
             SetFontSize 39
             DisableDropSoundIfAlertSound
             
-        Show #印鈔 - 高等特殊智慧基底
+        Show # %H2 高等特殊智慧基底
             Rarity <= Rare
             BaseType "Feathered Raiment" "Sacramental Robe" "Flowing Raiment"
             ItemLevel >= 82
@@ -1587,7 +1587,7 @@ Import "自定義過濾/自定義配置.filter" Optional
             SetFontSize 39
             DisableDropSoundIfAlertSound
 
-        Show #印鈔 - 高等特殊敏捷基底
+        Show # %H2 高等特殊敏捷基底
             Rarity <= Rare
             BaseType "Corsair Coat" "Wyrmscale Coat" "Swiftstalker Coat"
             ItemLevel >= 82
@@ -1596,7 +1596,7 @@ Import "自定義過濾/自定義配置.filter" Optional
             SetFontSize 39
             DisableDropSoundIfAlertSound
 
-        Show #印鈔 - 高等特殊力量基底
+        Show # %H2 高等特殊力量基底
             Rarity <= Rare
             BaseType "Warlord Cuirass" "Utzaal Cuirass" "Ornate Plate"
             ItemLevel >= 82
@@ -1608,7 +1608,7 @@ Import "自定義過濾/自定義配置.filter" Optional
         #end
 
     #L2 5.10 高等高級基底
-        Show #印鈔 - 高等高級敏智基底
+        Show # %H2 高等高級敏智基底
             Rarity <= Rare
             BaseType "Secured Wraps" "Daggerfoot Shoes" "Sleek Jacket" "Grinning Mask"
             ItemLevel >= 82
@@ -1617,7 +1617,7 @@ Import "自定義過濾/自定義配置.filter" Optional
             SetFontSize 39
             DisableDropSoundIfAlertSound
 
-        Show #印鈔 - 高等高級力智基底
+        Show # %H2 高等高級力智基底
             Rarity <= Rare
             BaseType "Adherent Cuffs" "Cryptic Leggings" "Wolfskin Mantle" "Cryptic Crown"
             ItemLevel >= 82
@@ -1626,7 +1626,7 @@ Import "自定義過濾/自定義配置.filter" Optional
             SetFontSize 39
             DisableDropSoundIfAlertSound
 
-        Show #印鈔 - 高等高級力敏基底
+        Show # %H2 高等高級力敏基底
             Rarity <= Rare
             BaseType "Blacksteel Gauntlets" "Blacksteel Sabatons" "Death Mail" "Gladiatorial Helm"
             ItemLevel >= 82
@@ -1635,7 +1635,7 @@ Import "自定義過濾/自定義配置.filter" Optional
             SetFontSize 39
             DisableDropSoundIfAlertSound
             
-        Show #印鈔 - 高等高級智慧基底
+        Show # %H2 高等高級智慧基底
             Rarity <= Rare
             BaseType "Sirenscale Gloves" "Sekhema Sandals" "Vile Robe" "Ancestral Tiara"
             ItemLevel >= 82
@@ -1644,7 +1644,7 @@ Import "自定義過濾/自定義配置.filter" Optional
             SetFontSize 39
             DisableDropSoundIfAlertSound
 
-        Show #印鈔 - 高等高級敏捷基底
+        Show # %H2 高等高級敏捷基底
             Rarity <= Rare
             BaseType "Polished Bracers" "Drakeskin Boots" "Tasalian Greaves" "Slipstrike Vest" "Freebooter Cap"
             ItemLevel >= 82
@@ -1653,7 +1653,7 @@ Import "自定義過濾/自定義配置.filter" Optional
             SetFontSize 39
             DisableDropSoundIfAlertSound
 
-        Show #印鈔 - 高等高級力量基底
+        Show # %H2 高等高級力量基底
             Rarity <= Rare
             BaseType "Massive Mitts" "Soldier Cuirass" "Imperial Greathelm"
             ItemLevel >= 82
@@ -1665,42 +1665,42 @@ Import "自定義過濾/自定義配置.filter" Optional
         #end
 
     #L2 5.11 特殊基底
-        Show #印鈔 - 終局 特殊敏智基底
+        Show # %H1 特殊敏智基底
             Rarity <= Rare
             BaseType "Austere Garb" "Falconer's Jacket" "Rambler Jacket"
             SetBorderColor 0 155 155 255
             SetFontSize 39
             DisableDropSoundIfAlertSound
 
-        Show #印鈔 - 終局 特殊力智基底
+        Show # %H1 特殊力智基底
             Rarity <= Rare
             BaseType "Seastorm Mantle" "Death Mantle" "Conjurer Mantle"
             SetBorderColor 155 0 155 255
             SetFontSize 39
             DisableDropSoundIfAlertSound
 
-        Show #印鈔 - 終局 特殊力敏基底
+        Show # %H1 特殊力敏基底
             Rarity <= Rare
             BaseType "Thane Mail" "Shrouded Mail" "Dastard Armour"
             SetBorderColor 155 155 0 255
             SetFontSize 39
             DisableDropSoundIfAlertSound
             
-        Show #印鈔 - 終局 特殊智慧基底
+        Show # %H1 特殊智慧基底
             Rarity <= Rare
             BaseType "Feathered Raiment" "Sacramental Robe" "Flowing Raiment"
             SetBorderColor 27 103 255
             SetFontSize 39
             DisableDropSoundIfAlertSound
 
-        Show #印鈔 - 終局 特殊敏捷基底
+        Show # %H1 特殊敏捷基底
             Rarity <= Rare
             BaseType "Corsair Coat" "Wyrmscale Coat" "Swiftstalker Coat"
             SetBorderColor 55 143 8
             SetFontSize 39
             DisableDropSoundIfAlertSound
 
-        Show #印鈔 - 終局 特殊力量基底
+        Show # %H1 特殊力量基底
             Rarity <= Rare
             BaseType "Warlord Cuirass" "Utzaal Cuirass" "Ornate Plate"
             SetBorderColor 243 91 50
@@ -1710,42 +1710,42 @@ Import "自定義過濾/自定義配置.filter" Optional
         #end
 
     #L2 5.12 高級基底
-        Show #印鈔 - 終局 高級敏智基底
+        Show # %H1 高級敏智基底
             Rarity <= Rare
             BaseType "Secured Wraps" "Daggerfoot Shoes" "Sleek Jacket" "Grinning Mask"
             SetBorderColor 0 155 155 255
             SetFontSize 39
             DisableDropSoundIfAlertSound
 
-        Show #印鈔 - 終局 高級力智基底
+        Show # %H1 高級力智基底
             Rarity <= Rare
             BaseType "Adherent Cuffs" "Cryptic Leggings" "Wolfskin Mantle" "Cryptic Crown"
             SetBorderColor 155 0 155 255
             SetFontSize 39
             DisableDropSoundIfAlertSound
 
-        Show #印鈔 - 終局 高級力敏基底
+        Show # %H1 高級力敏基底
             Rarity <= Rare
             BaseType "Blacksteel Gauntlets" "Blacksteel Sabatons" "Death Mail" "Gladiatorial Helm"
             SetBorderColor 155 155 0 255
             SetFontSize 39
             DisableDropSoundIfAlertSound
             
-        Show #印鈔 - 終局 高級智慧基底
+        Show # %H1 高級智慧基底
             Rarity <= Rare
             BaseType "Sirenscale Gloves" "Sekhema Sandals" "Vile Robe" "Ancestral Tiara"
             SetBorderColor 27 103 255
             SetFontSize 39
             DisableDropSoundIfAlertSound
 
-        Show #印鈔 - 終局 高級敏捷基底
+        Show # %H1 高級敏捷基底
             Rarity <= Rare
             BaseType "Polished Bracers" "Drakeskin Boots" "Tasalian Greaves" "Slipstrike Vest" "Freebooter Cap"
             SetBorderColor 55 143 8
             SetFontSize 39
             DisableDropSoundIfAlertSound
 
-        Show #印鈔 - 終局 高級力量基底
+        Show # %H1 高級力量基底
             Rarity <= Rare
             BaseType "Massive Mitts" "Soldier Cuirass" "Imperial Greathelm"
             SetBorderColor 243 91 50
@@ -1755,42 +1755,42 @@ Import "自定義過濾/自定義配置.filter" Optional
         #end
 
     #L2 5.13 次級基底
-        Hide #印鈔 - 終局 - 速刷 次級敏智基底
+        Hide # %H0 次級敏智基底
             Rarity <= Rare
             BaseType "Vaal Wraps" "Quickslip Shoes" "Soaring Mask"
             SetBorderColor 0 155 155 255
             SetFontSize 39
             DisableDropSoundIfAlertSound
 
-        Hide #印鈔 - 終局 - 速刷 次級力智基底
+        Hide # %H0 次級力智基底
             Rarity <= Rare
             BaseType "Gleaming Cuffs" "Warlock Leggings" "Divine Crown"
             SetBorderColor 155 0 155 255
             SetFontSize 39
             DisableDropSoundIfAlertSound
 
-        Hide #印鈔 - 終局 - 速刷 次級力敏基底
+        Hide # %H0 次級力敏基底
             Rarity <= Rare
             BaseType "Cultist Gauntlets" "Fortress Sabatons" "Champion Helm"
             SetBorderColor 155 155 0 255
             SetFontSize 39
             DisableDropSoundIfAlertSound
             
-        Hide #印鈔 - 終局 - 速刷 次級智慧基底
+        Hide # %H0 次級智慧基底
             Rarity <= Rare
             BaseType "Vaal Gloves" "Sandsworn Sandals" "Kamasan Tiara"
             SetBorderColor 27 103 255
             SetFontSize 39
             DisableDropSoundIfAlertSound
 
-        Hide #印鈔 - 終局 - 速刷 次級敏捷基底
+        Hide # %H0 次級敏捷基底
             Rarity <= Rare
             BaseType "Barbed Bracers" "Dragonscale Boots" "Trapper Hood"
             SetBorderColor 55 143 8
             SetFontSize 39
             DisableDropSoundIfAlertSound
 
-        Hide #印鈔 - 終局 - 速刷 次級力量基底
+        Hide # %H0 次級力量基底
             Rarity <= Rare
             BaseType "Vaal Mitts" "Paragon Greathelm" "Vaal Greaves"
             SetBorderColor 243 91 50
@@ -1809,7 +1809,7 @@ Import "自定義過濾/自定義配置.filter" Optional
             SetFontSize 39
             DisableDropSoundIfAlertSound
 
-        Show #印鈔 - 物理箭袋基底 灌注箭袋|內臟箭袋
+        Show # %H2 物理箭袋基底 灌注箭袋|內臟箭袋
             Rarity <= Rare
             BaseType "Primed Quiver" "Visceral Quiver"
             ItemLevel >= 82
@@ -1818,7 +1818,7 @@ Import "自定義過濾/自定義配置.filter" Optional
             SetFontSize 39
             DisableDropSoundIfAlertSound
 
-        Show #印鈔 - 盾牌智力基底 神聖法器|塔薩里安法器
+        Show # %H2 盾牌智力基底 神聖法器|塔薩里安法器
             Rarity <= Rare
             BaseType "Sacred Focus" "Tasalian Focus"
             ItemLevel >= 82
@@ -1827,7 +1827,7 @@ Import "自定義過濾/自定義配置.filter" Optional
             SetFontSize 39
             DisableDropSoundIfAlertSound
             
-        Show #印鈔 - 盾牌力量基底 瓦爾塔盾|Tawhoan Tower Shield
+        Show # %H2 盾牌力量基底 瓦爾塔盾|Tawhoan Tower Shield
             Rarity <= Rare
             BaseType "Vaal Tower Shield" "Tawhoan Tower Shield"
             ItemLevel >= 82
@@ -1836,7 +1836,7 @@ Import "自定義過濾/自定義配置.filter" Optional
             SetFontSize 39
             DisableDropSoundIfAlertSound
 
-        Show #印鈔 - 盾牌力智基底 瓦爾紋章盾|Blacksteel Crest Shield
+        Show # %H2 盾牌力智基底 瓦爾紋章盾|Blacksteel Crest Shield
             Rarity <= Rare
             BaseType "Vaal Crest Shield" "Blacksteel Crest Shield"
             ItemLevel >= 82
@@ -1845,7 +1845,7 @@ Import "自定義過濾/自定義配置.filter" Optional
             SetFontSize 39
             DisableDropSoundIfAlertSound
 
-        Show #印鈔 - 盾牌力敏基底 翱翔圓盾|Golden Targe
+        Show # %H2 盾牌力敏基底 翱翔圓盾|Golden Targe
             Rarity <= Rare
             BaseType "Soaring Targe" "Golden Targe"
             ItemLevel >= 82
@@ -1857,42 +1857,42 @@ Import "自定義過濾/自定義配置.filter" Optional
         #end
 
     #L2 5.15 副手基底
-        Show #印鈔 - 終局 高階金裝(輕盾) 遠古輕盾|Desert Buckler
+        Show # %H1 高階金裝(輕盾) 遠古輕盾|Desert Buckler
             Rarity <= Rare
             BaseType "Ancient Buckler" "Desert Buckler"
             SetBorderColor 55 143 8
             SetFontSize 39
             DisableDropSoundIfAlertSound
 
-        Show #印鈔 - 終局 物理箭袋基底 灌注箭袋|內臟箭袋
+        Show # %H1 物理箭袋基底 灌注箭袋|內臟箭袋
             Rarity <= Rare
             BaseType "Primed Quiver" "Visceral Quiver"
             SetBorderColor 55 143 8
             SetFontSize 39
             DisableDropSoundIfAlertSound
 
-        Show #印鈔 - 終局 盾牌智力基底 神聖法器|塔薩里安法器
+        Show # %H1 盾牌智力基底 神聖法器|塔薩里安法器
             Rarity <= Rare
             BaseType "Sacred Focus" "Tasalian Focus"
             SetBorderColor 27 103 255
             SetFontSize 39
             DisableDropSoundIfAlertSound
             
-        Show #印鈔 - 終局 盾牌力量基底 瓦爾塔盾|Tawhoan Tower Shield
+        Show # %H1 盾牌力量基底 瓦爾塔盾|Tawhoan Tower Shield
             Rarity <= Rare
             BaseType "Vaal Tower Shield" "Tawhoan Tower Shield"
             SetBorderColor 243 91 50
             SetFontSize 39
             DisableDropSoundIfAlertSound
 
-        Show #印鈔 - 終局 盾牌力智基底 瓦爾紋章盾|Blacksteel Crest Shield
+        Show # %H1 盾牌力智基底 瓦爾紋章盾|Blacksteel Crest Shield
             Rarity <= Rare
             BaseType "Vaal Crest Shield" "Blacksteel Crest Shield"
             SetBorderColor 160 90 180
             SetFontSize 39
             DisableDropSoundIfAlertSound
 
-        Show #印鈔 - 終局 盾牌力敏基底 翱翔圓盾|Golden Targe
+        Show # %H1 盾牌力敏基底 翱翔圓盾|Golden Targe
             Rarity <= Rare
             BaseType "Soaring Targe" "Golden Targe"
             SetBorderColor 180 140 40
@@ -1910,7 +1910,7 @@ Import "自定義過濾/自定義配置.filter" Optional
             SetFontSize 39
             DisableDropSoundIfAlertSound
 
-        Show #印鈔 - 權杖基底 雜響權杖|徵兆權杖|暴怒權杖
+        Show # %H2 權杖基底 雜響權杖|徵兆權杖|暴怒權杖
             Rarity <= Rare
             BaseType "Rattling Sceptre" "Omen Sceptre" "Wrath Sceptre"
             ItemLevel >= 82
@@ -1919,7 +1919,7 @@ Import "自定義過濾/自定義配置.filter" Optional
             SetFontSize 39
             DisableDropSoundIfAlertSound
 
-        Show #印鈔 - 法杖基底 調和法杖|虹吸法杖|電能法杖|單挑法杖
+        Show # %H2 法杖基底 調和法杖|虹吸法杖|電能法杖|單挑法杖
             Rarity <= Rare
             BaseType "Attuned Wand" "Siphoning Wand" "Galvanic Wand" "Dueling Wand"
             ItemLevel >= 81
@@ -1928,7 +1928,7 @@ Import "自定義過濾/自定義配置.filter" Optional
             SetFontSize 39
             DisableDropSoundIfAlertSound
 
-        Show #印鈔 - 長杖基底 鳴響長杖|死神長杖|咆哮長杖|牧師長杖|麻木長杖
+        Show # %H2 長杖基底 鳴響長杖|死神長杖|咆哮長杖|牧師長杖|麻木長杖
             Rarity <= Rare
             BaseType "Chiming Staff" "Reaping Staff" "Roaring Staff" "Sanctified Staff" "Paralysing Staff"
             ItemLevel >= 81
@@ -1937,7 +1937,7 @@ Import "自定義過濾/自定義配置.filter" Optional
             SetFontSize 39
             DisableDropSoundIfAlertSound
 
-        Show #印鈔 - 物理單手錘基底 強化之錘|鬥爭鎬|熔火之錘|Akoyan Club
+        Show # %H2 物理單手錘基底 強化之錘|鬥爭鎬|熔火之錘|Akoyan Club
             Rarity <= Rare
             BaseType "Fortified Hammer" "Strife Pick" "Molten Hammer" "Akoyan Club"
             ItemLevel >= 81
@@ -1946,7 +1946,7 @@ Import "自定義過濾/自定義配置.filter" Optional
             SetFontSize 39
             DisableDropSoundIfAlertSound
 
-        Show #印鈔 - 物理雙手錘基底 毀滅重錘|盲信巨錘|鐵木巨錘|Tawhoan Greatclub
+        Show # %H2 物理雙手錘基底 毀滅重錘|盲信巨錘|鐵木巨錘|Tawhoan Greatclub
             Rarity <= Rare
             BaseType "Ruination Maul" "Fanatic Greathammer" "Ironwood Greathammer" "Tawhoan Greatclub"
             ItemLevel >= 81
@@ -1955,7 +1955,7 @@ Import "自定義過濾/自定義配置.filter" Optional
             SetFontSize 39
             DisableDropSoundIfAlertSound
 
-        Show #印鈔 - 長鋒基底 海玻璃長鋒|潛獵長鋒|翱翔長鋒|宏偉長鋒|尖刺長鋒|Akoyan Spear
+        Show # %H2 長鋒基底 海玻璃長鋒|潛獵長鋒|翱翔長鋒|宏偉長鋒|尖刺長鋒|Akoyan Spear
             Rarity <= Rare
             BaseType "Seaglass Spear" "Stalking Spear" "Flying Spear" "Grand Spear" "Spiked Spear" "Akoyan Spear"
             ItemLevel >= 81
@@ -1963,7 +1963,7 @@ Import "自定義過濾/自定義配置.filter" Optional
             SetBorderColor 55 143 8
             DisableDropSoundIfAlertSound
 
-        Show #印鈔 - 物理弓基底 毀滅者之弓
+        Show # %H2 物理弓基底 毀滅者之弓
             Rarity <= Rare
             BaseType "Obliterator Bow"
             ItemLevel >= 82
@@ -1972,7 +1972,7 @@ Import "自定義過濾/自定義配置.filter" Optional
             SetFontSize 39
             DisableDropSoundIfAlertSound
 
-        Show #印鈔 - 元素弓基底 雙子之弓
+        Show # %H2 元素弓基底 雙子之弓
             Rarity <= Rare
             BaseType "Gemini Bow"
             ItemLevel >= 81
@@ -1981,7 +1981,7 @@ Import "自定義過濾/自定義配置.filter" Optional
             SetFontSize 39
             DisableDropSoundIfAlertSound
 
-        Show #印鈔 - 物理/元素十字弓基底 攻城十字弓|雙子十字弓|蒼涼十字弓|Elegant Crossbow
+        Show # %H2 物理/元素十字弓基底 攻城十字弓|雙子十字弓|蒼涼十字弓|Elegant Crossbow
             Rarity <= Rare
             BaseType "Siege Crossbow" "Gemini Crossbow" "Desolate Crossbow" "Elegant Crossbow"
             ItemLevel >= 81
@@ -1993,62 +1993,62 @@ Import "自定義過濾/自定義配置.filter" Optional
         #end
 
     #L2 5.17 武器基底
-        Show #印鈔 - 終局 魔符基底 翠玉魔符|天雷魔符|荒林魔符|聖賢魔符|統領魔符|真菌魔符|銳爪魔符|燼木魔符|尖錐魔符
+        Show # %H1 魔符基底 翠玉魔符|天雷魔符|荒林魔符|聖賢魔符|統領魔符|真菌魔符|銳爪魔符|燼木魔符|尖錐魔符
             Rarity <= Rare
             BaseType "Jade Talisman" "Thunder Talisman" "Wildwood Talisman" "Maji Talisman" "Alpha Talisman" "Fungal Talisman" "Fang Talisman" "Ashbark Talisman" "Spiny Talisman"
             SetBorderColor 160 90 180
             SetFontSize 39
             DisableDropSoundIfAlertSound
 
-        Show #印鈔 - 終局 權杖基底 雜響權杖|徵兆權杖|暴怒權杖
+        Show # %H1 權杖基底 雜響權杖|徵兆權杖|暴怒權杖
             Rarity <= Rare
             BaseType "Rattling Sceptre" "Omen Sceptre" "Wrath Sceptre"
             SetBorderColor 160 90 180
             SetFontSize 39
             DisableDropSoundIfAlertSound
 
-        Show #印鈔 - 終局 法杖基底 調和法杖|虹吸法杖|電能法杖|單挑法杖
+        Show # %H1 法杖基底 調和法杖|虹吸法杖|電能法杖|單挑法杖
             Rarity <= Rare
             BaseType "Attuned Wand" "Siphoning Wand" "Galvanic Wand" "Dueling Wand"
             SetBorderColor 27 103 255
             SetFontSize 39
             DisableDropSoundIfAlertSound
 
-        Show #印鈔 - 終局 長杖基底 鳴響長杖|死神長杖|咆哮長杖|牧師長杖|麻木長杖
+        Show # %H1 長杖基底 鳴響長杖|死神長杖|咆哮長杖|牧師長杖|麻木長杖
             Rarity <= Rare
             BaseType "Chiming Staff" "Reaping Staff" "Roaring Staff" "Sanctified Staff" "Paralysing Staff"
             SetBorderColor 27 103 255
             SetFontSize 39
             DisableDropSoundIfAlertSound
 
-        Show #印鈔 - 終局 物理單手錘基底 強化之錘|鬥爭鎬|熔火之錘|Akoyan Club
+        Show # %H1 物理單手錘基底 強化之錘|鬥爭鎬|熔火之錘|Akoyan Club
             Rarity <= Rare
             BaseType "Fortified Hammer" "Strife Pick" "Molten Hammer" "Akoyan Club"
             SetBorderColor 243 91 50
             SetFontSize 39
             DisableDropSoundIfAlertSound
 
-        Show #印鈔 - 終局 物理雙手錘基底 毀滅重錘|盲信巨錘|鐵木巨錘|Tawhoan Greatclub
+        Show # %H1 物理雙手錘基底 毀滅重錘|盲信巨錘|鐵木巨錘|Tawhoan Greatclub
             Rarity <= Rare
             BaseType "Ruination Maul" "Fanatic Greathammer" "Ironwood Greathammer" "Tawhoan Greatclub"
             SetBorderColor 243 91 50
             SetFontSize 39
             DisableDropSoundIfAlertSound
 
-        Show #印鈔 - 終局 長鋒基底 海玻璃長鋒|潛獵長鋒|翱翔長鋒|宏偉長鋒|尖刺長鋒|Akoyan Spear
+        Show # %H1 長鋒基底 海玻璃長鋒|潛獵長鋒|翱翔長鋒|宏偉長鋒|尖刺長鋒|Akoyan Spear
             Rarity <= Rare
             BaseType "Seaglass Spear" "Stalking Spear" "Flying Spear" "Grand Spear" "Spiked Spear" "Akoyan Spear"
             SetBorderColor 55 143 8
             DisableDropSoundIfAlertSound
 
-        Show #印鈔 - 終局 物理弓基底 雙子之弓|Obliterator Bow
+        Show # %H1 物理弓基底 雙子之弓|Obliterator Bow
             Rarity <= Rare
             BaseType "Gemini Bow" "Obliterator Bow"
             SetBorderColor 55 143 8
             SetFontSize 39
             DisableDropSoundIfAlertSound
 
-        Show #印鈔 - 終局 物理十字弓基底 攻城十字弓|雙子十字弓|蒼涼十字弓|Elegant Crossbow
+        Show # %H1 物理十字弓基底 攻城十字弓|雙子十字弓|蒼涼十字弓|Elegant Crossbow
             Rarity <= Rare
             BaseType "Siege Crossbow" "Gemini Crossbow" "Desolate Crossbow" "Elegant Crossbow"
             SetBorderColor 180 140 40
@@ -2113,7 +2113,7 @@ Import "自定義過濾/自定義配置.filter" Optional
         PlayEffect Purple
         DisableDropSoundIfAlertSound
 
-    Hide #印鈔 - 終局 - 速刷 高等區域白換界石
+    Hide # %H0 高等區域白換界石
         AreaLevel >= 78
         Rarity <= Rare
         WaystoneTier <= 5
@@ -2144,7 +2144,7 @@ Import "自定義過濾/自定義配置.filter" Optional
         PlayEffect White Temp
         DisableDropSoundIfAlertSound
 
-    Hide #印鈔 - 終局 - 速刷 高等地區黃換界石
+    Hide # %H0 高等地區黃換界石
         AreaLevel >= 78
         Rarity <= Rare
         WaystoneTier >= 6
@@ -2177,7 +2177,7 @@ Import "自定義過濾/自定義配置.filter" Optional
         PlayEffect Yellow Temp
         DisableDropSoundIfAlertSound
 
-    Hide #印鈔 - 終局 - 速刷 高等地區低等紅換界石
+    Hide # %H0 高等地區低等紅換界石
         AreaLevel >= 78
         Rarity <= Rare
         WaystoneTier >= 11
@@ -2282,7 +2282,7 @@ Import "自定義過濾/自定義配置.filter" Optional
         MinimapIcon 0 Red Raindrop
         DisableDropSoundIfAlertSound
 
-    Show #印鈔 - 終局 - 顯示高品質終極魔力藥劑(21~25)
+    Show # %H1 - 顯示高品質終極魔力藥劑(21~25)
         Class "Mana Flask"
         BaseType "Ultimate Mana Flask"
         Quality > 20
@@ -2295,7 +2295,7 @@ Import "自定義過濾/自定義配置.filter" Optional
         MinimapIcon 1 Blue Raindrop
         DisableDropSoundIfAlertSound
 
-    Show #印鈔 - 終局 - 顯示高品質終極生命藥劑(21~25)
+    Show # %H1 - 顯示高品質終極生命藥劑(21~25)
         Class "Life Flask"
         BaseType "Ultimate Life Flask"
         Quality > 20
@@ -2308,7 +2308,7 @@ Import "自定義過濾/自定義配置.filter" Optional
         MinimapIcon 1 Red Raindrop
         DisableDropSoundIfAlertSound
 
-    Show #印鈔 - 高等終極魔力藥劑
+    Show # %H2 高等終極魔力藥劑
         Rarity == Normal
         Class "Mana Flask"
         BaseType "Ultimate Mana Flask"
@@ -2322,7 +2322,7 @@ Import "自定義過濾/自定義配置.filter" Optional
         MinimapIcon 2 Blue Raindrop
         DisableDropSoundIfAlertSound
 
-    Hide #印鈔 - 終局 - 速刷 終極魔力藥劑
+    Hide # %H0 終極魔力藥劑
         Class "Mana Flask"
         BaseType "Ultimate Mana Flask"
         SetTextColor 30 144 255
@@ -2334,7 +2334,7 @@ Import "自定義過濾/自定義配置.filter" Optional
         MinimapIcon 2 Blue Raindrop
         DisableDropSoundIfAlertSound
 
-    Show #印鈔 - 高等終極生命藥劑
+    Show # %H2 高等終極生命藥劑
         Rarity == Normal
         Class "Life Flask"
         BaseType "Ultimate Life Flask"
@@ -2348,7 +2348,7 @@ Import "自定義過濾/自定義配置.filter" Optional
         MinimapIcon 2 Red Raindrop
         DisableDropSoundIfAlertSound
 
-    Hide #印鈔 - 終局 - 速刷 終極生命藥劑
+    Hide # %H0 終極生命藥劑
         Class "Life Flask"
         BaseType "Ultimate Life Flask"
         SetTextColor 150 0 0
@@ -2415,7 +2415,7 @@ Import "自定義過濾/自定義配置.filter" Optional
         MinimapIcon 1 Green Raindrop
         DisableDropSoundIfAlertSound
 
-    Show #印鈔 - 終局 顯示護符 解凍護符|止血護符|解毒護符|滅火護符|接地護符|岩石護符|白銀護符|紫晶護符
+    Show # %H1 顯示護符 解凍護符|止血護符|解毒護符|滅火護符|接地護符|岩石護符|白銀護符|紫晶護符
         BaseType "Thawing Charm" "Staunching Charm" "Antidote Charm" "Dousing Charm" "Grounding Charm" "Stone Charm" "Silver Charm" "Amethyst Charm"
         Class "Charms"
         SetTextColor 172 233 76
@@ -2428,7 +2428,7 @@ Import "自定義過濾/自定義配置.filter" Optional
         MinimapIcon 2 Green Raindrop
         DisableDropSoundIfAlertSound
 
-    Hide #印鈔 - 終局 - 速刷 顯示護符
+    Hide # %H0 顯示護符
         Class "Charms"
         SetTextColor 172 233 76
         SetBackgroundColor 0 0 0
@@ -2454,7 +2454,7 @@ Import "自定義過濾/自定義配置.filter" Optional
         PlayEffect Purple
         DisableDropSoundIfAlertSound
 
-    Show #印鈔 - 技能寶石
+    Show # %H2 技能寶石
         Class "Uncut Skill Gems"
         BaseType "Uncut Skill Gem (Level 19)"
         SetTextColor 27 162 155
@@ -2463,7 +2463,7 @@ Import "自定義過濾/自定義配置.filter" Optional
         SetFontSize 40
         DisableDropSoundIfAlertSound
 
-    Show #印鈔 - 終局 技能寶石
+    Show # %H1 技能寶石
         Class "Uncut Skill Gems"
         SetTextColor 27 162 155
         SetBackgroundColor 0 0 0
@@ -2486,7 +2486,7 @@ Import "自定義過濾/自定義配置.filter" Optional
         PlayEffect Purple
         DisableDropSoundIfAlertSound
 
-    Show #印鈔 - 精魂寶石
+    Show # %H2 精魂寶石
         Class "Uncut Spirit Gems"
         BaseType "Uncut Spirit Gem (Level 19)" "Uncut Spirit Gem (Level 18)"
         SetTextColor 27 162 155
@@ -2495,7 +2495,7 @@ Import "自定義過濾/自定義配置.filter" Optional
         SetFontSize 40
         DisableDropSoundIfAlertSound
 
-    Show #印鈔 - 終局 精魂寶石
+    Show # %H1 精魂寶石
         Class "Uncut Spirit Gems"
         SetTextColor 27 162 155
         SetBackgroundColor 0 0 0
@@ -2503,7 +2503,7 @@ Import "自定義過濾/自定義配置.filter" Optional
         SetFontSize 40
         DisableDropSoundIfAlertSound
 
-    Show #印鈔 - 終局 輔助寶石
+    Show # %H1 輔助寶石
         Class "Uncut Support Gems"
         SetTextColor 27 162 155
         SetBackgroundColor 0 0 0
@@ -2557,7 +2557,7 @@ Import "自定義過濾/自定義配置.filter" Optional
         PlayEffect Brown
         DisableDropSoundIfAlertSound
 
-    Hide #印鈔 - 終局 - 速刷 稀有裝
+    Hide # %H0 稀有裝
         Rarity == Rare
         Class "Claws" "Daggers" "Wands" "One Hand Swords" "One Hand Axes" "One Hand Maces" "Sceptres" "Spears" "Flails" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Quarterstaves" "Crossbows" "Traps" "Fishing Rods" "Quivers" "Shields" "Foci" "Gloves" "Boots" "Body Armours" "Helmets" "Buckler" "Amulets" "Rings" "Belts" "Talisman"
         SetFontSize 35
