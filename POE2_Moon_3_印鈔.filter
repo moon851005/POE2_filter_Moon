@@ -255,7 +255,7 @@ Import "自定義過濾/自定義配置.filter" Optional
         PlayEffect Green Temp
         DisableDropSoundIfAlertSound 
 
-    Hide #印鈔 - 終局 工匠石
+    Hide #印鈔 - 終局 低階工匠石
         Class "Stackable Currency"
         BaseType "Lesser Jeweller's Orb"
         SetTextColor 252 239 175
@@ -309,7 +309,7 @@ Import "自定義過濾/自定義配置.filter" Optional
         PlayEffect Green Temp
         DisableDropSoundIfAlertSound
 
-    Show #工匠石(裝備插槽)
+    Show #巧匠石
         Class "Stackable Currency"
         BaseType "Artificer's Orb"
         SetTextColor 255 255 255
@@ -1322,7 +1322,7 @@ Import "自定義過濾/自定義配置.filter" Optional
     #L2 5.3 罕見基底
         Show #卓越 雙孔>三孔
             Rarity <= Rare
-            Class "Body Armours" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Quarterstaves" "Crossbows" "Traps" "Fishing Rods"
+            Class "Body Armours" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Quarterstaves" "Crossbows" "Traps" "Fishing Rods" "Talisman"
             Sockets == 3
             SetTextColor 30 30 30
             SetBackgroundColor 255 221 100
@@ -1901,9 +1901,9 @@ Import "自定義過濾/自定義配置.filter" Optional
 
         #end
     #L2 5.16 高等武器基底
-        Hide #印鈔 -魔符基底
+        Hide #印鈔 -魔符基底 翠玉魔符|天雷魔符|荒林魔符|聖賢魔符|統領魔符|真菌魔符|銳爪魔符|燼木魔符|尖錐魔符
             Rarity <= Rare
-            BaseType "Fang Talisman" "Fungal Talisman" "Voltfang Talisman" "Wildwood Talisman" "Wingbeat Talisman" "Changeling Talisman"
+            BaseType "Jade Talisman" "Thunder Talisman" "Wildwood Talisman" "Maji Talisman" "Alpha Talisman" "Fungal Talisman" "Fang Talisman" "Ashbark Talisman" "Spiny Talisman"
             ItemLevel >= 82
             SetBackgroundColor 50 0 50
             SetBorderColor 160 90 180
@@ -1993,9 +1993,9 @@ Import "自定義過濾/自定義配置.filter" Optional
         #end
 
     #L2 5.17 武器基底
-        Hide #印鈔 - 終局 魔符基底
+        Hide #印鈔 - 終局 魔符基底 翠玉魔符|天雷魔符|荒林魔符|聖賢魔符|統領魔符|真菌魔符|銳爪魔符|燼木魔符|尖錐魔符
             Rarity <= Rare
-            BaseType "Fang Talisman" "Fungal Talisman" "Voltfang Talisman" "Wildwood Talisman" "Wingbeat Talisman" "Changeling Talisman"
+            BaseType "Jade Talisman" "Thunder Talisman" "Wildwood Talisman" "Maji Talisman" "Alpha Talisman" "Fungal Talisman" "Fang Talisman" "Ashbark Talisman" "Spiny Talisman"
             SetBorderColor 160 90 180
             SetFontSize 39
             DisableDropSoundIfAlertSound
@@ -2056,7 +2056,7 @@ Import "自定義過濾/自定義配置.filter" Optional
             DisableDropSoundIfAlertSound
 
     #end
-
+#end
 #L1 6 輿圖
     Show #艾斯祖太的偶像
         Class "Map Fragments"
@@ -2559,7 +2559,7 @@ Import "自定義過濾/自定義配置.filter" Optional
 
     Hide #印鈔 - 終局 - 速刷 稀有裝
         Rarity == Rare
-        Class "Claws" "Daggers" "Wands" "One Hand Swords" "One Hand Axes" "One Hand Maces" "Sceptres" "Spears" "Flails" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Quarterstaves" "Crossbows" "Traps" "Fishing Rods" "Quivers" "Shields" "Foci" "Gloves" "Boots" "Body Armours" "Helmets" "Buckler" "Amulets" "Rings" "Belts"
+        Class "Claws" "Daggers" "Wands" "One Hand Swords" "One Hand Axes" "One Hand Maces" "Sceptres" "Spears" "Flails" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Quarterstaves" "Crossbows" "Traps" "Fishing Rods" "Quivers" "Shields" "Foci" "Gloves" "Boots" "Body Armours" "Helmets" "Buckler" "Amulets" "Rings" "Belts" "Talisman"
         SetFontSize 35
         DisableDropSoundIfAlertSound
 
@@ -2580,34 +2580,15 @@ Import "自定義過濾/自定義配置.filter" Optional
     Hide #隱藏高等白藍裝
         AreaLevel >= 75
         Rarity < Rare
-        Class "Claws" "Daggers" "Wands" "One Hand Swords" "One Hand Axes" "One Hand Maces" "Sceptres" "Spears" "Flails" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Quarterstaves" "Crossbows" "Traps" "Fishing Rods" "Quivers" "Shields" "Foci" "Gloves" "Boots" "Body Armours" "Helmets" "Buckler" "Amulets" "Rings" "Belts"
+        Class "Claws" "Daggers" "Wands" "One Hand Swords" "One Hand Axes" "One Hand Maces" "Sceptres" "Spears" "Flails" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Quarterstaves" "Crossbows" "Traps" "Fishing Rods" "Quivers" "Shields" "Foci" "Gloves" "Boots" "Body Armours" "Helmets" "Buckler" "Amulets" "Rings" "Belts" "Talisman"
         SetFontSize 35
         DisableDropSoundIfAlertSound
 
     Show #縮小白藍裝
         AreaLevel >= 65
         Rarity < Rare
-        Class "Claws" "Daggers" "Wands" "One Hand Swords" "One Hand Axes" "One Hand Maces" "Sceptres" "Spears" "Flails" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Quarterstaves" "Crossbows" "Traps" "Fishing Rods" "Quivers" "Shields" "Foci" "Gloves" "Boots" "Body Armours" "Helmets" "Buckler" "Amulets" "Rings" "Belts"
+        Class "Claws" "Daggers" "Wands" "One Hand Swords" "One Hand Axes" "One Hand Maces" "Sceptres" "Spears" "Flails" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Quarterstaves" "Crossbows" "Traps" "Fishing Rods" "Quivers" "Shields" "Foci" "Gloves" "Boots" "Body Armours" "Helmets" "Buckler" "Amulets" "Rings" "Belts" "Talisman"
         SetFontSize 35
         DisableDropSoundIfAlertSound
 
     #end
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
