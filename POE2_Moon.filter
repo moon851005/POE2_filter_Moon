@@ -231,7 +231,7 @@
 
     Show # 瓦爾灌注器
         Class "Stackable Currency"
-        BaseType "Vaal Infuser"
+        BaseType "Vaal Armourer's Infuser"
         SetTextColor 170 129 129
         SetBackgroundColor 45 0 0
         SetBorderColor 150 0 0
@@ -2207,9 +2207,9 @@
         PlayEffect Purple
         DisableDropSoundIfAlertSound
 
-    Show # 裂痕碑牌|探險碑牌|譫妄碑牌|祭祀碑牌|深淵石碑
+    Show # 裂痕碑牌|探險碑牌|譫妄碑牌|祭祀碑牌|深淵碑牌|總督碑牌|神廟碑牌
         Class "Tablet"
-        BaseType "Breach Precursor Tablet" "Expedition Precursor Tablet" "Delirium Precursor Tablet" "Ritual Precursor Tablet" "Abyss Precursor Tablet"
+        BaseType "Breach Tablet" "Expedition Tablet" "Delirium Tablet" "Ritual Tablet" "Abyss Tablet" "Overseer Tablet" "Temple Tablet"
         SetTextColor 246 173 255
         SetBorderColor 30 144 255
         SetFontSize 45
@@ -2223,7 +2223,7 @@
 
     Show # 先行者碑牌
         Class "Tablet"
-        BaseType "Precursor Tablet"
+        BaseType "Irradiated Precursor Tablet"
         SetTextColor 246 173 255
         SetBorderColor 30 144 255
         SetFontSize 42
