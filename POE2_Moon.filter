@@ -684,7 +684,7 @@
 
     Show # 完美符文(冰川、暴風、心靈、肉體、啟發、重生、遠見、鍛鐵、岩石、沙漠、嫻熟、決心、堅實)
         Class "Augment"
-        BaseType == "Perfect Glacial Rune" "Perfect Storm Rune" "Perfect Iron Rune" "Perfect Body Rune" "Perfect Mind Rune" "Perfect Rebirth Rune" "Perfect Inspiration Rune" "Perfect Stone Rune" "Perfect Vision Rune""Perfect Desert Rune" "Perfect Robust Rune" "Perfect Adept Rune" "Perfect Resolve Rune"
+        BaseType == "Perfect Glacial Rune" "Perfect Storm Rune" "Perfect Iron Rune" "Perfect Body Rune" "Perfect Mind Rune" "Perfect Rebirth Rune" "Perfect Inspiration Rune" "Perfect Stone Rune" "Perfect Vision Rune" "Perfect Desert Rune" "Perfect Robust Rune" "Perfect Adept Rune" "Perfect Resolve Rune"
         SetTextColor 0 73 165 200
         SetBackgroundColor 152 184 191
         SetBorderColor 153 213 243
@@ -1068,7 +1068,7 @@
         MinimapIcon 0 Cyan Cross
         PlayEffect Cyan
         DisableDropSoundIfAlertSound
-    
+
     Show # 重鑄三曲烈焰
         Class "Map Fragment"
         BaseType "The Triskelion Reforged"
@@ -1083,7 +1083,7 @@
         MinimapIcon 0 Cyan Cross
         PlayEffect Cyan
         DisableDropSoundIfAlertSound
-        
+
     Show # 加密金鑰
         Class "Stackable Currency"
         BaseType "Cryptic Key"
@@ -1143,7 +1143,7 @@
         MinimapIcon 2 Grey Kite
         PlayEffect Grey Temp
         DisableDropSoundIfAlertSound
-        
+
     Show # 渡鴉的倒影
         Class "Map Fragment"
         BaseType "Raven's Reflection"
@@ -1567,7 +1567,7 @@
         CustomAlertSoundOptional "Lelouch\Lelouch-CC_真是令我吃驚.mp3" 300
         DisableDropSoundIfAlertSound
 
-    Show #有用胎贈 奢華
+    Show # 有用胎贈 奢華
         Class "Wombgifts"
         BaseType == "Lavish Wombgift"
         SetTextColor 192 127 225
@@ -1582,7 +1582,7 @@
         PlayEffect Purple
         DisableDropSoundIfAlertSound
 
-    Show #胎贈
+    Show # 胎贈
         Class "Wombgifts"
         SetTextColor 192 127 225
         SetBackgroundColor 104 34 44
@@ -1595,6 +1595,7 @@
         MinimapIcon 2 Purple Circle
         PlayEffect Purple Temp
         DisableDropSoundIfAlertSound
+
     #end
 #L1 5 裝備
     #L2 5.1 傳奇
@@ -2998,7 +2999,7 @@
         SetFontSize 35
         DisableDropSoundIfAlertSound
 
-    Show #請更新過濾器
+    Show # 請更新過濾器
         SetTextColor 30 144 255
         SetBackgroundColor 114 110 210 200
         SetFontSize 39
@@ -3006,5 +3007,5 @@
         CustomAlertSoundOptional "Diablo2\39.mp3" 300
         CustomAlertSoundOptional "Lelouch\Lelouch-傑瑞米亞_Orange.mp3" 300
         DisableDropSoundIfAlertSound
-        
+
     #end
