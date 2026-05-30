@@ -2949,6 +2949,10 @@ Import "自定義過濾/自定義配置.filter" Optional
         PlayEffect Cyan
         DisableDropSoundIfAlertSound
 
+    Show # 寶石
+        Class "Gems"
+        DisableDropSoundIfAlertSound
+
     #end
 #L1 9 其他
     Show # 遺鑰

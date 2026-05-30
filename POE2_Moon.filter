@@ -2949,6 +2949,10 @@
         PlayEffect Cyan
         DisableDropSoundIfAlertSound
 
+    Show # 寶石
+        Class "Gems"
+        DisableDropSoundIfAlertSound
+
     #end
 #L1 9 其他
     Show # 遺鑰
