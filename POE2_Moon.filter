@@ -2652,7 +2652,7 @@
 
     Show # 先行者碑牌
         Class "Tablet"
-        BaseType "Irradiated Precursor Tablet"
+        BaseType "Irradiated Tablet"
         SetTextColor 246 173 255
         SetBorderColor 30 144 255
         SetFontSize 42
