@@ -2999,6 +2999,12 @@ Import "自定義過濾/自定義配置.filter" Optional
         SetFontSize 35
         DisableDropSoundIfAlertSound
 
+    Show # 縮小白藍
+        Rarity < Rare
+        Class "Claws" "Daggers" "Wands" "One Hand Swords" "One Hand Axes" "One Hand Maces" "Sceptres" "Spears" "Flails" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Quarterstaves" "Crossbows" "Traps" "Fishing Rods" "Quivers" "Shields" "Foci" "Gloves" "Boots" "Body Armours" "Helmets" "Buckler" "Amulets" "Rings" "Belts" "Talisman"
+        SetFontSize 40
+        DisableDropSoundIfAlertSound
+
     Show # 請更新過濾器
         SetTextColor 30 144 255
         SetBackgroundColor 114 110 210 200
