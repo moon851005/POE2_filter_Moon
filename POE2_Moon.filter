@@ -876,10 +876,10 @@
         MinimapIcon 0 Purple Circle
         PlayEffect Purple
         DisableDropSoundIfAlertSound
-
-    Show # 阿德爾
+        
+    Show # 具名增幅 & 阿德爾
         Class "Augment"
-        BaseType "Aldur"
+        BaseType "'s" "s'" "Aldur"
         SetTextColor 255 200 80
         SetBackgroundColor 55 25 0
         SetBorderColor 210 140 20
