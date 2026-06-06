@@ -12,6 +12,18 @@ Import "自定義過濾/自定義配置.filter" Optional
         PlayEffect Green
         DisableDropSoundIfAlertSound
 
+    Show # 地區物品
+        Class "Instance Local Items"
+        SetTextColor 74 230 58
+        SetBackgroundColor 0 0 0
+        SetBorderColor 74 230 58
+        SetFontSize 42
+        CustomAlertSoundOptional "bubu\bubu-任務道具(粵語).mp3" 300
+        CustomAlertSoundOptional "Lelouch\Lelouch-魯路修_所有條件都成立了.mp3" 300
+        MinimapIcon 1 Green UpsideDownHouse
+        PlayEffect Green
+        DisableDropSoundIfAlertSound
+
     #end
 #L1 2 通貨
     Hide # 隱藏高等地區知識卷軸
@@ -994,18 +1006,33 @@ Import "自定義過濾/自定義配置.filter" Optional
         PlayEffect Cyan
         DisableDropSoundIfAlertSound
 
-    Show # 合金
+    Show # 高階合金(君主合金|星界合金|超凡合金|符文縛者的合金|符文之父的合金)
         Class "Stackable Currency"
-        BaseType "Runic Alloy" "Adaptive Alloy" "Protective Alloy" "Expansive Alloy" "Swift Alloy" "Cyclonic Alloy" "Prismatic Alloy" "Mystic Alloy" "Sovereign Alloy" "Celestial Alloy"
-        SetTextColor 255 144 0 255
-        SetBackgroundColor 45 55 87
-        SetBorderColor 135 155 210
-        SetFontSize 42
+        BaseType "Sovereign Alloy" "Celestial Alloy" "Transcendent Alloy" "The Runebinder's Alloy" "The Runefather's Alloy"
+        SetTextColor 51 106 255
+        SetBackgroundColor 255 255 255
+        SetBorderColor 51 106 255
+        SetFontSize 45
         PlayAlertSoundPositional 9 300
         CustomAlertSoundOptional "bubu\bubu-探險文物.mp3" 300
-        CustomAlertSoundOptional "Diablo2\28.mp3" 300
+        CustomAlertSoundOptional "Diablo2\24.mp3" 300
         CustomAlertSoundOptional "Lelouch\Lelouch-傑瑞米亞_發現.mp3" 300
-        MinimapIcon 1 Cyan Circle
+        MinimapIcon 0 Cyan Circle
+        PlayEffect Cyan
+        DisableDropSoundIfAlertSound
+
+    Show # 合金
+        Class "Stackable Currency"
+        BaseType "Alloy"
+        SetTextColor 255 200 0
+        SetBackgroundColor 45 55 87
+        SetBorderColor 135 155 210
+        SetFontSize 45
+        PlayAlertSoundPositional 9 300
+        CustomAlertSoundOptional "bubu\bubu-探險文物.mp3" 300
+        CustomAlertSoundOptional "Diablo2\24.mp3" 300
+        CustomAlertSoundOptional "Lelouch\Lelouch-傑瑞米亞_發現.mp3" 300
+        MinimapIcon 0 Cyan Circle
         PlayEffect Cyan
         DisableDropSoundIfAlertSound
 
@@ -1045,7 +1072,7 @@ Import "自定義過濾/自定義配置.filter" Optional
         SetTextColor 255 200 0
         SetBackgroundColor 66 148 202
         SetBorderColor 0 0 0 255
-        SetFontSize 42
+        SetFontSize 45
         PlayAlertSoundPositional 2 300
         CustomAlertSoundOptional "bubu\bubu-探險日誌.mp3" 300
         CustomAlertSoundOptional "Diablo2\51.mp3" 300
@@ -1069,18 +1096,17 @@ Import "自定義過濾/自定義配置.filter" Optional
         PlayEffect Cyan
         DisableDropSoundIfAlertSound
 
-    Show # 重鑄三曲烈焰
-        Class "Map Fragment"
-        BaseType "The Triskelion Reforged"
-        SetTextColor 255 200 0
-        SetBackgroundColor 66 148 202
-        SetBorderColor 0 0 0 255
+    Show # 三曲烈焰
+        BaseType "The Triskelion Reforged" "Shattered Triskelion"
+        SetTextColor 25 28 35
+        SetBackgroundColor 210 160 90
+        SetBorderColor 25 28 35
         SetFontSize 45
         PlayAlertSoundPositional 2 300
-        CustomAlertSoundOptional "bubu\bubu-探險日誌.mp3" 300
-        CustomAlertSoundOptional "Diablo2\51.mp3" 300
+        CustomAlertSoundOptional "bubu\bubu-特殊地圖.mp3" 300
+        CustomAlertSoundOptional "Diablo2\42.mp3" 300
         CustomAlertSoundOptional "Lelouch\Lelouch-魯路修_死吧4.mp3" 300
-        MinimapIcon 0 Cyan Cross
+        MinimapIcon 0 Cyan Triangle
         PlayEffect Cyan
         DisableDropSoundIfAlertSound
 
@@ -1552,20 +1578,33 @@ Import "自定義過濾/自定義配置.filter" Optional
         CustomAlertSoundOptional "Lelouch\Lelouch-CC_真是令我吃驚.mp3" 300
         DisableDropSoundIfAlertSound
 
-    Show # 維里西姆
+    Show # 卓越維里西姆
         Class "Stackable Currency"
-        BaseType "Exceptional Verisium" "Verisium"
-        SetTextColor 100 200 255
-        SetBackgroundColor 10 25 45
-        SetBorderColor 50 150 220
+        BaseType "Exceptional Verisium"
+        SetTextColor 255 144 0 255
+        SetBackgroundColor 45 55 87
+        SetBorderColor 135 155 210
         SetFontSize 45
-        MinimapIcon 0 Cyan Kite
-        PlayEffect Cyan
         PlayAlertSoundPositional 9 300
         CustomAlertSoundOptional "bubu\bubu-探險文物.mp3" 300
         CustomAlertSoundOptional "Diablo2\28.mp3" 300
         CustomAlertSoundOptional "Lelouch\Lelouch-傑瑞米亞_發現.mp3" 300
-        DisableDropSoundIfAlertSound
+        MinimapIcon 0 Cyan Circle
+        PlayEffect Cyan
+
+    Show # 維里西姆
+        Class "Stackable Currency"
+        BaseType "Verisium"
+        SetTextColor 100 200 255
+        SetBackgroundColor 45 55 87
+        SetBorderColor 135 155 210
+        SetFontSize 42
+        PlayAlertSoundPositional 9 300
+        CustomAlertSoundOptional "bubu\bubu-探險文物.mp3" 300
+        CustomAlertSoundOptional "Diablo2\28.mp3" 300
+        CustomAlertSoundOptional "Lelouch\Lelouch-傑瑞米亞_發現.mp3" 300
+        MinimapIcon 1 Cyan Circle
+        PlayEffect Cyan
 
     Show # 有用胎贈 奢華
         Class "Wombgifts"
@@ -1819,19 +1858,8 @@ Import "自定義過濾/自定義配置.filter" Optional
             DisableDropSoundIfAlertSound
 
         #end
-    #L2 5.4 拆解基底
-        Show # 品質權杖
-            Rarity <= Rare
-            Quality > 0
-            SetFontSize 45
-            Class "Sceptre"
-            SetBorderColor 220 220 220
-            MinimapIcon 0 White UpsideDownHouse
-            DisableDropSoundIfAlertSound
-
-        #end
-    #L2 5.5 限定基底
-        Show # 卡蘭德迷湖限定戒指
+    #L2 5.4 限定基底
+        Show # 破裂迷湖飾品
             Rarity <= Rare
             BaseType "Dusk Ring" "Gloam Ring" "Penumbra Ring" "Tenebrous Ring" "Dusk Amulet" "Gloam Amulet" "Penumbra Amulet" "Tenebrous Amulet"
             SetTextColor 255 255 255 255
@@ -1842,8 +1870,8 @@ Import "自定義過濾/自定義配置.filter" Optional
             PlayEffect Purple Temp
             DisableDropSoundIfAlertSound
 
-        Show # 裂痕戒指
-            BaseType "Breach Ring"
+        Show # 裂痕飾品(裂痕戒指|惡兆護身符|虛無護身符|悼亡護身符|日冕護身符|維生之戒|動力之戒|恆生之戒|憶念之戒|夢境之戒|抓取之戒)
+            BaseType "Breach Ring" "Portent Amulet" "Absent Amulet" "Lament Amulet" "Corona Amulet" "Vitalic Ring" "Kinetic Ring" "Biostatic Ring" "Mnemonic Ring" "Oneiric Ring" "Grasping Ring"
             SetTextColor 128 0 128
             SetBackgroundColor 255 218 136 202
             SetBorderColor 128 0 128
@@ -1875,7 +1903,7 @@ Import "自定義過濾/自定義配置.filter" Optional
 
         #end
         
-    #L2 5.6 有價基底
+    #L2 5.5 有價基底
         Show # 高等有價基底 惡毒長袍 快速打擊背心
             Rarity == Normal
             ItemLevel >= 82
@@ -1924,7 +1952,7 @@ Import "自定義過濾/自定義配置.filter" Optional
             DisableDropSoundIfAlertSound
 
         #end
-    #L2 5.7 高等飾品
+    #L2 5.6 高等飾品
         Show # %H2 項鍊基底 日耀項鍊
             Rarity <= Rare
             BaseType "Solar Amulet"
@@ -1959,7 +1987,7 @@ Import "自定義過濾/自定義配置.filter" Optional
             DisableDropSoundIfAlertSound
 
         #end
-    #L2 5.8 飾品
+    #L2 5.7 飾品
         Hide # %H1 項鍊基底 日耀項鍊
             Rarity <= Rare
             BaseType "Solar Amulet"
@@ -1987,7 +2015,7 @@ Import "自定義過濾/自定義配置.filter" Optional
             DisableDropSoundIfAlertSound
 
         #end
-    #L2 5.9 高等特殊基底
+    #L2 5.8 高等特殊基底
         Show # %H2 高等特殊敏智基底
             Rarity <= Rare
             BaseType "Austere Garb" "Falconer's Jacket" "Rambler Jacket"
@@ -2043,7 +2071,7 @@ Import "自定義過濾/自定義配置.filter" Optional
             DisableDropSoundIfAlertSound
 
         #end
-    #L2 5.10 高等高級基底
+    #L2 5.9 高等高級基底
         Show # %H2 高等高級敏智基底
             Rarity <= Rare
             BaseType "Secured Wraps" "Daggerfoot Shoes" "Sleek Jacket" "Grinning Mask"
@@ -2099,7 +2127,7 @@ Import "自定義過濾/自定義配置.filter" Optional
             DisableDropSoundIfAlertSound
 
         #end
-    #L2 5.11 特殊基底
+    #L2 5.10 特殊基底
         Hide # %H1 特殊敏智基底
             Rarity <= Rare
             BaseType "Austere Garb" "Falconer's Jacket" "Rambler Jacket"
@@ -2143,7 +2171,7 @@ Import "自定義過濾/自定義配置.filter" Optional
             DisableDropSoundIfAlertSound
 
         #end
-    #L2 5.12 高級基底
+    #L2 5.11 高級基底
         Hide # %H1 高級敏智基底
             Rarity <= Rare
             BaseType "Secured Wraps" "Daggerfoot Shoes" "Sleek Jacket" "Grinning Mask"
@@ -2187,7 +2215,7 @@ Import "自定義過濾/自定義配置.filter" Optional
             DisableDropSoundIfAlertSound
 
         #end
-    #L2 5.13 次級基底
+    #L2 5.12 次級基底
         Hide # %H0 次級敏智基底
             Rarity <= Rare
             BaseType "Vaal Wraps" "Quickslip Shoes" "Soaring Mask"
@@ -2231,7 +2259,7 @@ Import "自定義過濾/自定義配置.filter" Optional
             DisableDropSoundIfAlertSound
 
         #end
-    #L2 5.14 高等副手基底
+    #L2 5.13 高等副手基底
         Show # 高階金裝(輕盾) 遠古輕盾|Desert Buckler
             Rarity <= Rare
             BaseType "Ancient Buckler" "Desert Buckler"
@@ -2287,7 +2315,7 @@ Import "自定義過濾/自定義配置.filter" Optional
             DisableDropSoundIfAlertSound
 
         #end
-    #L2 5.15 副手基底
+    #L2 5.14 副手基底
         Hide # %H1 高階金裝(輕盾) 遠古輕盾|Desert Buckler
             Rarity <= Rare
             BaseType "Ancient Buckler" "Desert Buckler"
@@ -2331,7 +2359,7 @@ Import "自定義過濾/自定義配置.filter" Optional
             DisableDropSoundIfAlertSound
 
         #end
-    #L2 5.16 高等武器基底
+    #L2 5.15 高等武器基底
         Show # 印鈔 -魔符基底 翠玉魔符|天雷魔符|荒林魔符|聖賢魔符|統領魔符|真菌魔符|銳爪魔符|燼木魔符|尖錐魔符
             Rarity <= Rare
             BaseType "Jade Talisman" "Thunder Talisman" "Wildwood Talisman" "Maji Talisman" "Alpha Talisman" "Fungal Talisman" "Fang Talisman" "Ashbark Talisman" "Spiny Talisman"
@@ -2422,7 +2450,7 @@ Import "自定義過濾/自定義配置.filter" Optional
             DisableDropSoundIfAlertSound
 
         #end
-    #L2 5.17 武器基底
+    #L2 5.16 武器基底
         Hide # %H1 魔符基底 翠玉魔符|天雷魔符|荒林魔符|聖賢魔符|統領魔符|真菌魔符|銳爪魔符|燼木魔符|尖錐魔符
             Rarity <= Rare
             BaseType "Jade Talisman" "Thunder Talisman" "Wildwood Talisman" "Maji Talisman" "Alpha Talisman" "Fungal Talisman" "Fang Talisman" "Ashbark Talisman" "Spiny Talisman"
@@ -2943,7 +2971,7 @@ Import "自定義過濾/自定義配置.filter" Optional
 
     Show # 高價族裔輔助寶石
         Class "Support Gems"
-        BaseType "Dialla's Desire" "Rakiata's Flow" "Atalui's Bloodletting" "Uul-Netol's Embrace" "Uhtred's Augury" "Uhtred's Omen" "Arjun's Medal"
+        BaseType "Garukhan's Resolve" "Uul-Netol's Embrace" "Rakiata's Flow" "Rigwald's Ferocity" "Dialla's Desire" "Breachlord's Amalgam" "Vorana's Siege" "Tul's Stillness" "Uhtred's Exodus" "Olroth's Conviction" "Esh's Radiance" "Xoph's Pyre" "Her Declaration" "Uhtred's Omen" "Uhtred's Augury" "Brutus' Brain" "Catha's Brilliance" "Seraph's Heart" "Arbiter's Ignition" "Uhtred's Constellation" "Breachlord's Rift" "Tecrod's Revenge" "Ailith's Chimes" "Zerphi's Infamy"
         SetTextColor 255 0 0 255
         SetBackgroundColor 255 255 255
         SetBorderColor 255 0 0 255
